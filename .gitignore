@@ -1,0 +1,10 @@
+/node_modules
+/.next
+/out
+/public/vs
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.judge-tmp
+/gen/_shim
+

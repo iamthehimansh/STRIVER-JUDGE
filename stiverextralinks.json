@@ -1,0 +1,2962 @@
+{
+  "3": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-x-raised-to-power-n-_626560",
+    "gfg": "https://practice.geeksforgeeks.org/problems/expression-add-operators/1",
+    "lc": "https://leetcode.com/problems/expression-add-operators/"
+  },
+  "4": {
+    "cn": "https://www.codingninjas.com/studio/problems/word-break-1_758963",
+    "gfg": "https://practice.geeksforgeeks.org/problems/word-break1352/1",
+    "lc": "https://leetcode.com/problems/word-break/"
+  },
+  "20": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/number-of-inversions_6840276",
+    "gfg": "https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1",
+    "lc": ""
+  },
+  "21": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/missing-and-repeating-numbers_6828164",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
+    "lc": ""
+  },
+  "22": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/majority-element_6783241",
+    "gfg": "https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1",
+    "lc": "https://leetcode.com/problems/majority-element/"
+  },
+  "23": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/majority-element_6915220",
+    "gfg": "https://practice.geeksforgeeks.org/problems/majority-element-1587115620/1",
+    "lc": "https://leetcode.com/problems/majority-element-ii/"
+  },
+  "24": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/subarray-with-maximum-product_6890008",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-product-subarray3604/1",
+    "lc": "https://leetcode.com/problems/maximum-product-subarray/"
+  },
+  "25": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/merge-two-sorted-arrays-without-extra-space_6898839",
+    "gfg": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1",
+    "lc": "https://leetcode.com/problems/merge-sorted-array/"
+  },
+  "26": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/team-contest_6840309",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-reverse-pairs/1",
+    "lc": "https://leetcode.com/problems/reverse-pairs/"
+  },
+  "27": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/three-sum_6922132",
+    "gfg": "https://practice.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1",
+    "lc": "https://leetcode.com/problems/3sum/"
+  },
+  "28": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/4sum_5713771",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-all-four-sum-numbers1732/1",
+    "lc": "https://leetcode.com/problems/4sum/"
+  },
+  "30": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/superior-elements_6783446",
+    "gfg": "https://practice.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1",
+    "lc": ""
+  },
+  "31": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/next-greater-permutation_6929564",
+    "gfg": "https://practice.geeksforgeeks.org/problems/next-permutation5226/1",
+    "lc": "https://leetcode.com/problems/next-permutation/"
+  },
+  "33": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/spiral-matrix_6922069",
+    "gfg": "https://practice.geeksforgeeks.org/problems/spirally-traversing-a-matrix-1587115621/1",
+    "lc": "https://leetcode.com/problems/spiral-matrix/"
+  },
+  "34": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/alternate-numbers_6783445",
+    "gfg": "https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately-1587115620/1",
+    "lc": "https://leetcode.com/problems/rearrange-array-elements-by-sign/"
+  },
+  "35": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/rotate-the-matrix_6825090",
+    "gfg": "https://practice.geeksforgeeks.org/problems/rotate-by-90-degree-1587115621/1",
+    "lc": "https://leetcode.com/problems/rotate-image/"
+  },
+  "37": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/reading_6845742",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1",
+    "lc": "https://leetcode.com/problems/two-sum/"
+  },
+  "38": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/largest-element-in-the-array-largest-element-in-the-array_5026279",
+    "gfg": "https://practice.geeksforgeeks.org/problems/largest-element-in-array4009/1",
+    "lc": ""
+  },
+  "39": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/rotate-array_1230543",
+    "gfg": "https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1",
+    "lc": "https://leetcode.com/problems/rotate-array/"
+  },
+  "40": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/left-rotate-an-array-by-one_5026278",
+    "gfg": "https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1",
+    "lc": "https://leetcode.com/problems/rotate-array/"
+  },
+  "41": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/linear-search_6922070",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-an-element-in-an-array-1587115621/1",
+    "lc": ""
+  },
+  "42": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/traffic_6682625",
+    "gfg": "https://www.geeksforgeeks.org/problems/longest-consecutive-1s-1587115620/1",
+    "lc": "https://leetcode.com/problems/max-consecutive-ones/"
+  },
+  "43": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/ninja-and-the-second-order-elements_6581960",
+    "gfg": "https://practice.geeksforgeeks.org/problems/second-largest3735/1",
+    "lc": ""
+  },
+  "44": {
+    "cn": "https://www.naukri.com/code360/problems/missing-number_6680467",
+    "gfg": "https://practice.geeksforgeeks.org/problems/missing-number-in-array1416/1",
+    "lc": "https://leetcode.com/problems/missing-number/"
+  },
+  "46": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/ninja-and-the-zero-s_6581958",
+    "gfg": "https://practice.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array0751/1",
+    "lc": "https://leetcode.com/problems/move-zeroes/"
+  },
+  "48": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/sorted-array_6613259",
+    "gfg": "https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1",
+    "lc": ""
+  },
+  "56": {
+    "cn": "https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock-with-cooldown_3125969",
+    "gfg": "https://practice.geeksforgeeks.org/problems/buy-stock-with-cooldown/1",
+    "lc": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/"
+  },
+  "65": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/find-peak-element_7449073",
+    "gfg": "https://practice.geeksforgeeks.org/problems/peak-element/1",
+    "lc": "https://leetcode.com/problems/find-a-peak-element-ii/"
+  },
+  "66": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/row-of-a-matrix-with-maximum-ones_982768",
+    "gfg": "https://practice.geeksforgeeks.org/problems/row-with-max-1s0023/1",
+    "lc": ""
+  },
+  "67": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/median-of-a-row-wise-sorted-matrix_1115473",
+    "gfg": "https://practice.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1",
+    "lc": ""
+  },
+  "68": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/search-in-a-sorted-2d-matrix_6917532",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-in-a-matrix-1587115621/1",
+    "lc": "https://leetcode.com/problems/search-a-2d-matrix-ii/"
+  },
+  "69": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/search-in-a-2d-matrix_980531",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-in-a-matrix17201720/1",
+    "lc": "https://leetcode.com/problems/search-a-2d-matrix/"
+  },
+  "73": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/aggressive-cows_1082559",
+    "gfg": "https://practice.geeksforgeeks.org/problems/aggressive-cows/0",
+    "lc": "https://www.spoj.com/problems/AGGRCOW/"
+  },
+  "74": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/allocate-books_1090540",
+    "gfg": "https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1",
+    "lc": ""
+  },
+  "75": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/find-peak-element_1081482",
+    "gfg": "https://practice.geeksforgeeks.org/problems/peak-element/1",
+    "lc": "https://leetcode.com/problems/find-peak-element/"
+  },
+  "77": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/median-of-two-sorted-arrays_985294",
+    "gfg": "https://practice.geeksforgeeks.org/problems/median-of-2-sorted-arrays-of-different-sizes/1",
+    "lc": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+  },
+  "78": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/minimise-max-distance_7541449",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimize-max-distance-to-gas-station/1",
+    "lc": "https://leetcode.com/problems/minimize-max-distance-to-gas-station/"
+  },
+  "79": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/largest-subarray-sum-minimized_7461751",
+    "gfg": "https://practice.geeksforgeeks.org/problems/split-array-largest-sum--141634/1",
+    "lc": "https://leetcode.com/problems/split-array-largest-sum/"
+  },
+  "80": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/lower-bound_8165382",
+    "gfg": "https://practice.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1",
+    "lc": ""
+  },
+  "81": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/binary-search_972",
+    "gfg": "https://practice.geeksforgeeks.org/problems/binary-search-1587115620/1",
+    "lc": "https://leetcode.com/problems/binary-search/"
+  },
+  "82": {
+    "cn": "https://www.codingninjas.com/studio/problems/implement-upper-bound_8165383",
+    "gfg": "https://www.geeksforgeeks.org/implementing-upper_bound-and-lower_bound-in-c/",
+    "lc": ""
+  },
+  "83": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/rotated-array_1093219",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-element-in-a-sorted-and-rotated-array3611/1",
+    "lc": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+  },
+  "84": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/rotation_7449070",
+    "gfg": "https://www.geeksforgeeks.org/problems/rotation4723/1",
+    "lc": ""
+  },
+  "85": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549",
+    "gfg": "https://practice.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1",
+    "lc": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+  },
+  "86": {
+    "cn": "https://www.codingninjas.com/studio/problems/ceiling-in-a-sorted-array_1825401",
+    "gfg": "https://practice.geeksforgeeks.org/problems/ceil-the-floor2802/1",
+    "lc": ""
+  },
+  "87": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/search-in-rotated-sorted-array_1082554",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-in-a-rotated-array4618/1",
+    "lc": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+  },
+  "88": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/search-in-a-rotated-sorted-array-ii_7449547",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-in-rotated-array-2/1",
+    "lc": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/"
+  },
+  "89": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-insert-position-of-k-in-a-sorted-array/1",
+    "lc": "https://leetcode.com/problems/search-insert-position/"
+  },
+  "91": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/square-root-integral_893351",
+    "gfg": "https://practice.geeksforgeeks.org/problems/square-root/1",
+    "lc": ""
+  },
+  "93": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/smallest-divisor-with-the-given-limit_1755882",
+    "gfg": "https://practice.geeksforgeeks.org/problems/smallest-divisor/1",
+    "lc": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/"
+  },
+  "94": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/minimum-rate-to-eat-bananas_7449064",
+    "gfg": "https://practice.geeksforgeeks.org/problems/koko-eating-bananas/1",
+    "lc": "https://leetcode.com/problems/koko-eating-bananas/"
+  },
+  "95": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/rose-garden_2248080",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-days-to-make-m-bouquets/1",
+    "lc": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/"
+  },
+  "97": {
+    "cn": "https://www.codingninjas.com/studio/problems/fix-bst_873137",
+    "gfg": "https://practice.geeksforgeeks.org/problems/fixed-two-nodes-of-a-bst/1",
+    "lc": "https://leetcode.com/problems/recover-binary-search-tree/"
+  },
+  "98": {
+    "cn": "https://www.codingninjas.com/studio/problems/size-of-largest-bst-in-binary-tree_893103",
+    "gfg": "https://practice.geeksforgeeks.org/problems/largest-bst/1",
+    "lc": ""
+  },
+  "100": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-bst_5975",
+    "gfg": "https://practice.geeksforgeeks.org/problems/check-for-bst/1",
+    "lc": "https://leetcode.com/problems/validate-binary-search-tree/"
+  },
+  "101": {
+    "cn": "https://www.codingninjas.com/studio/problems/construct-bst-from-preorder-traversal_2689307",
+    "gfg": "https://practice.geeksforgeeks.org/problems/preorder-traversal-and-bst4006/1",
+    "lc": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/"
+  },
+  "102": {
+    "cn": "https://www.codingninjas.com/studio/problems/delete-node-in-bst_920381",
+    "gfg": "https://practice.geeksforgeeks.org/problems/delete-a-node-from-bst/1",
+    "lc": "https://leetcode.com/problems/delete-node-in-a-bst/"
+  },
+  "104": {
+    "cn": "https://www.codingninjas.com/studio/problems/insert-into-a-binary-search-tree_1279913",
+    "gfg": "https://practice.geeksforgeeks.org/problems/insert-a-node-in-a-bst/1",
+    "lc": "https://leetcode.com/problems/insert-into-a-binary-search-tree/"
+  },
+  "105": {
+    "cn": "https://www.codingninjas.com/studio/problems/kth-smallest-node-in-bst_920441",
+    "gfg": "https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1",
+    "lc": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+  },
+  "106": {
+    "cn": "https://www.codingninjas.com/studio/problems/lca-in-a-bst_981280",
+    "gfg": "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1",
+    "lc": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+  },
+  "107": {
+    "cn": "https://www.codingninjas.com/studio/problems/ceil-from-bst_920464",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implementing-ceil-in-bst/1",
+    "lc": ""
+  },
+  "110": {
+    "cn": "https://www.codingninjas.com/studio/problems/construct-binary-tree-from-inorder-and-preorder-traversal_920539",
+    "gfg": "https://practice.geeksforgeeks.org/problems/construct-tree-1/1",
+    "lc": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+  },
+  "111": {
+    "cn": "https://www.codingninjas.com/studio/problems/unique-binary-tree_8180906",
+    "gfg": "https://practice.geeksforgeeks.org/problems/unique-binary-tree-requirements/1",
+    "lc": ""
+  },
+  "112": {
+    "cn": "https://www.codingninjas.com/studio/problems/serialize-and-deserialize-binary-tree_920328",
+    "gfg": "https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1",
+    "lc": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+  },
+  "115": {
+    "cn": "https://www.codingninjas.com/studio/problems/bottom-view-of-binary-tree_893110",
+    "gfg": "https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1",
+    "lc": ""
+  },
+  "116": {
+    "cn": "https://www.codingninjas.com/studio/problems/boundary-traversal-of-binary-tree_790725",
+    "gfg": "https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1",
+    "lc": "https://leetcode.com/problems/boundary-of-binary-tree/"
+  },
+  "117": {
+    "cn": "https://www.codingninjas.com/studio/problems/nodes-in-complete-binary-tree_1281151",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-number-of-nodes-in-a-binary-tree/1",
+    "lc": "https://leetcode.com/problems/count-complete-tree-nodes/"
+  },
+  "118": {
+    "cn": "https://www.codingninjas.com/studio/problems/lca-of-binary-tree_920541",
+    "gfg": "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1",
+    "lc": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/"
+  },
+  "119": {
+    "cn": "https://www.codingninjas.com/studio/problems/maximum-width-in-binary-tree_763671",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-width-of-tree/1",
+    "lc": "https://leetcode.com/problems/maximum-width-of-binary-tree/"
+  },
+  "120": {
+    "cn": "https://www.codingninjas.com/studio/problems/time-to-burn-tree_1469067",
+    "gfg": "https://practice.geeksforgeeks.org/problems/burning-tree/1",
+    "lc": ""
+  },
+  "121": {
+    "cn": "https://www.codingninjas.com/studio/problems/print-nodes-at-distance-k-from-a-given-node_842560",
+    "gfg": "https://practice.geeksforgeeks.org/problems/nodes-at-given-distance-in-binary-tree/1",
+    "lc": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/"
+  },
+  "122": {
+    "cn": "https://www.codingninjas.com/studio/problems/path-in-a-tree_3843990",
+    "gfg": "https://practice.geeksforgeeks.org/problems/root-to-leaf-paths/1",
+    "lc": ""
+  },
+  "124": {
+    "cn": "https://www.codingninjas.com/studio/problems/top-view-of-binary-tree_799401",
+    "gfg": "https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1",
+    "lc": ""
+  },
+  "125": {
+    "cn": "https://www.codingninjas.com/studio/problems/vertical-order-traversal_3622711",
+    "gfg": "https://practice.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1",
+    "lc": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/"
+  },
+  "126": {
+    "cn": "https://www.codingninjas.com/studio/problems/zigzag-binary-tree-traversal_920532",
+    "gfg": "https://practice.geeksforgeeks.org/problems/zigzag-tree-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/"
+  },
+  "127": {
+    "cn": "https://www.codingninjas.com/studio/problems/is-height-balanced-binary-tree_975497",
+    "gfg": "https://www.geeksforgeeks.org/problems/check-for-balanced-tree/1",
+    "lc": "https://leetcode.com/problems/balanced-binary-tree/"
+  },
+  "129": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-identical-trees_799364",
+    "gfg": "https://practice.geeksforgeeks.org/problems/determine-if-two-trees-are-identical/1",
+    "lc": "https://leetcode.com/problems/same-tree/"
+  },
+  "130": {
+    "cn": "https://www.codingninjas.com/studio/problems/diameter-of-binary-tree_920552",
+    "gfg": "https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1",
+    "lc": "https://leetcode.com/problems/diameter-of-binary-tree/"
+  },
+  "131": {
+    "cn": "https://www.codingninjas.com/studio/problems/height-of-binary-tree_4609628",
+    "gfg": "https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1",
+    "lc": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+  },
+  "132": {
+    "cn": "https://www.codingninjas.com/studio/problems/maximum-sum-path-of-a-binary-tree._1214968",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-path-sum-from-any-node/1",
+    "lc": "https://leetcode.com/problems/binary-tree-maximum-path-sum/"
+  },
+  "134": {
+    "cn": "https://www.codingninjas.com/studio/problems/zigzag-binary-tree-traversal_920532",
+    "gfg": "https://practice.geeksforgeeks.org/problems/level-order-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+  },
+  "135": {
+    "cn": "https://www.codingninjas.com/studio/problems/postorder-traversal_2035933",
+    "gfg": "https://practice.geeksforgeeks.org/problems/postorder-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+  },
+  "136": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/tree-traversal_981269",
+    "gfg": "https://practice.geeksforgeeks.org/problems/inorder-traversal/1",
+    "lc": ""
+  },
+  "137": {
+    "cn": "https://www.codingninjas.com/studio/problems/preorder-binary-tree_5948",
+    "gfg": "https://practice.geeksforgeeks.org/problems/preorder-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+  },
+  "140": {
+    "cn": "https://www.codingninjas.com/studio/problems/-divide-two-integers_1112617",
+    "gfg": "https://practice.geeksforgeeks.org/problems/division-without-using-multiplication-division-and-mod-operator/0",
+    "lc": "https://leetcode.com/problems/divide-two-integers/"
+  },
+  "141": {
+    "cn": "https://www.codingninjas.com/studio/problems/flip-bits_8160405",
+    "gfg": "https://www.geeksforgeeks.org/count-number-of-bits-to-be-flipped-to-convert-a-to-b/",
+    "lc": "https://leetcode.com/problems/minimum-bit-flips-to-convert-number/"
+  },
+  "142": {
+    "cn": "https://www.codingninjas.com/studio/problems/subsequences-of-string_985087",
+    "gfg": "https://practice.geeksforgeeks.org/problems/power-set4302/1",
+    "lc": "https://leetcode.com/problems/subsets/"
+  },
+  "143": {
+    "cn": "https://www.codingninjas.com/studio/problems/one-odd-occurring_4606074",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-the-odd-occurence4820/1",
+    "lc": "https://leetcode.com/problems/single-number/"
+  },
+  "145": {
+    "cn": "https://www.codingninjas.com/studio/problems/two-numbers-with-odd-occurrences_8160466",
+    "gfg": "https://practice.geeksforgeeks.org/problems/two-numbers-with-odd-occurrences5846/1",
+    "lc": ""
+  },
+  "146": {
+    "cn": "https://www.codingninjas.com/studio/problems/l-to-r-xor_8160412",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-xor-of-numbers-from-l-to-r/1",
+    "lc": ""
+  },
+  "161": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/capacity-to-ship-packages-within-d-days_1229379",
+    "gfg": "https://practice.geeksforgeeks.org/problems/capacity-to-ship-packages-within-d-days/1",
+    "lc": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+  },
+  "171": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/odd-even_7993579",
+    "gfg": "https://practice.geeksforgeeks.org/problems/odd-or-even3618/1",
+    "lc": ""
+  },
+  "172": {
+    "cn": "https://www.codingninjas.com/studio/problems/power-of-two_893061",
+    "gfg": "https://practice.geeksforgeeks.org/problems/power-of-2-1587115620/1",
+    "lc": "https://leetcode.com/problems/power-of-two/"
+  },
+  "177": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-whether-k-th-bit-is-set-or-not_5026446",
+    "gfg": "https://practice.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/1",
+    "lc": ""
+  },
+  "185": {
+    "cn": "https://www.codingninjas.com/studio/problems/childrensumproperty_790723",
+    "gfg": "https://practice.geeksforgeeks.org/problems/children-sum-parent/1",
+    "lc": ""
+  },
+  "222": {
+    "cn": "https://www.codingninjas.com/studio/problems/good-numbers_625508",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-good-numbers/1",
+    "lc": "https://leetcode.com/problems/count-good-numbers/"
+  },
+  "229": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/occurrence-of-x-in-a-sorted-array_630456",
+    "gfg": "https://practice.geeksforgeeks.org/problems/number-of-occurrence2259/1",
+    "lc": ""
+  },
+  "231": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-palindromic-subsequences_1062696",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-palindromic-subsequences/1",
+    "lc": ""
+  },
+  "243": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-total-set-bits_784",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1",
+    "lc": ""
+  },
+  "252": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-frequency-in-a-range_8365446",
+    "gfg": "https://practice.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/0",
+    "lc": ""
+  },
+  "276": {
+    "cn": "https://www.codingninjas.com/studio/problems/boolean-evaluation_1214650",
+    "gfg": "https://practice.geeksforgeeks.org/problems/boolean-parenthesization5610/1",
+    "lc": "https://leetcode.com/problems/parsing-a-boolean-expression/"
+  },
+  "285": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-of-greater-elements-to-the-right_8365436",
+    "gfg": "https://practice.geeksforgeeks.org/problems/number-of-nges-to-the-right/1",
+    "lc": ""
+  },
+  "287": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-ways-to-reach-the-n-th-stairs_798650",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-ways-to-reach-the-nth-stair-1587115620/1",
+    "lc": "https://leetcode.com/problems/climbing-stairs/"
+  },
+  "288": {
+    "cn": "https://www.codingninjas.com/studio/problems/frog-jump_3621012",
+    "gfg": "https://www.geeksforgeeks.org/problems/geek-jump/1",
+    "lc": ""
+  },
+  "289": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimal-cost_8180930",
+    "gfg": "https://practice.geeksforgeeks.org/problems/frogs-and-jumps--170647/1",
+    "lc": ""
+  },
+  "290": {
+    "cn": "https://www.codingninjas.com/studio/problems/house-robber-ii_839733",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stickler-theif-1587115621/1",
+    "lc": "https://leetcode.com/problems/house-robber-ii/"
+  },
+  "291": {
+    "cn": "https://www.codingninjas.com/studio/problems/maximum-sum-of-non-adjacent-elements_843261",
+    "gfg": "https://practice.geeksforgeeks.org/problems/max-sum-without-adjacents2430/1",
+    "lc": "https://leetcode.com/problems/house-robber/"
+  },
+  "292": {
+    "cn": "https://www.codingninjas.com/studio/problems/ninja%E2%80%99s-training_3621003",
+    "gfg": "https://www.geeksforgeeks.org/problems/geeks-training/1",
+    "lc": ""
+  },
+  "298": {
+    "cn": "https://www.codingninjas.com/studio/problems/maximum-path-sum-in-the-matrix_797998",
+    "gfg": "https://practice.geeksforgeeks.org/problems/path-in-matrix3805/1",
+    "lc": "https://leetcode.com/problems/minimum-falling-path-sum/"
+  },
+  "299": {
+    "cn": "https://www.codingninjas.com/studio/problems/triangle_1229398",
+    "gfg": "https://practice.geeksforgeeks.org/problems/triangle-path-sum/1",
+    "lc": "https://leetcode.com/problems/triangle/"
+  },
+  "300": {
+    "cn": "https://www.codingninjas.com/studio/problems/unique-paths-ii_977241",
+    "gfg": "https://practice.geeksforgeeks.org/problems/unique-paths-in-a-grid--170647/1",
+    "lc": "https://leetcode.com/problems/unique-paths-ii/"
+  },
+  "301": {
+    "cn": "https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock_893405",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1",
+    "lc": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+  },
+  "302": {
+    "cn": "https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock-ii_630282",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell2615/1",
+    "lc": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/"
+  },
+  "303": {
+    "cn": "https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock-iii_1071012",
+    "gfg": "https://practice.geeksforgeeks.org/problems/buy-and-sell-a-share-at-most-twice/1",
+    "lc": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/"
+  },
+  "304": {
+    "cn": "https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock-iv_1080698",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1",
+    "lc": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/"
+  },
+  "305": {
+    "cn": "https://www.codingninjas.com/studio/problems/best-time-to-buy-and-sell-stock-with-transaction-fee_3118974",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1",
+    "lc": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/"
+  },
+  "306": {
+    "cn": "https://www.codingninjas.com/studio/problems/subsequence-counting_3755256",
+    "gfg": "https://practice.geeksforgeeks.org/problems/distinct-occurrences/1",
+    "lc": "https://leetcode.com/problems/distinct-subsequences/"
+  },
+  "307": {
+    "cn": "https://www.codingninjas.com/studio/problems/shortest-common-supersequence_4244493",
+    "gfg": "https://practice.geeksforgeeks.org/problems/edit-distance3702/1",
+    "lc": "https://leetcode.com/problems/edit-distance/"
+  },
+  "308": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-common-subsequence_624879",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1",
+    "lc": "https://leetcode.com/problems/longest-common-subsequence/"
+  },
+  "309": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-common-substring_1235207",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1",
+    "lc": ""
+  },
+  "310": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-palindromic-subsequence_842787",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-palindromic-subsequence-1612327878/1",
+    "lc": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+  },
+  "311": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-number-of-deletions-and-insertions_4244510",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-number-of-deletions-and-insertions0209/1",
+    "lc": "https://leetcode.com/problems/delete-operation-for-two-strings/"
+  },
+  "313": {
+    "cn": "https://www.codingninjas.com/studio/problems/shortest-common-supersequence_4244493",
+    "gfg": "https://practice.geeksforgeeks.org/problems/shortest-common-supersequence0322/1",
+    "lc": "https://leetcode.com/problems/shortest-common-supersequence/"
+  },
+  "314": {
+    "cn": "https://www.codingninjas.com/studio/problems/wildcard-pattern-matching_701650",
+    "gfg": "https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1",
+    "lc": "https://leetcode.com/problems/wildcard-matching/"
+  },
+  "317": {
+    "cn": "https://www.codingninjas.com/studio/problems/partitions-with-given-difference_3751628",
+    "gfg": "https://practice.geeksforgeeks.org/problems/partitions-with-given-difference/1",
+    "lc": ""
+  },
+  "318": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-subsets-with-sum-k_3952532",
+    "gfg": "https://practice.geeksforgeeks.org/problems/perfect-sum-problem5633/1",
+    "lc": ""
+  },
+  "319": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-minimum-number-of-coins_975277",
+    "gfg": "https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/",
+    "lc": "https://www.geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/"
+  },
+  "320": {
+    "cn": "https://www.codingninjas.com/studio/problems/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum._842494",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-sum-partition3317/1",
+    "lc": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/"
+  },
+  "321": {
+    "cn": "https://www.codingninjas.com/studio/problems/partition-equal-subset-sum-_892980",
+    "gfg": "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
+    "lc": "https://leetcode.com/problems/partition-equal-subset-sum/"
+  },
+  "324": {
+    "cn": "https://www.codingninjas.com/studio/problems/target-sum_4127362",
+    "gfg": "https://practice.geeksforgeeks.org/problems/target-sum-1626326450/1",
+    "lc": "https://leetcode.com/problems/target-sum/"
+  },
+  "325": {
+    "cn": "https://www.codingninjas.com/studio/problems/unbounded-knapsack_1215029",
+    "gfg": "https://practice.geeksforgeeks.org/problems/knapsack-with-duplicate-items4201/1",
+    "lc": ""
+  },
+  "326": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/burst-balloons_628471",
+    "gfg": "https://practice.geeksforgeeks.org/problems/burst-balloons/1",
+    "lc": "https://leetcode.com/problems/burst-balloons/"
+  },
+  "327": {
+    "cn": "https://www.codingninjas.com/studio/problems/matrix-chain-multiplication_624880",
+    "gfg": "https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1",
+    "lc": ""
+  },
+  "328": {
+    "cn": "https://www.codingninjas.com/studio/problems/rod-cutting-problem_800284",
+    "gfg": "https://practice.geeksforgeeks.org/problems/rod-cutting0840/1",
+    "lc": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/"
+  },
+  "329": {
+    "cn": "https://www.codingninjas.com/studio/problems/palindrome-partitioning-ll_873266",
+    "gfg": "https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1",
+    "lc": "https://leetcode.com/problems/palindrome-partitioning-ii/"
+  },
+  "342": {
+    "cn": "https://www.codingninjas.com/studio/problems/reverse-an-array_8365444",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-array-in-groups0255/1",
+    "lc": ""
+  },
+  "344": {
+    "cn": "https://www.codingninjas.com/studio/problems/k-most-occurrent-numbers_625382",
+    "gfg": "https://practice.geeksforgeeks.org/problems/top-k-frequent-elements-in-array/1",
+    "lc": "https://leetcode.com/problems/frequency-of-the-most-frequent-element/"
+  },
+  "348": {
+    "cn": "https://www.codingninjas.com/studio/problems/delete-last-node-of-a-doubly-linked-list_8160469",
+    "gfg": "https://practice.geeksforgeeks.org/problems/delete-node-in-doubly-linked-list/1",
+    "lc": ""
+  },
+  "352": {
+    "cn": "https://www.codingninjas.com/studio/problems/delete-node-of-linked-list_8160463",
+    "gfg": "https://practice.geeksforgeeks.org/problems/delete-a-node-in-single-linked-list/1",
+    "lc": "https://leetcode.com/problems/delete-node-in-a-linked-list/"
+  },
+  "356": {
+    "cn": "https://www.codingninjas.com/studio/problems/insert-node-at-the-beginning_8144739",
+    "gfg": "https://practice.geeksforgeeks.org/problems/linked-list-insertion-1587115620/0",
+    "lc": ""
+  },
+  "361": {
+    "cn": "https://www.codingninjas.com/studio/problems/insert-at-end-of-doubly-linked-list_8160464",
+    "gfg": "https://practice.geeksforgeeks.org/problems/insert-a-node-in-doubly-linked-list/1",
+    "lc": ""
+  },
+  "365": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-prime_624934",
+    "gfg": "https://practice.geeksforgeeks.org/problems/prime-number2314/1",
+    "lc": ""
+  },
+  "366": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-armstrong_589",
+    "gfg": "https://practice.geeksforgeeks.org/problems/armstrong-numbers2727/1",
+    "lc": "https://leetcode.com/problems/armstrong-number/"
+  },
+  "367": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/count-digits_8416387",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-digits5716/1",
+    "lc": ""
+  },
+  "370": {
+    "cn": "https://www.codingninjas.com/studio/problems/print-all-divisors-of-a-number_1164188",
+    "gfg": "https://practice.geeksforgeeks.org/problems/all-divisors-of-a-number/1",
+    "lc": ""
+  },
+  "371": {
+    "cn": "https://www.codingninjas.com/studio/problems/factorial-numbers-not-greater-than-n_8365435",
+    "gfg": "https://practice.geeksforgeeks.org/problems/factorial5739/1",
+    "lc": ""
+  },
+  "372": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/hcf-and-lcm_840448",
+    "gfg": "https://practice.geeksforgeeks.org/problems/lcm-and-gcd4516/1",
+    "lc": ""
+  },
+  "374": {
+    "cn": "https://www.codingninjas.com/studio/problems/palindrome-number_624662",
+    "gfg": "https://practice.geeksforgeeks.org/problems/palindrome0746/1",
+    "lc": "https://leetcode.com/problems/palindrome-number/"
+  },
+  "376": {
+    "cn": "https://www.codingninjas.com/studio/problems/reverse-bits_2181102",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-bits3556/1",
+    "lc": "https://leetcode.com/problems/reverse-integer/"
+  },
+  "378": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-palindrome-recursive_624386",
+    "gfg": "https://practice.geeksforgeeks.org/problems/palindrome-string0817/1",
+    "lc": "https://leetcode.com/problems/valid-palindrome/"
+  },
+  "379": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/ninja-and-the-sorted-check_6581957",
+    "gfg": "https://practice.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1",
+    "lc": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/"
+  },
+  "381": {
+    "cn": "https://www.codingninjas.com/studio/problems/print-fibonacci-series_7421617",
+    "gfg": "https://practice.geeksforgeeks.org/problems/nth-fibonacci-number1335/1",
+    "lc": "https://leetcode.com/problems/fibonacci-number/"
+  },
+  "386": {
+    "cn": "https://www.codingninjas.com/studio/problems/sum-of-first-n-numbers_8876068",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stuti-and-her-problem5846/1",
+    "lc": ""
+  },
+  "387": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/implement-queue-using-arrays_8390825",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implement-queue-using-array/1",
+    "lc": ""
+  },
+  "388": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/implement-queue-using-linked-list_8161235",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implement-queue-using-linked-list/1",
+    "lc": ""
+  },
+  "389": {
+    "cn": "https://www.codingninjas.com/studio/problems/day-25-:-queue-using-stack_799482",
+    "gfg": "https://practice.geeksforgeeks.org/problems/queue-using-stack/1",
+    "lc": "https://leetcode.com/problems/implement-queue-using-stacks/"
+  },
+  "390": {
+    "cn": "https://www.codingninjas.com/studio/problems/stack-implementation-using-array_3210209",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1",
+    "lc": ""
+  },
+  "391": {
+    "cn": "https://www.codingninjas.com/studio/problems/implement-stack-with-linked-list_1279905",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implement-stack-using-linked-list/1",
+    "lc": ""
+  },
+  "392": {
+    "cn": "https://www.codingninjas.com/studio/problems/stack-using-queue_795152",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stack-using-two-queues/1",
+    "lc": "https://leetcode.com/problems/implement-stack-using-queues/"
+  },
+  "393": {
+    "cn": "https://www.codingninjas.com/studio/problems/isomorphic-strings-_1117636",
+    "gfg": "https://practice.geeksforgeeks.org/problems/isomorphic-strings-1587115620/1",
+    "lc": "https://leetcode.com/problems/isomorphic-strings/"
+  },
+  "394": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/problems/largest-odd-number-in-string/1",
+    "lc": "https://leetcode.com/problems/largest-odd-number-in-string/"
+  },
+  "395": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-common-prefix_628874",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-common-prefix-in-an-array5129/1",
+    "lc": "https://leetcode.com/problems/longest-common-prefix/"
+  },
+  "398": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-if-one-string-is-a-rotation-of-another-string_1115683",
+    "gfg": "https://practice.geeksforgeeks.org/problems/check-if-strings-are-rotations-of-each-other-or-not-1587115620/1",
+    "lc": "https://leetcode.com/problems/rotate-string/"
+  },
+  "399": {
+    "cn": "https://www.codingninjas.com/studio/problems/sorting-characters-by-frequency_1263699",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sorting-elements-of-an-array-by-frequency/0",
+    "lc": "https://leetcode.com/problems/sort-characters-by-frequency/"
+  },
+  "424": {
+    "cn": "https://www.codingninjas.com/studio/problems/if-else-decision-making_8357235",
+    "gfg": "https://practice.geeksforgeeks.org/problems/java-if-else-decision-making0924/0",
+    "lc": ""
+  },
+  "425": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-character-case_58513",
+    "gfg": "https://practice.geeksforgeeks.org/problems/c-input-output2432/1",
+    "lc": ""
+  },
+  "429": {
+    "cn": "https://www.codingninjas.com/studio/problems/switch-case-statement_8357244",
+    "gfg": "https://practice.geeksforgeeks.org/problems/java-switch-case-statement3529/1",
+    "lc": ""
+  },
+  "452": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-pairs-with-given-sum-in-doubly-linked-list_1164172",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-pairs-with-given-sum-in-doubly-linked-list/1",
+    "lc": ""
+  },
+  "470": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-nodes-of-linked-list_5884",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-nodes-of-linked-list/1",
+    "lc": ""
+  },
+  "486": {
+    "cn": "https://www.codingninjas.com/studio/problems/flatten-binary-tree-to-linked-list_1112615",
+    "gfg": "https://practice.geeksforgeeks.org/problems/flatten-binary-tree-to-linked-list/1",
+    "lc": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+  },
+  "489": {
+    "cn": "https://www.codingninjas.com/studio/problems/fractional-knapsack_975286",
+    "gfg": "https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1",
+    "lc": ""
+  },
+  "493": {
+    "cn": "https://www.codingninjas.com/studio/problems/-binary-strings-with-no-consecutive-1s._893001",
+    "gfg": "https://practice.geeksforgeeks.org/problems/generate-all-binary-strings/1",
+    "lc": ""
+  },
+  "496": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/articulation-point_840708",
+    "gfg": "https://practice.geeksforgeeks.org/problems/articulation-point-1/1",
+    "lc": ""
+  },
+  "497": {
+    "cn": "https://www.codingninjas.com/studio/problems/bridges-in-a-graph_893026",
+    "gfg": "https://practice.geeksforgeeks.org/problems/bridge-edge-in-graph/1",
+    "lc": "https://leetcode.com/problems/critical-connections-in-a-network/discuss/382385/find-bridges-in-a-graph"
+  },
+  "498": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-strongly-connected-components-(kosaraju%E2%80%99s-algorithm)_1171151",
+    "gfg": "https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1",
+    "lc": ""
+  },
+  "500": {
+    "cn": "https://www.codingninjas.com/studio/problems/detect-cycle-in-a-directed-graph_1062626",
+    "gfg": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1",
+    "lc": ""
+  },
+  "501": {
+    "cn": "https://www.codingninjas.com/studio/problems/detect-cycle-in-an-undirected-graph-_758967",
+    "gfg": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1",
+    "lc": ""
+  },
+  "502": {
+    "cn": "https://www.codingninjas.com/studio/problems/topological-sorting_973003",
+    "gfg": "https://practice.geeksforgeeks.org/problems/topological-sort/1",
+    "lc": ""
+  },
+  "503": {
+    "cn": "https://www.codingninjas.com/studio/problems/alien-dictionary_630423",
+    "gfg": "https://practice.geeksforgeeks.org/problems/alien-dictionary/1",
+    "lc": "https://leetcode.com/problems/alien-dictionary/solution/"
+  },
+  "504": {
+    "cn": "https://www.codingninjas.com/studio/problems/course-schedule-ii_1069243",
+    "gfg": "https://practice.geeksforgeeks.org/problems/course-schedule/1",
+    "lc": "https://leetcode.com/problems/course-schedule/"
+  },
+  "505": {
+    "cn": "https://www.codingninjas.com/studio/problems/course-schedule-ii_1069243",
+    "gfg": "https://www.geeksforgeeks.org/problems/prerequisite-tasks/1",
+    "lc": "https://leetcode.com/problems/course-schedule-ii/"
+  },
+  "506": {
+    "cn": "https://www.codingninjas.com/studio/problems/safe-nodes-in-the-graph_1376703",
+    "gfg": "https://practice.geeksforgeeks.org/problems/eventual-safe-states/1",
+    "lc": "https://leetcode.com/problems/find-eventual-safe-states/"
+  },
+  "507": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/shortest-path-in-dag_8381897",
+    "gfg": "https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1",
+    "lc": ""
+  },
+  "508": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/single-source-shortest-path_8416371",
+    "gfg": "https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1",
+    "lc": ""
+  },
+  "509": {
+    "cn": "https://www.codingninjas.com/studio/problems/word-ladder_1102319",
+    "gfg": "https://practice.geeksforgeeks.org/problems/word-ladder/1",
+    "lc": "https://leetcode.com/problems/word-ladder/"
+  },
+  "510": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/shortest-transition-paths_8391015",
+    "gfg": "https://practice.geeksforgeeks.org/problems/word-ladder-ii/1",
+    "lc": "https://leetcode.com/problems/word-ladder-ii/"
+  },
+  "511": {
+    "cn": "https://www.codingninjas.com/studio/problems/accounts-merge_1089558",
+    "gfg": "https://practice.geeksforgeeks.org/problems/account-merge/1",
+    "lc": "https://leetcode.com/problems/accounts-merge/"
+  },
+  "512": {
+    "cn": "https://www.codingninjas.com/studio/problems/making-the-largest-island_1381282",
+    "gfg": "https://practice.geeksforgeeks.org/problems/length-of-largest-region-of-1s-1587115620/1",
+    "lc": "https://leetcode.com/problems/making-a-large-island/"
+  },
+  "513": {
+    "cn": "https://www.codingninjas.com/studio/problems/-most-stones-removed-with-same-row-or-column_1376597",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-stone-removal-1662179442/1",
+    "lc": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/"
+  },
+  "514": {
+    "cn": "https://www.codingninjas.com/studio/problems/largest-island_840701",
+    "gfg": "https://practice.geeksforgeeks.org/problems/number-of-islands/1",
+    "lc": "https://leetcode.com/problems/number-of-islands-ii/"
+  },
+  "515": {
+    "cn": "https://www.codingninjas.com/studio/problems/number-of-operations-to-make-graph-connected._1385179",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimize-connections/1",
+    "lc": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/"
+  },
+  "516": {
+    "cn": "https://www.codingninjas.com/studio/problems/data-stream-as-disjoint-intervals_1382362",
+    "gfg": "https://practice.geeksforgeeks.org/problems/disjoint-set-union-find/1",
+    "lc": ""
+  },
+  "517": {
+    "cn": "https://www.codingninjas.com/studio/problems/kruskal%E2%80%99s-minimum-spanning-tree-algorithm_1082553",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+    "lc": ""
+  },
+  "519": {
+    "cn": "https://www.codingninjas.com/studio/problems/saving-money_1171195",
+    "gfg": "https://practice.geeksforgeeks.org/problems/cheapest-flights-within-k-stops/1",
+    "lc": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
+  },
+  "521": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance_1264289",
+    "gfg": "https://practice.geeksforgeeks.org/problems/city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/1",
+    "lc": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/"
+  },
+  "522": {
+    "cn": "https://www.codingninjas.com/studio/problems/floyd-warshall_2041979",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1",
+    "lc": ""
+  },
+  "523": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-operations_8360665",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1",
+    "lc": ""
+  },
+  "524": {
+    "cn": "https://www.codingninjas.com/studio/problems/number-of-ways_8360639",
+    "gfg": "https://practice.geeksforgeeks.org/problems/number-of-ways-to-arrive-at-destination/1",
+    "lc": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/"
+  },
+  "525": {
+    "cn": "https://www.codingninjas.com/studio/problems/path-with-minimum-effort_1380958",
+    "gfg": "https://practice.geeksforgeeks.org/problems/path-with-minimum-effort/1",
+    "lc": "https://leetcode.com/problems/path-with-minimum-effort/"
+  },
+  "527": {
+    "cn": "https://www.codingninjas.com/studio/problems/shortest-path-in-a-binary-maze_893065",
+    "gfg": "https://practice.geeksforgeeks.org/problems/shortest-path-in-a-binary-maze-1655453161/1",
+    "lc": "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+  },
+  "528": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-the-number-of-states_1377943",
+    "gfg": "https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1",
+    "lc": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+  },
+  "529": {
+    "cn": "https://www.codingninjas.com/studio/problems/bfs-in-graph_973002",
+    "gfg": "https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1",
+    "lc": ""
+  },
+  "530": {
+    "cn": "https://www.codingninjas.com/studio/problems/distance-of-nearest-cell-having-1-in-a-binary-matrix_1169913",
+    "gfg": "https://practice.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1-1587115620/1",
+    "lc": "https://leetcode.com/problems/01-matrix/"
+  },
+  "531": {
+    "cn": "https://www.codingninjas.com/studio/problems/flood-fill-_1082141",
+    "gfg": "https://practice.geeksforgeeks.org/problems/flood-fill-algorithm1856/1",
+    "lc": "https://leetcode.com/problems/flood-fill/"
+  },
+  "533": {
+    "cn": "https://www.codingninjas.com/studio/problems/matrix-traps_8365440",
+    "gfg": "https://practice.geeksforgeeks.org/problems/number-of-enclaves/1",
+    "lc": "https://leetcode.com/problems/number-of-enclaves/"
+  },
+  "534": {
+    "cn": "https://www.codingninjas.com/studio/problems/distinct-islands_630460",
+    "gfg": "https://practice.geeksforgeeks.org/problems/number-of-distinct-islands/1",
+    "lc": "https://leetcode.com/problems/number-of-distinct-islands-ii/"
+  },
+  "535": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-the-number-of-states_1377943",
+    "gfg": "https://practice.geeksforgeeks.org/problems/number-of-provinces/1",
+    "lc": "https://leetcode.com/problems/number-of-provinces/"
+  },
+  "536": {
+    "cn": "https://www.codingninjas.com/studio/problems/rotting-oranges_701655",
+    "gfg": "https://practice.geeksforgeeks.org/problems/rotten-oranges2536/1",
+    "lc": "https://leetcode.com/problems/rotting-oranges/"
+  },
+  "537": {
+    "cn": "https://www.codingninjas.com/studio/problems/replace-%E2%80%98o%E2%80%99-with-%E2%80%98x%E2%80%99_630517",
+    "gfg": "https://practice.geeksforgeeks.org/problems/replace-os-with-xs0052/1",
+    "lc": "https://leetcode.com/problems/surrounded-regions/"
+  },
+  "541": {
+    "cn": "https://www.codingninjas.com/studio/problems/0-1-knapsack_920542",
+    "gfg": "https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1",
+    "lc": "https://leetcode.com/problems/assign-cookies/"
+  },
+  "542": {
+    "cn": "https://www.codingninjas.com/studio/problems/jump-game_3164697",
+    "gfg": "https://practice.geeksforgeeks.org/problems/jump-game/1",
+    "lc": "https://leetcode.com/problems/jump-game/"
+  },
+  "543": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/lemonade-change_8224112",
+    "gfg": "https://practice.geeksforgeeks.org/problems/lemonade-change/1",
+    "lc": "https://leetcode.com/problems/lemonade-change/"
+  },
+  "544": {
+    "cn": "https://www.codingninjas.com/studio/problems/candies_893290",
+    "gfg": "https://practice.geeksforgeeks.org/problems/candy/1",
+    "lc": "https://leetcode.com/problems/candy/"
+  },
+  "545": {
+    "cn": "https://www.codingninjas.com/studio/problems/balanced-parentheses_8162202",
+    "gfg": "https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/1",
+    "lc": "https://leetcode.com/problems/valid-parenthesis-string/"
+  },
+  "546": {
+    "cn": "https://www.codingninjas.com/studio/problems/-insert-interval_285893",
+    "gfg": "https://practice.geeksforgeeks.org/problems/insert-interval-1666733333/1",
+    "lc": "https://leetcode.com/problems/insert-interval/"
+  },
+  "547": {
+    "cn": "https://www.codingninjas.com/studio/problems/job-sequencing-problem_1169460",
+    "gfg": "https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1",
+    "lc": ""
+  },
+  "548": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-number-of-platforms_799400",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1",
+    "lc": ""
+  },
+  "549": {
+    "cn": "https://www.codingninjas.com/studio/problems/maximum-meetings_1062658",
+    "gfg": "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1",
+    "lc": ""
+  },
+  "550": {
+    "cn": "https://www.codingninjas.com/studio/problems/non-overlapping-intervals_3169341",
+    "gfg": "https://practice.geeksforgeeks.org/problems/non-overlapping-intervals/1",
+    "lc": "https://leetcode.com/problems/non-overlapping-intervals/"
+  },
+  "551": {
+    "cn": "https://www.codingninjas.com/studio/problems/sjf_1172165",
+    "gfg": "https://practice.geeksforgeeks.org/problems/shortest-job-first/1",
+    "lc": ""
+  },
+  "556": {
+    "cn": "https://www.codingninjas.com/studio/problems/groups-in-ninja-land._1459215",
+    "gfg": "https://practice.geeksforgeeks.org/problems/hands-of-straights/1",
+    "lc": "https://leetcode.com/problems/hand-of-straights/"
+  },
+  "561": {
+    "cn": "https://www.codingninjas.com/studio/problems/subarray-sums-i_1467103",
+    "gfg": "https://practice.geeksforgeeks.org/problems/subarrays-with-sum-k/1",
+    "lc": "https://leetcode.com/problems/subarray-sum-equals-k/"
+  },
+  "562": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/subarrays-with-xor-k_6826258",
+    "gfg": "https://www.geeksforgeeks.org/problems/count-subarray-with-given-xor/1",
+    "lc": ""
+  },
+  "564": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-subarray-with-sum-k_5713505",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1",
+    "lc": ""
+  },
+  "565": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/design-twitter_8380711",
+    "gfg": "https://practice.geeksforgeeks.org/problems/design-twitter/1",
+    "lc": "https://leetcode.com/problems/design-twitter/"
+  },
+  "566": {
+    "cn": "https://www.codingninjas.com/studio/problems/median-in-a-stream_975268",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1",
+    "lc": "https://leetcode.com/problems/find-median-from-data-stream/"
+  },
+  "568": {
+    "cn": "https://www.codingninjas.com/studio/problems/median-in-a-stream_975268",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-sum-combination/1",
+    "lc": "https://www.interviewbit.com/problems/maximum-sum-combinations/"
+  },
+  "569": {
+    "cn": "https://www.codingninjas.com/studio/problems/merge-k-sorted-lists_992772",
+    "gfg": "https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1",
+    "lc": "https://leetcode.com/problems/merge-k-sorted-lists/"
+  },
+  "571": {
+    "cn": "https://www.codingninjas.com/studio/problems/is-heap-possible-from-the-array?_8164274",
+    "gfg": "https://practice.geeksforgeeks.org/problems/does-array-represent-heap4345/1",
+    "lc": ""
+  },
+  "572": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/convert-min-heap-to-max-heap_1381084",
+    "gfg": "https://practice.geeksforgeeks.org/problems/convert-min-heap-to-max-heap-1666385109/1",
+    "lc": ""
+  },
+  "576": {
+    "cn": "https://www.codingninjas.com/studio/problems/min-heap-implementation_5480527",
+    "gfg": "https://practice.geeksforgeeks.org/problems/convert-min-heap-to-max-heap-1666385109/1",
+    "lc": ""
+  },
+  "578": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/k-largest-elements_796005",
+    "gfg": "https://www.geeksforgeeks.org/problems/k-largest-elements4206/1",
+    "lc": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+  },
+  "586": {
+    "cn": "https://www.codingninjas.com/studio/problems/day-23-:-infix-to-postfix-_1382146",
+    "gfg": "https://practice.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1",
+    "lc": ""
+  },
+  "587": {
+    "cn": "https://www.codingninjas.com/studio/problems/day-23-:-infix-to-postfix-_1382146",
+    "gfg": "https://www.geeksforgeeks.org/convert-infix-prefix-notation/",
+    "lc": ""
+  },
+  "595": {
+    "cn": "https://www.codingninjas.com/studio/problems/jump-game_893178",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1",
+    "lc": "https://leetcode.com/problems/jump-game-ii/"
+  },
+  "600": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/kth-missing-element_893215",
+    "gfg": "https://practice.geeksforgeeks.org/problems/k-th-missing-element3635/1",
+    "lc": "https://leetcode.com/problems/kth-missing-positive-number/"
+  },
+  "603": {
+    "cn": "https://www.codingninjas.com/studio/problems/divisible-set_3754960",
+    "gfg": "https://practice.geeksforgeeks.org/problems/largest-divisible-subset--170643/1",
+    "lc": "https://leetcode.com/problems/largest-divisible-subset/"
+  },
+  "605": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/longest-subarray-with-zero-sum_6783450",
+    "gfg": "https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1",
+    "lc": ""
+  },
+  "609": {
+    "cn": "https://www.codingninjas.com/studio/problems/delete-all-occurrences-of-a-given-key-in-a-doubly-linked-list_8160461",
+    "gfg": "https://practice.geeksforgeeks.org/problems/delete-all-occurrences-of-a-given-key-in-a-doubly-linked-list/1",
+    "lc": ""
+  },
+  "610": {
+    "cn": "https://www.codingninjas.com/studio/problems/remove-duplicates-from-a-sorted-doubly-linked-list_2420283",
+    "gfg": "https://practice.geeksforgeeks.org/problems/remove-duplicates-from-a-sorted-doubly-linked-list/1",
+    "lc": ""
+  },
+  "611": {
+    "cn": "https://www.codingninjas.com/studio/problems/clone-a-linked-list-with-random-pointers_983604",
+    "gfg": "https://practice.geeksforgeeks.org/problems/clone-a-linked-list-with-next-and-random-pointer/1",
+    "lc": "https://leetcode.com/problems/copy-list-with-random-pointer/"
+  },
+  "616": {
+    "cn": "https://www.codingninjas.com/studio/problems/sort-linked-list_625193",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sort-a-linked-list/1",
+    "lc": "https://leetcode.com/problems/sort-list/"
+  },
+  "617": {
+    "cn": "https://www.codingninjas.com/studio/problems/add-one-to-a-number-represented-as-linked-list_920557",
+    "gfg": "https://practice.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1",
+    "lc": ""
+  },
+  "619": {
+    "cn": "https://www.codingninjas.com/studio/problems/delete-middle-node_763267",
+    "gfg": "https://practice.geeksforgeeks.org/problems/delete-middle-of-linked-list/1",
+    "lc": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/"
+  },
+  "623": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-length-of-loop_8160455",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-length-of-loop/1",
+    "lc": ""
+  },
+  "625": {
+    "cn": "https://www.codingninjas.com/studio/problems/add-two-numbers_1170520",
+    "gfg": "https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1",
+    "lc": "https://leetcode.com/problems/add-two-numbers/"
+  },
+  "627": {
+    "cn": "https://www.codingninjas.com/studio/problems/reverse-linked-list_920513",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1",
+    "lc": "https://leetcode.com/problems/reverse-linked-list/"
+  },
+  "628": {
+    "cn": "https://www.codingninjas.com/studio/problems/segregate-even-and-odd-nodes-in-a-linked-list_1116100",
+    "gfg": "https://practice.geeksforgeeks.org/problems/segregate-even-and-odd-nodes-in-a-linked-list5035/1",
+    "lc": "https://leetcode.com/problems/odd-even-linked-list/"
+  },
+  "629": {
+    "cn": "https://www.codingninjas.com/studio/problems/sort-linked-list-of-0s-1s-2s_1071937",
+    "gfg": "https://practice.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1",
+    "lc": ""
+  },
+  "633": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-bitonic-sequence_1062688",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-bitonic-subsequence0824/1",
+    "lc": ""
+  },
+  "636": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-increasing-subsequence_630459",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1",
+    "lc": "https://leetcode.com/problems/longest-increasing-subsequence/"
+  },
+  "638": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-palindrome-in-a-string1956/1",
+    "lc": "https://leetcode.com/problems/longest-palindromic-substring/"
+  },
+  "640": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-string-chain_3752111",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-string-chain/1",
+    "lc": "https://leetcode.com/problems/longest-string-chain/"
+  },
+  "651": {
+    "cn": "https://www.codingninjas.com/studio/problems/prime-factorisation_1760849",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sieve-of-eratosthenes5242/1",
+    "lc": "https://leetcode.com/problems/count-primes/"
+  },
+  "652": {
+    "cn": "https://www.codingninjas.com/studio/problems/prime-factorisation_1760849",
+    "gfg": "https://practice.geeksforgeeks.org/problems/prime-factors5052/1",
+    "lc": ""
+  },
+  "674": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-nesting-depth-of-the-parentheses/1",
+    "lc": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/"
+  },
+  "712": {
+    "cn": "https://www.codingninjas.com/studio/problems/merge-intervals_699917",
+    "gfg": "https://practice.geeksforgeeks.org/problems/overlapping-intervals--170633/1",
+    "lc": "https://leetcode.com/problems/merge-intervals/"
+  },
+  "715": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/merge-all-overlapping-intervals_6783452",
+    "gfg": "https://practice.geeksforgeeks.org/problems/overlapping-intervals--170633/1",
+    "lc": "https://leetcode.com/problems/merge-intervals/"
+  },
+  "754": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-window-subsequence_2181133",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-window-subsequence/1",
+    "lc": "https://leetcode.com/problems/minimum-window-subsequence/"
+  },
+  "755": {
+    "cn": "https://www.codingninjas.com/studio/problems/connect-n-ropes-with-minimum-cost_625783",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1",
+    "lc": ""
+  },
+  "764": {
+    "cn": "https://www.codingninjas.com/studio/problems/network-delay-time_1382215",
+    "gfg": "https://www.geeksforgeeks.org/delays-in-computer-network/",
+    "lc": "https://leetcode.com/problems/network-delay-time/"
+  },
+  "768": {
+    "cn": "https://www.codingninjas.com/studio/problems/next-smaller-element_1112581",
+    "gfg": "https://www.geeksforgeeks.org/problems/help-classmates--141631/1",
+    "lc": "https://www.interviewbit.com/problems/nearest-smaller-element/"
+  },
+  "769": {
+    "cn": "https://www.codingninjas.com/studio/problems/chocolate-pickup_3125885",
+    "gfg": "https://www.geeksforgeeks.org/problems/chocolates-pickup/1",
+    "lc": ""
+  },
+  "780": {
+    "cn": "https://www.codingninjas.com/studio/problems/number-of-longest-increasing-subsequence_3751627",
+    "gfg": "https://practice.geeksforgeeks.org/problems/number-of-longest-increasing-subsequence/1",
+    "lc": "https://leetcode.com/problems/number-of-longest-increasing-subsequence/"
+  },
+  "805": {
+    "cn": "https://www.codingninjas.com/studio/problems/painter-s-partition-problem_1089557",
+    "gfg": "https://practice.geeksforgeeks.org/problems/the-painters-partition-problem1535/1",
+    "lc": ""
+  },
+  "810": {
+    "cn": "https://www.codingninjas.com/studio/problems/partition-array-for-maximum-sum_3755255",
+    "gfg": "https://practice.geeksforgeeks.org/problems/partition-array-for-maximum-sum/1",
+    "lc": "https://leetcode.com/problems/partition-array-for-maximum-sum/"
+  },
+  "813": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/print-pascal-s-triangle_6917910",
+    "gfg": "https://practice.geeksforgeeks.org/problems/pascal-triangle0652/1",
+    "lc": "https://leetcode.com/problems/pascals-triangle/"
+  },
+  "824": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/postfix-to-infix_8382386",
+    "gfg": "https://practice.geeksforgeeks.org/problems/postfix-to-infix-conversion/1",
+    "lc": ""
+  },
+  "825": {
+    "cn": "https://www.codingninjas.com/studio/problems/postfix-to-prefix_1788455",
+    "gfg": "https://practice.geeksforgeeks.org/problems/postfix-to-prefix-conversion/1",
+    "lc": ""
+  },
+  "848": {
+    "cn": "https://www.codingninjas.com/studio/problems/prefix-to-infix_1215000",
+    "gfg": "https://practice.geeksforgeeks.org/problems/prefix-to-infix-conversion/1",
+    "lc": ""
+  },
+  "849": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/convert-prefix-to-postfix_8391014",
+    "gfg": "https://practice.geeksforgeeks.org/problems/prefix-to-postfix-conversion/1",
+    "lc": ""
+  },
+  "850": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/print-1-to-n_628290",
+    "gfg": "https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops3621/1",
+    "lc": ""
+  },
+  "851": {
+    "cn": "https://www.codingninjas.com/studio/problems/printing-longest-increasing-subsequence_8360670",
+    "gfg": "https://practice.geeksforgeeks.org/problems/printing-longest-increasing-subsequence/1",
+    "lc": ""
+  },
+  "852": {
+    "cn": "https://www.codingninjas.com/studio/problems/n-to-1-without-loop_8357243",
+    "gfg": "https://practice.geeksforgeeks.org/problems/print-n-to-1-without-loop/1",
+    "lc": ""
+  },
+  "864": {
+    "cn": "https://www.codingninjas.com/studio/problems/combination-sum_981296",
+    "gfg": "https://practice.geeksforgeeks.org/problems/combination-sum-1587115620/1",
+    "lc": "https://leetcode.com/problems/combination-sum/"
+  },
+  "865": {
+    "cn": "https://www.codingninjas.com/studio/problems/combination-sum-ii_1112622",
+    "gfg": "https://practice.geeksforgeeks.org/problems/combination-sum-ii/1",
+    "lc": "https://leetcode.com/problems/combination-sum-ii/"
+  },
+  "866": {
+    "cn": "https://www.codingninjas.com/studio/problems/combination-sum-iii_5038357",
+    "gfg": "https://practice.geeksforgeeks.org/problems/combination-sum-iii/1",
+    "lc": "https://leetcode.com/problems/combination-sum-iii/"
+  },
+  "867": {
+    "cn": "https://www.codingninjas.com/studio/problems/subset-sum_3843086",
+    "gfg": "https://practice.geeksforgeeks.org/problems/subset-sums2234/1",
+    "lc": ""
+  },
+  "868": {
+    "cn": "https://www.codingninjas.com/studio/problems/get-all-unique-subsets_624393",
+    "gfg": "https://practice.geeksforgeeks.org/problems/subset-sum-ii/1",
+    "lc": "https://leetcode.com/problems/subsets-ii/"
+  },
+  "869": {
+    "cn": "https://www.codingninjas.com/studio/problems/m-coloring-problem_981273",
+    "gfg": "https://practice.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1",
+    "lc": ""
+  },
+  "870": {
+    "cn": "https://www.codingninjas.com/studio/problems/n-queens_696453",
+    "gfg": "https://practice.geeksforgeeks.org/problems/n-queen-problem0315/1",
+    "lc": "https://leetcode.com/problems/n-queens/"
+  },
+  "871": {
+    "cn": "https://www.codingninjas.com/studio/problems/palindrome-partitioning_626181",
+    "gfg": "https://practice.geeksforgeeks.org/problems/palindromic-patitioning4845/1",
+    "lc": "https://leetcode.com/problems/palindrome-partitioning/"
+  },
+  "872": {
+    "cn": "https://www.codingninjas.com/studio/problems/rat-in-a-maze-_8842357",
+    "gfg": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1",
+    "lc": ""
+  },
+  "873": {
+    "cn": "https://www.codingninjas.com/studio/problems/sudoku-solver_8416969",
+    "gfg": "https://practice.geeksforgeeks.org/problems/solve-the-sudoku-1587115621/1",
+    "lc": "https://leetcode.com/problems/sudoku-solver/"
+  },
+  "874": {
+    "cn": "https://www.codingninjas.com/studio/problems/word-search---l_892986",
+    "gfg": "https://practice.geeksforgeeks.org/problems/word-search/1",
+    "lc": "https://leetcode.com/problems/word-search/"
+  },
+  "875": {
+    "cn": "https://www.codingninjas.com/studio/problems/letter-phone_626178",
+    "gfg": "https://practice.geeksforgeeks.org/problems/possible-words-from-phone-digits-1587115620/1",
+    "lc": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+  },
+  "876": {
+    "cn": "https://www.codingninjas.com/studio/problems/generate-all-parenthesis_920445",
+    "gfg": "https://practice.geeksforgeeks.org/problems/generate-all-possible-parentheses/1",
+    "lc": "https://leetcode.com/problems/generate-parentheses/"
+  },
+  "877": {
+    "cn": "https://www.codingninjas.com/studio/problems/power-of-numbers_8157729",
+    "gfg": "https://practice.geeksforgeeks.org/problems/power-of-numbers-1587115620/1",
+    "lc": "https://leetcode.com/problems/powx-n/"
+  },
+  "878": {
+    "cn": "https://www.codingninjas.com/studio/problems/print-subsequences_8416366",
+    "gfg": "https://practice.geeksforgeeks.org/problems/power-set4302/1",
+    "lc": "https://leetcode.com/problems/subsets/"
+  },
+  "879": {
+    "cn": "https://www.codingninjas.com/studio/problems/subset-sum_630213",
+    "gfg": "https://practice.geeksforgeeks.org/problems/check-if-there-exists-a-subsequence-with-sum-k/1",
+    "lc": ""
+  },
+  "880": {
+    "cn": "https://www.codingninjas.com/studio/problems/subarrays-with-sum-%E2%80%98k'_6922076",
+    "gfg": "https://practice.geeksforgeeks.org/problems/check-if-there-exists-a-subsequence-with-sum-k/1",
+    "lc": ""
+  },
+  "881": {
+    "cn": "https://www.codingninjas.com/studio/problems/bubble-sort_624380",
+    "gfg": "https://www.geeksforgeeks.org/recursive-bubble-sort/",
+    "lc": ""
+  },
+  "882": {
+    "cn": "https://www.codingninjas.com/studio/problems/insertion-sort_624381",
+    "gfg": "https://practice.geeksforgeeks.org/problems/insertion-sort/1",
+    "lc": ""
+  },
+  "892": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/maximum-nesting-depth-of-the-parentheses_8144741",
+    "gfg": "https://practice.geeksforgeeks.org/problems/outermost-parentheses/1",
+    "lc": "https://leetcode.com/problems/remove-outermost-parentheses/"
+  },
+  "898": {
+    "cn": "https://www.codingninjas.com/studio/problems/replace-each-element-of-array-with-its-corresponding-rank_975384",
+    "gfg": "https://practice.geeksforgeeks.org/problems/replace-elements-by-its-rank-in-the-array/1",
+    "lc": ""
+  },
+  "900": {
+    "cn": "https://www.codingninjas.com/studio/problems/reverse-a-doubly-linked-list_1116098",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-a-doubly-linked-list/1",
+    "lc": ""
+  },
+  "901": {
+    "cn": "https://www.codingninjas.com/studio/problems/reverse-stack-using-recursion_631875",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-a-stack/1",
+    "lc": ""
+  },
+  "903": {
+    "cn": "https://www.codingninjas.com/studio/problems/roman-numeral-to-integer_981308",
+    "gfg": "https://practice.geeksforgeeks.org/problems/roman-number-to-integer3201/1",
+    "lc": "https://leetcode.com/problems/roman-to-integer/"
+  },
+  "905": {
+    "cn": "https://www.codingninjas.com/studio/problems/search-in-a-linked-list_975381",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-in-linked-list-1664434326/1",
+    "lc": ""
+  },
+  "911": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/zero-matrix_1171153",
+    "gfg": "https://practice.geeksforgeeks.org/problems/boolean-matrix-problem-1587115620/1",
+    "lc": "https://leetcode.com/problems/set-matrix-zeroes/"
+  },
+  "922": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/maximum-points-from-cards_8391016",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-point-you-can-obtain-from-cards/1",
+    "lc": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/"
+  },
+  "923": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-substrings-with-k-ones_3128698",
+    "gfg": "https://practice.geeksforgeeks.org/problems/binary-subarray-with-sum/0",
+    "lc": "https://leetcode.com/problems/binary-subarrays-with-sum/"
+  },
+  "924": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-distinct-subarrays-with-at-most-k-odd-elements_1069335",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-the-number-of-subarrays/1",
+    "lc": "https://leetcode.com/problems/count-number-of-nice-subarrays/"
+  },
+  "925": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-substring-with-abc_8160465",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-substring/1",
+    "lc": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/"
+  },
+  "926": {
+    "cn": "https://www.codingninjas.com/studio/problems/fruits-and-baskets_985356",
+    "gfg": "https://practice.geeksforgeeks.org/problems/fruit-into-baskets-1663137462/1",
+    "lc": ""
+  },
+  "927": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-repeating-substring_980523",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-repeating-character-replacement/1",
+    "lc": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+  },
+  "928": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-substring-with-at-most-k-distinct-characters_2221410",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1",
+    "lc": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/"
+  },
+  "930": {
+    "cn": "https://www.codingninjas.com/studio/problems/maximum-consecutive-ones_892994",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-consecutive-ones/1",
+    "lc": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+  },
+  "931": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-window-substring_1215004",
+    "gfg": "https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1",
+    "lc": "https://leetcode.com/problems/minimum-window-substring/"
+  },
+  "943": {
+    "cn": "https://www.codingninjas.com/studio/problems/bubble-sort_624380",
+    "gfg": "https://practice.geeksforgeeks.org/problems/bubble-sort/1",
+    "lc": ""
+  },
+  "944": {
+    "cn": "https://www.codingninjas.com/studio/problems/insertion-sort_624381",
+    "gfg": "https://practice.geeksforgeeks.org/problems/insertion-sort/1",
+    "lc": ""
+  },
+  "945": {
+    "cn": "https://www.codingninjas.com/studio/problems/merge-sort_5846",
+    "gfg": "https://practice.geeksforgeeks.org/problems/merge-sort/1",
+    "lc": ""
+  },
+  "946": {
+    "cn": "https://www.codingninjas.com/studio/problems/quick-sort_5844",
+    "gfg": "https://practice.geeksforgeeks.org/problems/quick-sort/1",
+    "lc": ""
+  },
+  "947": {
+    "cn": "https://www.codingninjas.com/studio/problems/selection-sort_624469",
+    "gfg": "https://practice.geeksforgeeks.org/problems/selection-sort/1",
+    "lc": ""
+  },
+  "957": {
+    "cn": "https://www.codingninjas.com/studio/problems/the-celebrity-problem_982769",
+    "gfg": "https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1",
+    "lc": "https://leetcode.com/problems/find-the-celebrity/"
+  },
+  "958": {
+    "cn": "https://www.codingninjas.com/studio/problems/min-stack_3843991",
+    "gfg": "https://practice.geeksforgeeks.org/problems/get-minimum-element-from-stack/1",
+    "lc": "https://leetcode.com/problems/min-stack/"
+  },
+  "959": {
+    "cn": "https://www.codingninjas.com/studio/problems/largest-rectangle-in-a-histogram_1058184",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1",
+    "lc": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+  },
+  "960": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/lfu-cache_8381892",
+    "gfg": "https://practice.geeksforgeeks.org/problems/lfu-cache-1665050355/1",
+    "lc": "https://leetcode.com/problems/lfu-cache/"
+  },
+  "961": {
+    "cn": "https://www.codingninjas.com/studio/problems/lru-cache-implementation_670276",
+    "gfg": "https://practice.geeksforgeeks.org/problems/lru-cache/1",
+    "lc": "https://leetcode.com/problems/lru-cache/"
+  },
+  "962": {
+    "cn": "https://www.codingninjas.com/studio/problems/maximum-size-rectangle-sub-matrix-with-all-1's_893017",
+    "gfg": "https://practice.geeksforgeeks.org/problems/max-rectangle/1",
+    "lc": "https://leetcode.com/problems/maximal-rectangle/"
+  },
+  "963": {
+    "cn": "https://www.codingninjas.com/studio/problems/sliding-maximum-_701652",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1",
+    "lc": "https://leetcode.com/problems/sliding-window-maximum/"
+  },
+  "964": {
+    "cn": "https://www.codingninjas.com/studio/problems/stock-span_5243295",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stock-span-problem-1587115621/1",
+    "lc": "https://leetcode.com/problems/online-stock-span/"
+  },
+  "965": {
+    "cn": "https://www.codingninjas.com/studio/problems/trapping-rain-water_630519",
+    "gfg": "https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1",
+    "lc": "https://leetcode.com/problems/trapping-rain-water/"
+  },
+  "966": {
+    "cn": "https://www.codingninjas.com/studio/problems/valid-parentheses_795104",
+    "gfg": "https://practice.geeksforgeeks.org/problems/parenthesis-checker2744/1",
+    "lc": "https://leetcode.com/problems/valid-parentheses/"
+  },
+  "967": {
+    "cn": "https://www.codingninjas.com/studio/problems/asteroid-collision_977232",
+    "gfg": "https://practice.geeksforgeeks.org/problems/asteroid-collision/1",
+    "lc": "https://leetcode.com/problems/asteroid-collision/"
+  },
+  "968": {
+    "cn": "https://www.codingninjas.com/studio/problems/next-greater-element_670312",
+    "gfg": "https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1",
+    "lc": "https://leetcode.com/problems/next-greater-element-i/"
+  },
+  "969": {
+    "cn": "https://www.codingninjas.com/studio/problems/next-greater-element-ii_6212757",
+    "gfg": "https://practice.geeksforgeeks.org/problems/next-greater-element-2/1",
+    "lc": "https://leetcode.com/problems/next-greater-element-ii/"
+  },
+  "970": {
+    "cn": "https://www.codingninjas.com/studio/problems/remove-k-digits_1461221",
+    "gfg": "https://practice.geeksforgeeks.org/problems/remove-k-digits/1",
+    "lc": "https://leetcode.com/problems/remove-k-digits/"
+  },
+  "971": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/sum-of-subarray-minimums_8365431",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sum-of-subarray-minimum/1",
+    "lc": "https://leetcode.com/problems/sum-of-subarray-minimums/"
+  },
+  "972": {
+    "cn": "https://www.codingninjas.com/studio/problems/subarray-range-sum_8365419",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sum-of-subarray-ranges/1",
+    "lc": "https://leetcode.com/problems/sum-of-subarray-ranges/"
+  },
+  "974": {
+    "cn": "https://www.codingninjas.com/studio/problems/implement-atoi-function_981270",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implement-atoi/1",
+    "lc": "https://leetcode.com/problems/string-to-integer-atoi/"
+  },
+  "977": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/search-pattern-kmp-algorithm_8416386",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-pattern0205/1",
+    "lc": "https://leetcode.com/problems/implement-strstr/"
+  },
+  "978": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-prefix-which-is-suffix_3146849",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-prefix-suffix2527/1",
+    "lc": "https://leetcode.com/problems/longest-happy-prefix/"
+  },
+  "979": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/stringmatch-rabincarp_1115738",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-pattern-rabin-karp-algorithm--141631/1",
+    "lc": "https://leetcode.com/problems/repeated-string-match/discuss/416144/Rabin-Karp-algorithm-C%2B%2B-implementation"
+  },
+  "980": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-characters-for-palindrome_893000",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-characters-to-be-added-at-front-to-make-string-palindrome/1",
+    "lc": "https://leetcode.com/problems/shortest-palindrome/"
+  },
+  "981": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/pattern-searching-using-z-algorithm_8395752",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-pattern-z-algorithm--141631/1",
+    "lc": "https://leetcode.com/problems/implement-strstr/"
+  },
+  "982": {
+    "cn": "https://www.codingninjas.com/studio/problems/look-and-say-sequence_668478",
+    "gfg": "https://practice.geeksforgeeks.org/problems/decode-the-pattern1138/1",
+    "lc": "https://leetcode.com/problems/count-and-say/"
+  },
+  "983": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-cost-to-make-string-valid_1115770",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-the-reversals0401/1",
+    "lc": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/"
+  },
+  "984": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/reverse-words_7037425",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-each-word-in-a-given-string1001/1",
+    "lc": "https://leetcode.com/problems/reverse-words-in-a-string/"
+  },
+  "988": {
+    "cn": "https://www.codingninjas.com/studio/problems/subarrays-with-at-most-%E2%80%98k%E2%80%99-distinct-values_1473804",
+    "gfg": "https://practice.geeksforgeeks.org/problems/subarrays-with-k-different-integers/1",
+    "lc": "https://leetcode.com/problems/subarrays-with-k-different-integers/"
+  },
+  "993": {
+    "cn": "https://www.codingninjas.com/studio/problems/sum-of-beauty-of-all-substrings_8143656",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sum-of-beauty-of-all-substrings-1662962118/1",
+    "lc": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/"
+  },
+  "1005": {
+    "cn": "https://www.codingninjas.com/studio/problems/swap-two-numbers_1380853",
+    "gfg": "https://practice.geeksforgeeks.org/problems/swap-two-numbers3844/1",
+    "lc": ""
+  },
+  "1006": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-time_8360128",
+    "gfg": "https://leetcode.com/problems/swim-in-rising-water/",
+    "lc": "https://leetcode.com/problems/swim-in-rising-water/"
+  },
+  "1008": {
+    "cn": "https://www.codingninjas.com/studio/problems/task-scheduler_1070424",
+    "gfg": "https://practice.geeksforgeeks.org/problems/task-scheduler/1",
+    "lc": "https://leetcode.com/problems/task-scheduler/"
+  },
+  "1018": {
+    "cn": "https://www.codingninjas.com/studio/problems/k-most-frequent-elements_3167808",
+    "gfg": "https://practice.geeksforgeeks.org/problems/top-k-frequent-elements-in-array/1",
+    "lc": "https://leetcode.com/problems/top-k-frequent-elements/"
+  },
+  "1023": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-common-prefix_2090383",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-common-prefix-in-an-array5129/1",
+    "lc": "https://www.naukri.com/code360/problems/complete-string_2687860"
+  },
+  "1024": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/maximum-xor_3119012",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-xor-of-two-numbers-in-an-array/1",
+    "lc": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/"
+  },
+  "1025": {
+    "cn": "https://www.codingninjas.com/studio/problems/maximum-xor-with-an-element-from-array_1382020",
+    "gfg": "https://practice.geeksforgeeks.org/problems/maximum-xor-with-an-element-from-array/1",
+    "lc": "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/"
+  },
+  "1026": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-distinct-substrings_985292",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-of-distinct-substrings/1",
+    "lc": ""
+  },
+  "1027": {
+    "cn": "https://www.codingninjas.com/studio/problems/trie-delete-operation_1062663",
+    "gfg": "https://practice.geeksforgeeks.org/problems/trie-insert-and-search0651/1",
+    "lc": "https://www.naukri.com/code360/problems/implement-trie_1387095"
+  },
+  "1028": {
+    "cn": "https://www.codingninjas.com/studio/problems/trie-implementation_1062581",
+    "gfg": "https://practice.geeksforgeeks.org/problems/trie-insert-and-search0651/1",
+    "lc": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+  },
+  "1153": {
+    "cn": "https://www.codingninjas.com/studio/problems/binary-search-trees_8160443",
+    "gfg": "https://practice.geeksforgeeks.org/problems/binary-search-trees/1",
+    "lc": ""
+  },
+  "1154": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/create-binary-tree_8360671",
+    "gfg": "https://practice.geeksforgeeks.org/problems/binary-tree-representation/1",
+    "lc": ""
+  },
+  "1155": {
+    "cn": "https://www.codingninjas.com/studio/problems/bit-manipulation_8142533",
+    "gfg": "https://practice.geeksforgeeks.org/problems/bit-manipulation-1666686020/1",
+    "lc": ""
+  },
+  "1195": {
+    "cn": "https://www.codingninjas.com/studio/problems/nth-fibonacci-number_74156",
+    "gfg": "https://practice.geeksforgeeks.org/problems/introduction-to-dp/1",
+    "lc": ""
+  },
+  "1203": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/hashing-data-structure/",
+    "lc": ""
+  },
+  "1211": {
+    "cn": "https://www.codingninjas.com/studio/problems/data-type_8357232",
+    "gfg": "https://practice.geeksforgeeks.org/problems/data-type-1666706751/0",
+    "lc": ""
+  },
+  "1216": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/problems/pattern/1",
+    "lc": ""
+  },
+  "1217": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/explore?category[]=Java-Collections",
+    "lc": ""
+  },
+  "1218": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/explore?category[]=STL",
+    "lc": ""
+  },
+  "1219": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/",
+    "lc": ""
+  },
+  "1221": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-spanning-tree_631769",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+    "lc": ""
+  },
+  "1222": {
+    "cn": "https://www.codingninjas.com/studio/problems/counting-graphs_8357237",
+    "gfg": "https://practice.geeksforgeeks.org/explore?category[]=Graph",
+    "lc": ""
+  },
+  "1223": {
+    "cn": "https://www.codingninjas.com/studio/problems/implement-a-priority-queue-_1743878",
+    "gfg": "https://www.geeksforgeeks.org/problems/implementation-of-priority-queue-using-binary-heap/1",
+    "lc": ""
+  },
+  "1234": {
+    "cn": "https://www.codingninjas.com/studio/problems/introduction-to-doubly-linked-list_8160413",
+    "gfg": "https://practice.geeksforgeeks.org/problems/introduction-to-doubly-linked-list/1",
+    "lc": ""
+  },
+  "1237": {
+    "cn": "https://www.codingninjas.com/studio/problems/introduction-to-linked-list_8144737",
+    "gfg": "https://practice.geeksforgeeks.org/problems/introduction-to-linked-list/1",
+    "lc": ""
+  },
+  "2390": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/bitwise-basic-operations_8382552",
+    "gfg": "https://practice.geeksforgeeks.org/problems/bits-basic-operations/1",
+    "lc": ""
+  },
+  "2394": {
+    "cn": "https://www.codingninjas.com/studio/problems/count-with-k-different-characters_1214627",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-number-of-substrings4528/1",
+    "lc": ""
+  },
+  "2395": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/problems/count-square-submatrices-with-all-ones/1",
+    "lc": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/"
+  },
+  "2398": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-element-in-bst_8160462",
+    "gfg": "https://www.geeksforgeeks.org/problems/minimum-element-in-bst/1",
+    "lc": ""
+  },
+  "2399": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/first-occurence-of-a-pattern-in-a-text_8416393",
+    "gfg": "https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/",
+    "lc": ""
+  },
+  "2400": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/more-subsequence_8842355",
+    "gfg": "https://practice.geeksforgeeks.org/problems/string-subsequence-game5515/1",
+    "lc": ""
+  },
+  "2401": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/print-1-to-n_628290",
+    "gfg": "https://practice.geeksforgeeks.org/problems/print-gfg-n-times/1",
+    "lc": ""
+  },
+  "2405": {
+    "cn": "https://www.codingninjas.com/studio/problems/-print-n-times_8380707",
+    "gfg": "https://practice.geeksforgeeks.org/problems/print-gfg-n-times/1",
+    "lc": ""
+  },
+  "2409": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/problems/k-sorted-array1610/1",
+    "lc": ""
+  },
+  "2410": {
+    "cn": "https://www.codingninjas.com/studio/problems/set-the-rightmost-unset-bit_8160456",
+    "gfg": "https://practice.geeksforgeeks.org/problems/set-the-rightmost-unset-bit4436/1",
+    "lc": ""
+  },
+  "2760": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/maximum-subarray-sum_630526",
+    "gfg": "https://practice.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1",
+    "lc": "https://leetcode.com/problems/maximum-subarray/"
+  },
+  "2761": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/longest-subarray-with-sum-k_6682399",
+    "gfg": "",
+    "lc": ""
+  },
+  "2762": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/sort-an-array-of-0s-1s-and-2s_892977",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+    "lc": "https://leetcode.com/problems/sort-colors/"
+  },
+  "2764": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/remove-duplicates-from-sorted-array_1102307",
+    "gfg": "https://practice.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1",
+    "lc": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+  },
+  "2767": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/k-th-element-of-2-sorted-array_1164159",
+    "gfg": "https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1",
+    "lc": ""
+  },
+  "2770": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/unique-element-in-sorted-array_1112654",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-the-element-that-appears-once-in-sorted-array0624/1",
+    "lc": "https://leetcode.com/problems/single-element-in-a-sorted-array/"
+  },
+  "2772": {
+    "cn": "https://www.codingninjas.com/studio/problems/merge-two-bsts_920474",
+    "gfg": "https://practice.geeksforgeeks.org/problems/merge-two-bst-s/1",
+    "lc": "https://leetcode.com/problems/binary-search-tree-iterator/"
+  },
+  "2774": {
+    "cn": "https://www.codingninjas.com/studio/problems/pair-sum-in-bst._920493",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1",
+    "lc": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+  },
+  "2775": {
+    "cn": "https://www.codingninjas.com/studio/problems/predecessor-and-successor-in-bst_893049",
+    "gfg": "https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1",
+    "lc": "https://leetcode.com/problems/inorder-successor-in-bst/"
+  },
+  "2778": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/floor-from-bst_625868",
+    "gfg": "https://practice.geeksforgeeks.org/problems/floor-in-bst/1",
+    "lc": ""
+  },
+  "2780": {
+    "cn": "https://www.codingninjas.com/studio/problems/search-in-bst_1402878",
+    "gfg": "https://practice.geeksforgeeks.org/problems/search-a-node-in-bst/1",
+    "lc": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+  },
+  "2781": {
+    "cn": "https://www.codingninjas.com/studio/problems/construct-binary-tree-from-inorder-and-postorder-traversal_1266106",
+    "gfg": "https://practice.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1",
+    "lc": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+  },
+  "2782": {
+    "cn": "https://www.codingninjas.com/studio/problems/left-view-of-binary-tree_625707",
+    "gfg": "https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1",
+    "lc": "https://leetcode.com/problems/binary-tree-right-side-view/"
+  },
+  "2784": {
+    "cn": "https://www.codingninjas.com/studio/problems/symmetric-tree_981177",
+    "gfg": "https://practice.geeksforgeeks.org/problems/symmetric-tree/1",
+    "lc": "https://leetcode.com/problems/symmetric-tree/"
+  },
+  "2785": {
+    "cn": "https://www.codingninjas.com/studio/problems/inorder-traversal_3839605",
+    "gfg": "https://practice.geeksforgeeks.org/problems/inorder-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+  },
+  "2786": {
+    "cn": "https://www.codingninjas.com/studio/problems/inorder-traversal_3839605",
+    "gfg": "https://practice.geeksforgeeks.org/problems/inorder-traversal-iterative/1",
+    "lc": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+  },
+  "2787": {
+    "cn": "https://www.codingninjas.com/studio/problems/postorder-traversal_2035933",
+    "gfg": "https://practice.geeksforgeeks.org/problems/postorder-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+  },
+  "2788": {
+    "cn": "https://www.codingninjas.com/studio/problems/postorder-traversal_2035933",
+    "gfg": "https://practice.geeksforgeeks.org/problems/postorder-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+  },
+  "2789": {
+    "cn": "https://www.codingninjas.com/studio/problems/tree-traversals_981269",
+    "gfg": "https://practice.geeksforgeeks.org/problems/postorder-traversal-from-given-inorder-and-preorder-traversals/1",
+    "lc": ""
+  },
+  "2791": {
+    "cn": "https://www.codingninjas.com/studio/problems/preorder-binary-tree_5948",
+    "gfg": "https://practice.geeksforgeeks.org/problems/preorder-traversal-iterative/1",
+    "lc": "https://leetcode.com/problems/binary-tree-preorder-traversal/description/"
+  },
+  "2792": {
+    "cn": "https://www.codingninjas.com/studio/problems/inorder-traversal_3839605",
+    "gfg": "https://practice.geeksforgeeks.org/problems/inorder-traversal-iterative/1",
+    "lc": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+  },
+  "2793": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/find-the-single-element_6680465",
+    "gfg": "https://practice.geeksforgeeks.org/problems/element-appearing-once2552/1",
+    "lc": "https://leetcode.com/problems/single-number/"
+  },
+  "2795": {
+    "cn": "https://www.codingninjas.com/studio/problems/unique-paths_1081470",
+    "gfg": "https://www.geeksforgeeks.org/problems/number-of-unique-paths5339/1",
+    "lc": "https://leetcode.com/problems/unique-paths/"
+  },
+  "2796": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-path-sum_985349",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-cost-path3833/1",
+    "lc": "https://leetcode.com/problems/minimum-path-sum/"
+  },
+  "2798": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/best-time-to-buy-and-sell-stock_6194560",
+    "gfg": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1",
+    "lc": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+  },
+  "2799": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/print-longest-common-subsequence_8416383",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1",
+    "lc": ""
+  },
+  "2800": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-insertions-to-make-a-string-palindrome_985293",
+    "gfg": "https://practice.geeksforgeeks.org/problems/form-a-palindrome2544/1",
+    "lc": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/"
+  },
+  "2801": {
+    "cn": "https://www.codingninjas.com/studio/problems/ways-to-make-coin-change_630471",
+    "gfg": "https://practice.geeksforgeeks.org/problems/coin-change2448/1",
+    "lc": "https://leetcode.com/problems/coin-change-2/"
+  },
+  "2802": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-elements_3843091",
+    "gfg": "https://practice.geeksforgeeks.org/problems/-minimum-number-of-coins4426/1",
+    "lc": "https://leetcode.com/problems/coin-change/"
+  },
+  "2803": {
+    "cn": "https://www.codingninjas.com/studio/problems/rod-cutting-problem_800284",
+    "gfg": "https://practice.geeksforgeeks.org/problems/rod-cutting0840/1",
+    "lc": ""
+  },
+  "2804": {
+    "cn": "https://www.codingninjas.com/studio/problems/subset-sum-equal-to-k_1550954",
+    "gfg": "https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1",
+    "lc": ""
+  },
+  "2806": {
+    "cn": "https://www.codingninjas.com/studio/problems/matrix-chain-multiplication_624880",
+    "gfg": "https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1",
+    "lc": ""
+  },
+  "2807": {
+    "cn": "https://www.codingninjas.com/studio/problems/sum-of-all-divisors_8360720",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n4738/1",
+    "lc": ""
+  },
+  "2809": {
+    "cn": "https://www.codingninjas.com/studio/problems/anagram-pairs_626517",
+    "gfg": "https://practice.geeksforgeeks.org/problems/anagram-1587115620/1",
+    "lc": "https://leetcode.com/problems/valid-anagram/"
+  },
+  "2810": {
+    "cn": "https://www.codingninjas.com/studio/problems/middle-of-linked-list_973250",
+    "gfg": "https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1",
+    "lc": "https://leetcode.com/problems/middle-of-the-linked-list/"
+  },
+  "2813": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-bipartite-graph-_920551",
+    "gfg": "https://practice.geeksforgeeks.org/problems/bipartite-graph/1",
+    "lc": "https://leetcode.com/problems/is-graph-bipartite/"
+  },
+  "2814": {
+    "cn": "https://www.codingninjas.com/studio/problems/detect-cycle-in-a-directed-graph-_920545",
+    "gfg": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1",
+    "lc": "https://leetcode.com/problems/course-schedule-ii/discuss/293048/detecting-cycle-in-directed-graph-problem"
+  },
+  "2822": {
+    "cn": "https://www.codingninjas.com/studio/problems/topological-sorting_973003",
+    "gfg": "https://practice.geeksforgeeks.org/problems/topological-sort/1",
+    "lc": ""
+  },
+  "2825": {
+    "cn": "https://www.codingninjas.com/studio/problems/minimum-spanning-tree_631769",
+    "gfg": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+    "lc": ""
+  },
+  "2826": {
+    "cn": "https://www.codingninjas.com/studio/problems/bellman-ford_2041977",
+    "gfg": "https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1",
+    "lc": ""
+  },
+  "2827": {
+    "cn": "https://www.codingninjas.com/studio/problems/dijkstra's-shortest-path_985358",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1",
+    "lc": ""
+  },
+  "2828": {
+    "cn": "https://www.codingninjas.com/studio/problems/dijkstra's-shortest-path_985358",
+    "gfg": "https://www.geeksforgeeks.org/can-we-use-simple-queue-instead-of-priority-queue-to-implement-dijkstras-algorithm/",
+    "lc": ""
+  },
+  "2830": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-the-number-of-states_1377943",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1",
+    "lc": ""
+  },
+  "2831": {
+    "cn": "https://www.codingninjas.com/studio/problems/dfs-traversal_630462",
+    "gfg": "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1",
+    "lc": ""
+  },
+  "2834": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/assign-cookies_8390826",
+    "gfg": "https://practice.geeksforgeeks.org/problems/assign-cookies/1",
+    "lc": "https://leetcode.com/problems/assign-cookies/"
+  },
+  "2835": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/longest-successive-elements_6811740",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/0",
+    "lc": "https://leetcode.com/problems/longest-consecutive-sequence/solution/"
+  },
+  "2836": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/longest-subarray-with-sum-k_6682399",
+    "gfg": "https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1",
+    "lc": ""
+  },
+  "2838": {
+    "cn": "https://www.codingninjas.com/studio/problems/kth-largest-element-in-a-stream_800301",
+    "gfg": "https://practice.geeksforgeeks.org/problems/kth-largest-element-in-a-stream2220/1",
+    "lc": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+  },
+  "2840": {
+    "cn": "https://www.codingninjas.com/studio/problems/merge-k-sorted-arrays_975379",
+    "gfg": "https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1",
+    "lc": ""
+  },
+  "2841": {
+    "cn": "https://www.codingninjas.com/studio/problems/flatten-a-linked-list_1112655",
+    "gfg": "https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1",
+    "lc": ""
+  },
+  "2842": {
+    "cn": "https://www.codingninjas.com/studio/problems/reverse-list-in-k-groups_983644",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1",
+    "lc": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+  },
+  "2843": {
+    "cn": "https://www.codingninjas.com/studio/problems/rotate-linked-list_920454",
+    "gfg": "https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1",
+    "lc": "https://leetcode.com/problems/rotate-list/description/"
+  },
+  "2844": {
+    "cn": "https://www.codingninjas.com/studio/problems/check-if-linked-list-is-palindrome_985248",
+    "gfg": "https://practice.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1",
+    "lc": "https://leetcode.com/problems/palindrome-linked-list/"
+  },
+  "2845": {
+    "cn": "https://www.codingninjas.com/studio/problems/cycle-detection-in-a-singly-linked-list_628974",
+    "gfg": "https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1",
+    "lc": "https://leetcode.com/problems/linked-list-cycle/"
+  },
+  "2846": {
+    "cn": "https://www.codingninjas.com/studio/problems/-intersection-of-two-linked-lists_630457",
+    "gfg": "https://practice.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1",
+    "lc": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
+  },
+  "2847": {
+    "cn": "https://www.codingninjas.com/studio/problems/linked-list-cycle-ii_1112628",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-the-first-node-of-loop-in-linked-list--170645/1",
+    "lc": "https://leetcode.com/problems/linked-list-cycle-ii/"
+  },
+  "2849": {
+    "cn": "https://www.codingninjas.com/studio/problems/delete-kth-node-from-end_799912",
+    "gfg": "https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1",
+    "lc": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+  },
+  "2850": {
+    "cn": "https://www.codingninjas.com/studio/problems/reverse-linked-list_920513",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1",
+    "lc": "https://leetcode.com/problems/reverse-linked-list/"
+  },
+  "2851": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-increasing-subsequence_630459",
+    "gfg": "https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1",
+    "lc": ""
+  },
+  "2853": {
+    "cn": "https://www.codingninjas.com/studio/problems/prime-factorisation_1760849",
+    "gfg": "https://practice.geeksforgeeks.org/problems/prime-factors5052/1",
+    "lc": ""
+  },
+  "2855": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-x-raised-to-power-n-_626560",
+    "gfg": "https://practice.geeksforgeeks.org/problems/power-of-numbers-1587115620/1",
+    "lc": "https://leetcode.com/problems/powx-n/"
+  },
+  "2857": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-substring-without-repeating-characters_630418",
+    "gfg": "https://practice.geeksforgeeks.org/problems/length-of-the-longest-substring3036/1",
+    "lc": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+  },
+  "2858": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/sort-stack_1229505",
+    "gfg": "https://practice.geeksforgeeks.org/problems/sort-a-stack/1",
+    "lc": ""
+  },
+  "2859": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/program-for-least-recently-used-lru-page-replacement-algorithm/",
+    "lc": ""
+  },
+  "2860": {
+    "cn": "",
+    "gfg": "https://practice.geeksforgeeks.org/problems/max-rectangle/1",
+    "lc": "https://leetcode.com/problems/maximal-rectangle/"
+  },
+  "2862": {
+    "cn": "https://www.codingninjas.com/studio/problems/implement-atoi-function_981270",
+    "gfg": "https://practice.geeksforgeeks.org/problems/implement-atoi/1",
+    "lc": "https://leetcode.com/problems/string-to-integer-atoi/"
+  },
+  "2863": {
+    "cn": "https://www.codingninjas.com/studio/problems/reverse-words-in-a-string_696444",
+    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/1",
+    "lc": "https://leetcode.com/problems/reverse-words-in-a-string/"
+  },
+  "2864": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/create-binary-tree_8360671",
+    "gfg": "https://practice.geeksforgeeks.org/problems/binary-tree-representation/1",
+    "lc": ""
+  },
+  "2865": {
+    "cn": "https://www.codingninjas.com/studio/problems/number-of-nodes_8162204",
+    "gfg": "https://practice.geeksforgeeks.org/problems/introduction-to-trees/1",
+    "lc": ""
+  },
+  "2866": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/fa-1-ece_4606261",
+    "gfg": "https://practice.geeksforgeeks.org/problems/pass-by-reference-and-value/1",
+    "lc": ""
+  },
+  "2867": {
+    "cn": "https://www.codingninjas.com/studio/problems/nth-fibonacci-number_74156",
+    "gfg": "https://practice.geeksforgeeks.org/problems/for-loop-primecheck-java/1",
+    "lc": ""
+  },
+  "2868": {
+    "cn": "https://www.codingninjas.com/studio/problems/sum-of-even-odd_624650",
+    "gfg": "https://practice.geeksforgeeks.org/problems/while-loop-printtable/1",
+    "lc": ""
+  },
+  "2869": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/arrays-and-strings-in-c/",
+    "lc": ""
+  },
+  "2870": {
+    "cn": "https://www.codingninjas.com/studio/problems/creating-and-printing_1214551",
+    "gfg": "https://practice.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1",
+    "lc": ""
+  },
+  "2871": {
+    "cn": "https://www.codingninjas.com/studio/problems/creating-and-printing_1214551",
+    "gfg": "https://practice.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1",
+    "lc": ""
+  },
+  "2872": {
+    "cn": "https://www.codingninjas.com/studio/problems/preorder-binary-tree_5948",
+    "gfg": "https://practice.geeksforgeeks.org/problems/preorder-traversal-iterative/1",
+    "lc": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+  },
+  "01knpsck": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1",
+    "lc": ""
+  },
+  "3sm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1",
+    "lc": "https://leetcode.com/problems/3sum/"
+  },
+  "binrytrtdbllinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/binary-tree-to-dll/1",
+    "lc": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+  },
+  "biprtitchcksingbfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/bipartite-graph/1",
+    "lc": "https://leetcode.com/problems/is-graph-bipartite/"
+  },
+  "biprtitchcksingdfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/bipartite-graph/1",
+    "lc": "https://leetcode.com/problems/is-graph-bipartite/"
+  },
+  "bllmnfrdlg": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1",
+    "lc": ""
+  },
+  "bstitrtr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/implement-binary-search-treebst-iterator/",
+    "lc": "https://leetcode.com/problems/binary-search-tree-iterator/"
+  },
+  "chckfrblncdprnthss": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1",
+    "lc": "https://leetcode.com/problems/valid-parentheses/"
+  },
+  "chckfrngrms": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/anagram-1587115620/1",
+    "lc": "https://leetcode.com/problems/valid-anagram/"
+  },
+  "chckifbinrytristhmirrrfitslfrnt": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/symmetric-tree/1",
+    "lc": ""
+  },
+  "chckiflinkdlistisplindrmrnt": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1",
+    "lc": "https://leetcode.com/problems/palindrome-linked-list/"
+  },
+  "chckisbtisbstrnt": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/check-for-bst/1",
+    "lc": "https://leetcode.com/problems/validate-binary-search-tree/"
+  },
+  "cilinbst": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/implementing-ceil-in-bst/1",
+    "lc": ""
+  },
+  "cinchng": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/coin-change2448/1",
+    "lc": "https://leetcode.com/problems/coin-change/"
+  },
+  "clngrph": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/clone-graph/1",
+    "lc": "https://leetcode.com/problems/clone-graph/"
+  },
+  "clngrphntthtsysitlks": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/clone-graph/1",
+    "lc": "https://leetcode.com/problems/clone-graph/"
+  },
+  "cmbintinsm1": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/combination-sum-1587115620/1",
+    "lc": "https://leetcode.com/problems/combination-sum/"
+  },
+  "cmbintinsm2": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/combination-sum-ii-1664263832/1",
+    "lc": "https://leetcode.com/problems/combination-sum-ii/"
+  },
+  "cmprvrsinnmbrs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/compare-two-version-numbers/",
+    "lc": "https://leetcode.com/problems/compare-version-numbers/"
+  },
+  "cnstrctbinrytrfrminrdrndpstrdr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/tree-from-postorder-and-inorder/1",
+    "lc": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+  },
+  "cnstrctbstfrmgivnkys": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/construct-all-possible-bsts-for-keys-1-to-n/",
+    "lc": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/"
+  },
+  "cntainsdplicate": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1",
+    "lc": "https://leetcode.com/problems/contains-duplicate/"
+  },
+  "cntngbts": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/count-total-set-bits-1587115620/1",
+    "lc": "https://leetcode.com/problems/counting-bits/"
+  },
+  "containerwithmostwater": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/container-with-most-water0535/1",
+    "lc": "https://leetcode.com/problems/container-with-most-water/"
+  },
+  "ctivityslctinitisthsmsnmtinginnrm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1",
+    "lc": ""
+  },
+  "cycldtctininndirctdgrphdfs": {
+    "cn": "https://www.codingninjas.com/studio/problems/detect-cycle-in-an-undirected-graph-_758967",
+    "gfg": "https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1",
+    "lc": ""
+  },
+  "dcodewys": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/total-decoding-messages1235/1",
+    "lc": "https://leetcode.com/problems/decode-ways/"
+  },
+  "ddtwnmbrsslinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1",
+    "lc": "https://leetcode.com/problems/add-two-numbers/"
+  },
+  "dijkstrslgrithm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1",
+    "lc": ""
+  },
+  "disjintstninbysiz": {
+    "cn": "https://www.codingninjas.com/studio/problems/data-stream-as-disjoint-intervals_1382362",
+    "gfg": "https://practice.geeksforgeeks.org/problems/disjoint-set-union-find/1",
+    "lc": ""
+  },
+  "distinctnmbrsinwindw": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/count-distinct-elements-in-every-window/1",
+    "lc": "https://www.interviewbit.com/problems/distinct-numbers-in-window/"
+  },
+  "ditdistnc": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/edit-distance3702/1",
+    "lc": "https://leetcode.com/problems/edit-distance/"
+  },
+  "dltgivnndwhnndisgivn01sltin": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/delete-a-node-in-single-linked-list/1",
+    "lc": "https://leetcode.com/problems/delete-node-in-a-linked-list/"
+  },
+  "dtctcyclindirctdgrphsingbfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1",
+    "lc": "https://leetcode.com/problems/course-schedule/"
+  },
+  "dtctcyclindirctdgrphsingdfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1",
+    "lc": "https://leetcode.com/problems/course-schedule/"
+  },
+  "dtctcyclinlinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1",
+    "lc": "https://leetcode.com/problems/linked-list-cycle/"
+  },
+  "dtctcyclinndirctdgrphsingbfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1",
+    "lc": "https://leetcode.com/problems/course-schedule/"
+  },
+  "dtctcyclinndirctdgrphsingdfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1",
+    "lc": "https://leetcode.com/problems/course-schedule/"
+  },
+  "encddcdestrngs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/decode-the-string2444/1",
+    "lc": "https://leetcode.com/problems/encode-and-decode-strings/"
+  },
+  "findintrsctinpintfylinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1",
+    "lc": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
+  },
+  "findkthlrgstlmntinbst": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/kth-largest-element-in-bst/1",
+    "lc": ""
+  },
+  "findkthsmllstlmntinbst": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1",
+    "lc": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+  },
+  "findlcftwndsinbst": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1",
+    "lc": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+  },
+  "findmdininstrmfrnningintgrs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-median-in-a-stream-1587115620/1",
+    "lc": "https://leetcode.com/problems/find-median-from-data-stream/"
+  },
+  "findpirwithgivnsminbst": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1",
+    "lc": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+  },
+  "findthdplictinnrryfn1intgrs": {
+    "cn": "https://www.codingninjas.com/studio/problems/find-duplicate-in-array_1112602",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1",
+    "lc": "https://leetcode.com/problems/find-the-duplicate-number/"
+  },
+  "findthinrdrprdcssrsccssrfgivnkyinbst": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/predecessor-and-successor/1",
+    "lc": ""
+  },
+  "findthlmntthtpprsncinsrtdrryndthrstlmntpprstwicbinrysrch": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/find-the-element-that-appears-once-in-a-sorted-array/",
+    "lc": "https://leetcode.com/problems/single-element-in-a-sorted-array/"
+  },
+  "findthmiddlflinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1",
+    "lc": "https://leetcode.com/problems/middle-of-the-linked-list/"
+  },
+  "findthmximmfminimmsfvrywindwsiz": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/maximum-of-minimum-for-every-window-size3453/1",
+    "lc": ""
+  },
+  "findthnthrtfnmbrsingbinrysrch": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/nth-root-of-m_1062679",
+    "gfg": "https://practice.geeksforgeeks.org/problems/find-nth-root-of-m5843/1",
+    "lc": ""
+  },
+  "findthstrtingpintfthlpflinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-the-first-node-of-loop-in-linked-list--170645/1",
+    "lc": "https://leetcode.com/problems/linked-list-cycle-ii/"
+  },
+  "fldfilllgrithm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/flood-fill-algorithm1856/1",
+    "lc": "https://leetcode.com/problems/flood-fill/"
+  },
+  "flrinbst": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/floor-from-bst_920457",
+    "gfg": "https://www.geeksforgeeks.org/problems/floor-in-bst/1",
+    "lc": ""
+  },
+  "flttningflinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/flattening-a-linked-list/1",
+    "lc": ""
+  },
+  "flydwrshlllgrithm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1",
+    "lc": ""
+  },
+  "ggdrpping": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/egg-dropping-puzzle-1587115620/1",
+    "lc": ""
+  },
+  "gridniqpths": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/unique-paths-in-a-grid--170647/1",
+    "lc": "https://leetcode.com/problems/unique-paths/"
+  },
+  "grpangrm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/print-anagrams-together/1",
+    "lc": "https://leetcode.com/problems/group-anagrams/"
+  },
+  "grphvldtree": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/is-it-a-tree/1",
+    "lc": "https://leetcode.com/problems/graph-valid-tree/solutions/"
+  },
+  "implmntqsingstck01mrtizdmthd": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/queue-using-stacks/",
+    "lc": "https://leetcode.com/problems/implement-queue-using-stacks/"
+  },
+  "implmntstcksingqsingsinglq": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/implement-a-stack-using-single-queue/",
+    "lc": "https://leetcode.com/problems/implement-stack-using-queues/"
+  },
+  "implmnttistrstr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/implement-atoi/1",
+    "lc": "https://leetcode.com/problems/string-to-integer-atoi/"
+  },
+  "implmnttriprfixtr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/trie-insert-and-search0651/1",
+    "lc": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+  },
+  "inrdrtrvrsl": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/inorder-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+  },
+  "invrsinfrryprrqmrgsrt": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/count-inversions_615",
+    "gfg": "https://www.geeksforgeeks.org/problems/inversion-of-array-1587115620/1",
+    "lc": ""
+  },
+  "invrtflpbnrytre": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/flip-binary-tree/",
+    "lc": "https://leetcode.com/problems/invert-binary-tree/"
+  },
+  "kdnslgrithm": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/maximum-subarray-sum_630526",
+    "gfg": "https://www.geeksforgeeks.org/problems/kadanes-algorithm-1587115620/1",
+    "lc": "https://leetcode.com/problems/maximum-subarray/"
+  },
+  "kthlmntftwsrtdrrys": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1",
+    "lc": ""
+  },
+  "kthlrgstlmnt": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/kth-largest-element-in-a-stream2220/1",
+    "lc": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+  },
+  "kthlrgstlmntinnnsrtdrry": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/k-largest-elements3736/1",
+    "lc": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+  },
+  "kthlrgstlmntinstrm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/kth-largest-element-in-a-stream2220/1",
+    "lc": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+  },
+  "kthprmttinsqnc": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-kth-permutation-0932/1",
+    "lc": "https://leetcode.com/problems/permutation-sequence/"
+  },
+  "lftviwfbinrytr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1",
+    "lc": ""
+  },
+  "llctminimmnmbrfpgs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1",
+    "lc": "https://www.interviewbit.com/problems/allocate-books/"
+  },
+  "lngstcmmnsbsqnc": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-common-subsequence_1063255",
+    "gfg": "https://www.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1",
+    "lc": "https://leetcode.com/problems/longest-common-subsequence/"
+  },
+  "lngstcnsctivsqnc": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/longest-consecutive-subsequence2449/1",
+    "lc": "https://leetcode.com/problems/longest-consecutive-sequence/"
+  },
+  "lngstincrsingsbsqnc": {
+    "cn": "https://www.codingninjas.com/studio/problems/longest-increasing-subsequence_630459",
+    "gfg": "https://www.geeksforgeeks.org/problems/longest-increasing-subsequence-1587115620/1",
+    "lc": "https://leetcode.com/problems/longest-increasing-subsequence/"
+  },
+  "lngstplindrminstring": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/longest-palindrome-in-a-string3411/1",
+    "lc": "https://leetcode.com/problems/longest-palindromic-substring/"
+  },
+  "lngstsbstringwithtrpt": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/length-of-the-longest-substring3036/1",
+    "lc": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+  },
+  "lrgstsbrrywithksm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1",
+    "lc": "https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1"
+  },
+  "minimmchrctrsnddtbinsrtdinthbginningtmkitplindrmic": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/minimum-characters-to-be-added-at-front-to-make-string-palindrome/1",
+    "lc": "https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/"
+  },
+  "minimmsmpthinthmtrixcntpthsndsimilrtypdlsbcktrcktfindthminimmpth": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/path-in-matrix3805/1",
+    "lc": "https://leetcode.com/problems/minimum-path-sum/"
+  },
+  "mrgksrtdrrys": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/merge-k-sorted-arrays_975379",
+    "gfg": "https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays/1",
+    "lc": ""
+  },
+  "mrgtwsrtdlinkdlistsmthdsdinmrgsrt": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/merge-two-sorted-linked-lists/1",
+    "lc": "https://leetcode.com/problems/merge-two-sorted-lists/"
+  },
+  "mrrisinrdrtrvrsl": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/inorder-traversal-iterative/1",
+    "lc": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+  },
+  "mrrisprrdrtrvrsl": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/preorder-traversal-iterative/1",
+    "lc": ""
+  },
+  "mstsingkrsklslg": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+    "lc": ""
+  },
+  "mstsingprimslg": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+    "lc": ""
+  },
+  "mtngrms": {
+    "cn": "",
+    "gfg": "",
+    "lc": "https://leetcode.com/problems/meeting-rooms/"
+  },
+  "mtngrms2": {
+    "cn": "",
+    "gfg": "",
+    "lc": "https://leetcode.com/problems/meeting-rooms-ii/"
+  },
+  "mtrixchinmltiplictin": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1",
+    "lc": ""
+  },
+  "mxcnsctivns": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/maximize-number-of-1s0905/1",
+    "lc": "https://leetcode.com/problems/max-consecutive-ones/"
+  },
+  "mxhpminhpimplmnttinnlyfrintrviws": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/convert-min-heap-to-max-heap-1666385109/1",
+    "lc": ""
+  },
+  "mximmprfitinjbschdling": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1",
+    "lc": ""
+  },
+  "mximmsmincrsingsbsqnc": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1",
+    "lc": ""
+  },
+  "mxprdctsbrry": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/maximum-product-subarray3604/1",
+    "lc": "https://leetcode.com/problems/maximum-product-subarray/"
+  },
+  "mxwidthfbinrytr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/maximum-width-of-tree/1",
+    "lc": "https://leetcode.com/problems/maximum-width-of-binary-tree/"
+  },
+  "nmbrfislndsdingridndgrphbth": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-the-number-of-islands/1",
+    "lc": "https://leetcode.com/problems/number-of-islands/"
+  },
+  "nmbrof1bts": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/set-bits0143/1",
+    "lc": "https://leetcode.com/problems/number-of-1-bits/"
+  },
+  "nqnsprblm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/n-queen-problem0315/1",
+    "lc": "https://leetcode.com/problems/n-queens/"
+  },
+  "pcficatlntcwtrflow": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/atlantic-pacific-water-flow/",
+    "lc": "https://leetcode.com/problems/pacific-atlantic-water-flow/"
+  },
+  "plindrmprtitiningmcmvritin": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/palindromic-patitioning4845/1",
+    "lc": ""
+  },
+  "plndrmcsbstrngs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/count-palindrome-sub-strings-of-a-string0652/1",
+    "lc": "https://leetcode.com/problems/palindromic-substrings/"
+  },
+  "ppltnxtrightpintrsftr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/connect-nodes-at-same-level/1",
+    "lc": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/"
+  },
+  "prdctofarrayexcptslf": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/a-product-array-puzzle/",
+    "lc": "https://leetcode.com/problems/product-of-array-except-self/"
+  },
+  "printllprmttinsfstringrry": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/permutations-of-a-given-string2041/1",
+    "lc": "https://leetcode.com/problems/permutations/"
+  },
+  "prrdrinrdrpstrdrinsingltrvrsl": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/preorder-postorder-and-inorder-traversal-of-a-binary-tree-using-a-single-stack/",
+    "lc": ""
+  },
+  "prrdrtrvrsl": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/preorder-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+  },
+  "pstrdrtrvrsl": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/postorder-traversal/1",
+    "lc": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+  },
+  "pwrstthisisvryimprtnt": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/power-set4302/1",
+    "lc": ""
+  },
+  "rdctting": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/rod-cutting0840/1",
+    "lc": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/"
+  },
+  "reversebits": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/reverse-bits-1611130171/1",
+    "lc": "https://leetcode.com/problems/reverse-bits/"
+  },
+  "rmvdplictfrmsrtdrry": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1",
+    "lc": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+  },
+  "rmvnthndfrmbckflinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1",
+    "lc": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+  },
+  "rptndmissingnmbr": {
+    "cn": "https://www.codingninjas.com/studio/problems/missing-and-repeating-numbers_873366",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
+    "lc": "https://www.interviewbit.com/problems/repeat-and-missing-number-array/"
+  },
+  "rrdrlst": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/reorder-list/1",
+    "lc": "https://leetcode.com/problems/reorder-list/"
+  },
+  "rttlinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/rotate-a-linked-list/1",
+    "lc": "https://leetcode.com/problems/rotate-list/description/"
+  },
+  "rttmtrix": {
+    "cn": "https://www.codingninjas.com/studio/problems/rotate-matrix_981260",
+    "gfg": "https://www.geeksforgeeks.org/problems/rotate-by-90-degree-1587115621/1",
+    "lc": "https://leetcode.com/problems/rotate-image/"
+  },
+  "rttnrngsingbfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/rotten-oranges2536/1",
+    "lc": "https://leetcode.com/problems/rotting-oranges/"
+  },
+  "rvrslinkdlist": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/reverse-a-linked-list/1",
+    "lc": "https://leetcode.com/problems/reverse-linked-list/"
+  },
+  "rvrslinkdlistingrpsfsizk": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1",
+    "lc": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+  },
+  "rvrspirsltcd": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/count-reverse-pairs/1",
+    "lc": "https://leetcode.com/problems/reverse-pairs/"
+  },
+  "rvrswrdsinstring": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/reverse-words-in-a-given-string5459/1",
+    "lc": "https://leetcode.com/problems/reverse-words-in-a-string/"
+  },
+  "sbstii": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/subset-sum-ii/1",
+    "lc": "https://leetcode.com/problems/subsets-ii/"
+  },
+  "sbstsm": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1",
+    "lc": "https://leetcode.com/problems/partition-equal-subset-sum/"
+  },
+  "sbstsms": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/subset-sums2234/1",
+    "lc": ""
+  },
+  "sbtreofanthertre": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/check-if-subtree/1",
+    "lc": "https://leetcode.com/problems/subtree-of-another-tree/"
+  },
+  "sizfthlrgstbstinbinrytr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/largest-bst/1",
+    "lc": "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/"
+  },
+  "srchgivnkyinbst": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/search-a-node-in-bst/1",
+    "lc": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+  },
+  "srchlmntinsrtdndrttdrryfindpivtwhritisrttd": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/search-in-a-rotated-array0959/1",
+    "lc": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+  },
+  "srtnrryf0s1s2s": {
+    "cn": "https://www.codingninjas.com/codestudio/problems/sort-an-array-of-0s-1s-and-2s_892977",
+    "gfg": "https://www.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1",
+    "lc": "https://leetcode.com/problems/sort-colors/"
+  },
+  "srtstck": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/sort-a-stack/1",
+    "lc": ""
+  },
+  "strnglycnnctdcmpnntsingksrjslg": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1",
+    "lc": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/discuss/766485/kosaraju-algorithm-on"
+  },
+  "sumof2intgrs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/addition-of-two-numbers0812/1",
+    "lc": "https://leetcode.com/problems/sum-of-two-integers/description/"
+  },
+  "thnthrtfnintgr": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/find-nth-root-of-m5843/1",
+    "lc": ""
+  },
+  "tplgiclsrtbfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/topological-sort/1",
+    "lc": ""
+  },
+  "tplgiclsrtdfs": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/topological-sort/1",
+    "lc": ""
+  },
+  "vrticlrdrtrvrsl": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1",
+    "lc": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/"
+  },
+  "wrdbrkprintllwys": {
+    "cn": "",
+    "gfg": "https://www.geeksforgeeks.org/problems/word-break1352/1",
+    "lc": ""
+  }
+}

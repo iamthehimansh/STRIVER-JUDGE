@@ -1,0 +1,956 @@
+{
+ "maximum-product-subarray-in-an-array": {
+  "lo": -5,
+  "hi": 5,
+  "maxn": 12,
+  "reason": "int overflow on large products"
+ },
+ "maximum-consecutive-ones": {
+  "domain": "binary",
+  "reason": "input is a 0/1 array"
+ },
+ "max-consecutive-ones-iii": {
+  "domain": "binary",
+  "reason": "input is a 0/1 array"
+ },
+ "majority-element-i": {
+  "exclude": true,
+  "reason": "agent: Boyer-Moore voting algorithm, O(n) time, O(1) space. The problem GUARANTEES one value appears more than n/2 times. Plain random int arrays will almost never satisfy this guarantee, so generatab"
+ },
+ "find-missing-number": {
+  "lo": 0,
+  "hi": 10000,
+  "maxn": 10000,
+  "distinct": true,
+  "domain": "permutation"
+ },
+ "find-the-repeating-and-missing-number": {
+  "exclude": true,
+  "reason": "agent: Classic \"Find the repeating and missing number\". Input is an array of size n with values in [1,n] where exactly one value (A) appears twice and exactly one value (B) in [1,n] is missing. Output"
+ },
+ "single-element-in-sorted-array": {
+  "exclude": true,
+  "reason": "agent: Classic binary search on a sorted array where every element appears exactly twice except one single element. O(log n) solution: handle edge cases (n==1, single at the boundaries), then binary s"
+ },
+ "insertion-sorting": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 1000
+ },
+ "shortest-path-in-undirected-graph-with-unit-weights": {
+  "exclude": true,
+  "reason": "agent: Classic single-source BFS shortest path on an undirected unweighted graph. Source is fixed at vertex 0; unit edge weights, so plain BFS gives shortest distances. Unreachable vertices return -1."
+ },
+ "sum-of-subarray-minimums": {
+  "lo": 1,
+  "hi": 1000000,
+  "maxn": 200
+ },
+ "best-time-to-buy-and-sell-stock": {
+  "lo": 0,
+  "hi": 1000000,
+  "maxn": 100000
+ },
+ "maximum-sum-combination": {
+  "lo": 1,
+  "hi": 10000,
+  "maxn": 200
+ },
+ "best-time-to-buy-and-sell-stock-iii": {
+  "lo": 0,
+  "hi": 1000000,
+  "maxn": 100000
+ },
+ "rat-in-a-maze": {
+  "exclude": true,
+  "reason": "agent: Input is a single n x n BINARY matrix (grid[i][j] in {0,1}), 2 <= n <= 5. The method signature takes only `grid` (no n); n is derived from grid.size(). Output is a vector<string> of all valid p"
+ },
+ "articulation-point-in-graph": {
+  "exclude": true,
+  "reason": "agent: Tarjan's articulation point algorithm. Input is an adjacency list (vector<int> adj[]) representing an undirected graph with n vertices (0..n-1); the graph may be disconnected and may contain se"
+ },
+ "longest-bitonic-subsequence": {
+  "lo": -1000000,
+  "hi": 1000000,
+  "maxn": 1000
+ },
+ "flood-fill-algorithm": {
+  "exclude": true,
+  "reason": "agent: Classic BFS flood fill. Critical edge case handled: when oldColor == newColor, return immediately to avoid infinite loop. Verified by compiling with clang++ -std=c++17 -O2 -w (replacing bits/st"
+ },
+ "longest-palindromic-substring": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 1000
+ },
+ "while-loop": {
+  "lo": 0,
+  "hi": 9,
+  "maxn": 1
+ },
+ "longest-repeating-character-replacement": {
+  "lo": 0,
+  "hi": 25,
+  "maxn": 100000
+ },
+ "maximum-rectangles-1": {
+  "lo": 0,
+  "hi": 1,
+  "maxn": 1000,
+  "domain": "binary"
+ },
+ "leaders-in-an-array": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "ninja's-training": {
+  "lo": 0,
+  "hi": 1000,
+  "maxn": 10000
+ },
+ "string-to-integer-atoi": {
+  "lo": -1000,
+  "hi": 1000,
+  "maxn": 200
+ },
+ "different-ways-to-evaluate-a-boolean-expression": {
+  "exclude": true,
+  "reason": "agent: Classic Boolean Parenthesization (Partition DP / MCM DP). Input is a single string `expr` (param named `s` in starter) that MUST follow the strict pattern operand operator operand ... operand: "
+ },
+ "rearrange-array-elements-by-sign": {
+  "exclude": true,
+  "reason": "agent: Classic Striver problem: place positives at even indices (0,2,4,...) and negatives at odd indices (1,3,5,...), preserving relative order; result starts with a positive. Verified by compiling wi"
+ },
+ "replace-elements-by-their-rank": {
+  "lo": -1000,
+  "hi": 1000,
+  "maxn": 200
+ },
+ "find-peak-element-ii": {
+  "exclude": true,
+  "reason": "agent: Standard \"Find a Peak Element II\" (LeetCode 1901). Algorithm: binary search on columns; for the mid column find the row holding that column's max, then move toward the larger horizontal neighbo"
+ },
+ "minimum-number-of-platforms-required-for-a-railway": {
+  "lo": 0,
+  "hi": 2359,
+  "maxn": 100000
+ },
+ "maximum-xor-with-an-element-from-an-array": {
+  "exclude": true,
+  "reason": "agent: Two inputs: `nums` (a flat non-negative int array, 0..1e9) and `queries` (a 2D array where each query is exactly [x_i, m_i], both 0..1e9). The reference is verified: it reproduces both example "
+ },
+ "combination-sum": {
+  "lo": 2,
+  "hi": 40,
+  "maxn": 30,
+  "distinct": true
+ },
+ "divisors-of-a-number-1": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 1
+ },
+ "detect-a-cycle-in-a-directed-graph-1": {
+  "exclude": true,
+  "reason": "agent: Detect cycle in a directed graph. Uses Kahn's algorithm (BFS topological sort): count nodes that get processed; if fewer than N nodes are processed, a cycle exists. Iterative, so no recursion-s"
+ },
+ "stock-span-problem": {
+  "lo": 1,
+  "hi": 1000000000,
+  "maxn": 100000
+ },
+ "for-loop": {
+  "exclude": true,
+  "reason": "agent: Inputs are two scalar ints `low` and `high` (NOT arrays/strings) with the constraint 0 <= low <= high <= 100. Valid generation: pick low in [0,100], then high in [low,100] (or pick two values a"
+ },
+ "minimum-window-subsequence": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 200
+ },
+ "capacity-to-ship-packages-within-d-days": {
+  "lo": 1,
+  "hi": 500,
+  "maxn": 200
+ },
+ "factorial-of-a-given-number-i": {
+  "lo": 0,
+  "hi": 10,
+  "maxn": 1
+ },
+ "majority-element-ii": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 200
+ },
+ "print-longest-increasing-subsequence": {
+  "lo": -1000000,
+  "hi": 1000000,
+  "maxn": 1000
+ },
+ "number-of-ways-to-arrive-at-destination": {
+  "exclude": true,
+  "reason": "agent: Dijkstra shortest-path counting. From node 0 run Dijkstra; ways[v] tracks number of shortest paths. On a strictly shorter path reset ways[v]=ways[u]; on an equal-length path add ways[u] (mod 1e"
+ },
+ "m-coloring-problem": {
+  "exclude": true,
+  "reason": "agent: Graph M-coloring via backtracking. Signature takes an edge list (vector<vector<int>>& edges), each edge a pair {u,v} of 0-indexed vertices in [0,n-1], plus m colors and n vertices. Adjacency li"
+ },
+ "upper-bound": {
+  "lo": -99999,
+  "hi": 99999,
+  "maxn": 100000,
+  "sorted": true
+ },
+ "recursive-bubble-sort": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 1000
+ },
+ "matrix-chain-multiplication": {
+  "lo": 1,
+  "hi": 100,
+  "maxn": 100
+ },
+ "traversal-techniques": {
+  "exclude": true,
+  "reason": "agent: There are TWO methods: dfsOfGraph and bfsOfGraph, both take (int V, vector<vector<int>> edges) and return vector<int>. The adjacency list is built in straightforward EDGE ORDER (for each edge ["
+ },
+ "fibonacci-number": {
+  "lo": 0,
+  "hi": 20,
+  "maxn": 1
+ },
+ "detect-a-cycle-in-a-directed-graph": {
+  "exclude": true,
+  "reason": "agent: Directed graph cycle detection via DFS with a path-visited (recursion-stack) array. Signature is bool isCyclic(int N, vector<int> adj[]) where adj is a C-style array of N vectors representing t"
+ },
+ "traversal-techniques-1": {
+  "exclude": true,
+  "reason": "agent: Problem has TWO entry methods: dfsOfGraph(int V, vector<vector<int>> edges) and bfsOfGraph(int V, vector<vector<int>> edges), both returning vector<int>. Output format combines both: \"[dfs...],"
+ },
+ "find-eventual-safe-states": {
+  "exclude": true,
+  "reason": "agent: Approach: reverse-graph topological sort (Kahn's). Build reverse adjacency list and an outdegree array; seed the queue with terminal nodes (outdegree 0). Repeatedly pop a node (it is safe), and"
+ },
+ "count-palindromic-subsequences": {
+  "lo": 0,
+  "hi": 25,
+  "maxn": 30
+ },
+ "connected-components-1": {
+  "exclude": true,
+  "reason": "agent: Counts connected components in an undirected graph with V vertices (0..V-1) and an edge list. Standard BFS over an adjacency list; each unvisited vertex starts a new component. Isolated vertice"
+ },
+ "recursive-insertion-sort": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 1000
+ },
+ "floor-and-ceil-in-sorted-array": {
+  "lo": 1,
+  "hi": 99999,
+  "maxn": 100000,
+  "sorted": true
+ },
+ "best-time-to-buy-and-sell-stock-1": {
+  "lo": 0,
+  "hi": 1000000,
+  "maxn": 100000
+ },
+ "minimum-window-substring-": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 200
+ },
+ "partition-equal-subset-sum": {
+  "lo": 1,
+  "hi": 100,
+  "maxn": 50
+ },
+ "coin-change-ii": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 1000,
+  "distinct": true
+ },
+ "pow(x,n)-1": {
+  "exclude": true,
+  "reason": "agent: Binary exponentiation (fast power). Inputs are a single double x and a single int n, NOT an int array/string, so the simple generator cannot express them -> generatable=false. Critical correctn"
+ },
+ "pow(x,n)": {
+  "exclude": true,
+  "reason": "agent: Inputs are NOT simple int arrays/strings: x is a floating-point double in [-100.0, 100.0] and n is a 32-bit int in [-2^31, 2^31-1]. The constraint -10^4 <= x^n <= 10^4 strongly couples x and n:"
+ },
+ "fractional-knapsack": {
+  "lo": 1,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "check-if-there-exists-a-subsequence-with-sum-k": {
+  "lo": 1,
+  "hi": 100,
+  "maxn": 20
+ },
+ "median-of-2-sorted-arrays": {
+  "lo": -1000000,
+  "hi": 1000000,
+  "maxn": 1000,
+  "sorted": true
+ },
+ "sum-of-first-n-numbers": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 1
+ },
+ "top-k-frequent-elements": {
+  "exclude": true,
+  "reason": "agent: Classic Top K Frequent Elements. Solved in O(n) via bucket sort (better than O(n log n) as required). The output order is \"any order\", so the reference sorts the result ascending to make it det"
+ },
+ "dijkstra's-algorithm": {
+  "exclude": true,
+  "reason": "agent: Inputs: V (number of vertices), edges (list of [u,v,weight] for an undirected weighted graph), and S (source, 0<=S<V). NOT generatable from simple int arrays/strings because edges must form a v"
+ },
+ "partition-a-set-into-two-subsets-with-minimum-absolute-sum-difference": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 100
+ },
+ "power-set-bit-manipulation": {
+  "lo": -10,
+  "hi": 10,
+  "maxn": 10,
+  "distinct": true
+ },
+ "partition-array-for-maximum-sum": {
+  "lo": 0,
+  "hi": 1000000000,
+  "maxn": 500
+ },
+ "check-for-prime-number": {
+  "lo": 1,
+  "hi": 5000,
+  "maxn": 1
+ },
+ "longest-happy-prefix": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 10000
+ },
+ "assign-cookies": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 200
+ },
+ "minimum-cost-to-connect-sticks": {
+  "lo": 1,
+  "hi": 10000,
+  "maxn": 10000
+ },
+ "bipartite-graph": {
+  "exclude": true,
+  "reason": "agent: Problem: determine if an undirected graph (V vertices 0..V-1, given as an edge list `edges`) is bipartite. Standard 2-coloring; I used BFS instead of DFS to avoid recursion-stack overflow since"
+ },
+ "burst-balloons": {
+  "lo": 1,
+  "hi": 100,
+  "maxn": 100
+ },
+ "number-of-operations-to-make-network-connected": {
+  "exclude": true,
+  "reason": "agent: Standard DSU (Disjoint Set Union) problem. Approach: if number of edges < n-1, it is impossible to connect all n nodes (return -1). Otherwise union all edges and count the number of connected c"
+ },
+ "palindrome-partitioning-ii-": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 2000
+ },
+ "course-schedule-ii": {
+  "exclude": true,
+  "reason": "agent: Topological sort (Kahn's algorithm). Two params: int N (1..2000) and vector<vector<int>> arr of [a,b] pairs where each pair means course b must be taken before course a (edge b->a, indegree of "
+ },
+ "shortest-path-in-dag": {
+  "exclude": true,
+  "reason": "agent: Single-source shortest path in a weighted DAG from source vertex 0. Solved via topological sort (iterative DFS, made iterative to handle N up to 5*10^4 without stack overflow) followed by relax"
+ },
+ "combination-sum-ii": {
+  "lo": 1,
+  "hi": 50,
+  "maxn": 30
+ },
+ "topological-sort-or-kahns-algorithm-1": {
+  "exclude": true,
+  "reason": "agent: Standard DFS-based topological sort (visit, recurse on neighbors, push node on backtrack, reverse). Input is `int V` plus `vector<int> adj[]` (an array of adjacency-list vectors), representing "
+ },
+ "linear-search": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "valid-anagram": {
+  "lo": 0,
+  "hi": 25,
+  "maxn": 50000
+ },
+ "prefix-to-postfix-conversion": {
+  "exclude": true,
+  "reason": "agent: Input must be a VALID prefix expression: a balanced sequence of single-char operands (a-z, 0-9) and binary operators (+, -, *, /, ^) where the operator-precedes-operands structure is correct (e"
+ },
+ "balanced-paranthesis": {
+  "exclude": true,
+  "reason": "agent: Classic \"Valid Parentheses\" problem. The single input `str` is a string consisting ONLY of the six bracket characters ()[]{}. The reference uses a stack: push openers, and for each closer verif"
+ },
+ "cheapest-flight-within-k-stops": {
+  "exclude": true,
+  "reason": "agent: Standard BFS level-by-level relaxation (k+1 levels = at most k stops). Verified by compiling with clang++ -std=c++17 (substituting portable headers for bits/stdc++.h, which clang on macOS lacks"
+ },
+ "grid-unique-paths": {
+  "lo": 1,
+  "hi": 100,
+  "maxn": 100
+ },
+ "prime-factorisation-of-a-number-1": {
+  "lo": 2,
+  "hi": 200000,
+  "maxn": 100000
+ },
+ "selection-sort": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 1000
+ },
+ "combination-sum-iii": {
+  "lo": 1,
+  "hi": 60,
+  "maxn": 9
+ },
+ "minimum-multiplications-to-reach-end": {
+  "lo": 1,
+  "hi": 10000,
+  "maxn": 200
+ },
+ "single-number---i": {
+  "exclude": true,
+  "reason": "agent: Classic Single Number: XOR all elements; pairs cancel, leaving the unique one. Verified by compiling with clang++ -std=c++17 -O2 -w (replacing bits/stdc++.h with explicit includes since macOS c"
+ },
+ "detect-a-cycle-in-an-undirected-graph": {
+  "exclude": true,
+  "reason": "agent: Classic undirected-graph cycle detection using BFS with parent tracking. The input is V plus an adjacency list `vector<int> adj[]` representing a valid undirected graph (symmetric edges, no sel"
+ },
+ "postfix-to-infix-conversion": {
+  "exclude": true,
+  "reason": "agent: Standard stack-based postfix-to-infix conversion. Iterate the string: push single-letter operands as strings; on an operator, pop a (right) then b (left), and push \"(\" + b + op + a + \")\". Final"
+ },
+ "longest-palindromic-subsequence": {
+  "lo": -1000,
+  "hi": 1000,
+  "maxn": 1000
+ },
+ "check-if-string-is-palindrome-or-not-": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 1000
+ },
+ "dijkstra's-algorithm-1": {
+  "exclude": true,
+  "reason": "agent: Standard Dijkstra on a weighted UNDIRECTED graph. Inputs are V (int), edges (vector<vector<int>> of [u,v,weight] triples), and source S. Build an adjacency list adding both directions per edge,"
+ },
+ "second-largest-element": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "count-primes-in-range-l-to-r": {
+  "exclude": true,
+  "reason": "agent: Input is a 2D array `queries` (vector<vector<int>>), where each query is a pair [L, R] with constraint 1 <= L <= R <= 10^5 and n up to 10^5. Marked generatable=false because each inner pair has"
+ },
+ "ninja-and-his-friends": {
+  "lo": 0,
+  "hi": 100,
+  "maxn": 50
+ },
+ "longest-common-subsequence": {
+  "lo": 97,
+  "hi": 122,
+  "maxn": 1000
+ },
+ "convert-min-heap-to-max-heap": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "string-to-integer-atoi-1": {
+  "lo": -1000,
+  "hi": 1000,
+  "maxn": 200
+ },
+ "network-delay-time": {
+  "exclude": true,
+  "reason": "agent: Single-source shortest path (Dijkstra) on a directed weighted graph; answer = max over all dist[i] (or -1 if any node unreachable). Verified by compiling with clang++ -std=c++17 -O2 -w (replace"
+ },
+ "count-partitions-with-given-difference": {
+  "lo": 0,
+  "hi": 50,
+  "maxn": 200
+ },
+ "minimum-insertions-or-deletions-to-convert-string-a-to-b": {
+  "lo": 97,
+  "hi": 122,
+  "maxn": 1000
+ },
+ "sliding-window-maximum": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 200
+ },
+ "merge-sorting": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 1000
+ },
+ "maximum-xor-of-two-numbers-in-an-array": {
+  "lo": 0,
+  "hi": 2147483647,
+  "maxn": 200
+ },
+ "frog-jump": {
+  "lo": 0,
+  "hi": 10000,
+  "maxn": 10000
+ },
+ "longest-string-chain": {
+  "exclude": true,
+  "reason": "agent: Input is an array of lowercase-letter strings (words.length 1..1000, each word length 1..20, lowercase a-z only). This cannot be expressed with the integer/permutation/binary knobs available (v"
+ },
+ "kosaraju's-algorithm": {
+  "exclude": true,
+  "reason": "agent: Kosaraju's algorithm: count strongly connected components in a directed graph. Signature is int kosaraju(int V, vector<int> adj[]) where adj[i] is the list of out-neighbors of vertex i. Impleme"
+ },
+ "merge-intervals": {
+  "exclude": true,
+  "reason": "agent: Classic Merge Intervals. Sort by start, then greedily merge while merged.back().end >= current.start (touching intervals like [1,4],[4,5] are merged since the strict '<' check treats end==start"
+ },
+ "count-the-number-of-set-bits": {
+  "lo": 0,
+  "hi": 1000000000,
+  "maxn": 1
+ },
+ "subset-sum-equals-to-target": {
+  "lo": 1,
+  "hi": 100,
+  "maxn": 100
+ },
+ "n-meetings-in-one-room": {
+  "exclude": true,
+  "reason": "agent: Classic greedy \"N meetings in one room\". Sort meetings by end time; pick a meeting only if its start time is STRICTLY greater than the previously selected meeting's end time (problem note: one "
+ },
+ "fruit-into-baskets": {
+  "lo": 0,
+  "hi": 99999,
+  "maxn": 100000
+ },
+ "frog-jump-with-k-distances": {
+  "lo": 0,
+  "hi": 10000,
+  "maxn": 10000
+ },
+ "count-and-say": {
+  "lo": 1,
+  "hi": 30,
+  "maxn": 30
+ },
+ "next-smaller-element": {
+  "lo": -1000000000,
+  "hi": 1000000000,
+  "maxn": 200
+ },
+ "find-the-city-with-the-smallest-number-of-neighbors": {
+  "exclude": true,
+  "reason": "agent: Classic Floyd-Warshall all-pairs shortest path. For each city, count other cities reachable within distanceThreshold; pick the city with the smallest count, breaking ties toward the greatest ci"
+ },
+ "infix-to-prefix-conversion": {
+  "exclude": true,
+  "reason": "agent: Input is a single valid infix arithmetic expression string (lowercase a-z operands, operators + - * /, balanced round parentheses, no whitespace, every operator binary). All four operators are "
+ },
+ "highest-occurring-element-in-an-array": {
+  "lo": 1,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "generate-parentheses": {
+  "lo": 1,
+  "hi": 8,
+  "maxn": 8
+ },
+ "3-sum": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 200
+ },
+ "palindrome-number": {
+  "lo": 0,
+  "hi": 5000,
+  "maxn": 1
+ },
+ "find-the-smallest-divisor": {
+  "lo": 1,
+  "hi": 1000000,
+  "maxn": 200
+ },
+ "rabin-karp-algorithm": {
+  "lo": 97,
+  "hi": 122,
+  "maxn": 50000
+ },
+ "longest-common-prefix": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 200
+ },
+ "count-all-subsequences-with-sum-k": {
+  "lo": 1,
+  "hi": 100,
+  "maxn": 20
+ },
+ "number-of-provinces": {
+  "exclude": true,
+  "reason": "agent: Classic connected-components count on an undirected graph given as an n x n adjacency matrix. BFS from each unvisited node; each new BFS launch is a new province. Time O(V^2), well within V<=30"
+ },
+ "edit-distance": {
+  "lo": 97,
+  "hi": 122,
+  "maxn": 1000
+ },
+ "minimum-falling-path-sum": {
+  "lo": -1000,
+  "hi": 1000,
+  "maxn": 100
+ },
+ "remove-outermost-parentheses": {
+  "exclude": true,
+  "reason": "agent: Input s must be a VALID balanced parentheses string over only '(' and ')'. A random string of '(' / ')' chars (or any int-array/string generator) will almost always be invalid (unbalanced or wi"
+ },
+ "reverse-a-number": {
+  "lo": 0,
+  "hi": 5000,
+  "maxn": 1
+ },
+ "minimum-cost-to-cut-the-stick": {
+  "exclude": true,
+  "reason": "agent: Classic Partition/MCM DP (\"Minimum Cost to Cut a Stick\", LeetCode 1547). Approach: prepend 0 and append n to the cuts array, sort it, then interval DP where dp[i][j] is the min cost to cut the "
+ },
+ "bellman-ford-algorithm": {
+  "exclude": true,
+  "reason": "agent: Classic Bellman-Ford. Inputs: V (vertices), edges = list of [u, v, w] directed weighted edges, S (source). Returns shortest distances from S to all vertices; unreachable vertices = 1e9; if a ne"
+ },
+ "minimum-coins": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 100
+ },
+ "prime-factorisation-of-a-number": {
+  "lo": 2,
+  "hi": 200000,
+  "maxn": 100000
+ },
+ "generate-binary-strings-without-consecutive-1s": {
+  "lo": 1,
+  "hi": 20,
+  "maxn": 20
+ },
+ "connected-components": {
+  "exclude": true,
+  "reason": "agent: Classic count-of-connected-components in an undirected graph, solved with DSU (Disjoint Set Union) with path compression and union by rank. Starts with V components and decrements each time two"
+ },
+ "best-time-to-buy-and-sell-stock-with-cooldown-and-transaction-fees": {
+  "lo": 0,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "count-subsets-with-sum-k": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 100
+ },
+ "two-sum": {
+  "exclude": true,
+  "reason": "agent: Classic Two Sum. Inputs are (vector<int> nums, int target). Output is a vector<int> of the two 0-indexed positions that sum to target, returned earlier-index-first (ascending), matching all exa"
+ },
+ "longest-subarray-with-sum-k": {
+  "lo": -1000,
+  "hi": 1000,
+  "maxn": 200
+ },
+ "gcd-of-two-numbers": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 1
+ },
+ "alient-dictionary": {
+  "exclude": true,
+  "reason": "agent: Alien Dictionary via topological sort (Kahn's BFS). Signature: string findOrder(string dict[], int N, int K). Returns the character order as a contiguous string (e.g. \"bdac\"); the test harness "
+ },
+ "unbounded-knapsack": {
+  "lo": 1,
+  "hi": 500,
+  "maxn": 500
+ },
+ "bubble-sort": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 1000
+ },
+ "detect-a-cycle-in-an-undirected-graph-1": {
+  "exclude": true,
+  "reason": "agent: Standard undirected-graph cycle detection via BFS with parent tracking, iterated over every component to handle disconnected graphs. Input is V (vertex count) and adj[] (adjacency list, vertice"
+ },
+ "longest-word-with-all-prefixes": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 200
+ },
+ "best-time-to-buy-and-sell-stock-ii": {
+  "lo": 0,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "shortest-job-first": {
+  "lo": 1,
+  "hi": 100000,
+  "maxn": 100000
+ },
+ "counting-frequencies-of-array-elements": {
+  "lo": -1000000000,
+  "hi": 1000000000,
+  "maxn": 100000
+ },
+ "rod-cutting-problem": {
+  "lo": 1,
+  "hi": 100000,
+  "maxn": 1000
+ },
+ "distance-of-nearest-cell-having-one": {
+  "exclude": true,
+  "reason": "agent: Multi-source BFS. The single input `grid` is a 2D N x M binary matrix (values 0 or 1), N,M up to 500. Output is the same-shaped matrix of Manhattan distance to nearest 1. Verified by compiling "
+ },
+ "check-if-the-number-if-armstrong": {
+  "lo": 0,
+  "hi": 1000000000,
+  "maxn": 1
+ },
+ "job-sequencing-problem": {
+  "exclude": true,
+  "reason": "agent: Classic greedy Job Sequencing. Input is a vector<vector<int>> where each row is [JobID, Deadline, Profit]. Algorithm: sort jobs by Profit descending, then for each job try to place it in the la"
+ },
+ "number-of-enclaves": {
+  "lo": 0,
+  "hi": 1,
+  "maxn": 500,
+  "domain": "binary"
+ },
+ "k-th-largest-element-in-an-array": {
+  "lo": -1000,
+  "hi": 1000,
+  "maxn": 200
+ },
+ "koko-eating-bananas": {
+  "lo": 1,
+  "hi": 1000000000,
+  "maxn": 200
+ },
+ "number-of-substrings-containing-all-three-characters": {
+  "exclude": true,
+  "reason": "agent: Single string input s consisting ONLY of characters 'a','b','c' (constraint: 1 <= s.length <= 5*10^4). Random generation must produce strings over the 3-character alphabet {a,b,c} only; a gener"
+ },
+ "count-subarrays-with-given-xor-k": {
+  "lo": 1,
+  "hi": 1000000000,
+  "maxn": 200
+ },
+ "number-of-distinct-substrings-in-a-string": {
+  "lo": 97,
+  "hi": 122,
+  "maxn": 1000
+ },
+ "power-set": {
+  "lo": -10,
+  "hi": 10,
+  "maxn": 10,
+  "distinct": true
+ },
+ "bridges-in-graph": {
+  "exclude": true,
+  "reason": "agent: Classic \"Bridges in Graph\" / LeetCode \"Critical Connections in a Network\", solved with Tarjan's algorithm (tin/low timestamps). Input is a structured undirected graph: an int V (vertex count) p"
+ },
+ "longest-increasing-subsequence-1": {
+  "lo": -1000000,
+  "hi": 1000000,
+  "maxn": 1000
+ },
+ "distinct-subsequences": {
+  "lo": -1000,
+  "hi": 1000,
+  "maxn": 1000
+ },
+ "kadane's-algorithm-1": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 100000
+ },
+ "remove-k-digits": {
+  "exclude": true,
+  "reason": "agent: Classic monotonic-stack \"Remove K Digits\". Two inputs: string `nums` (digit chars only, no leading zeros except \"0\" itself) and int `k` with 1 <= k <= nums.length <= 10^4. Algorithm: greedily p"
+ },
+ "subsets-i": {
+  "lo": 0,
+  "hi": 10000,
+  "maxn": 15
+ },
+ "longest-increasing-subsequence": {
+  "lo": -1000000,
+  "hi": 1000000,
+  "maxn": 100000
+ },
+ "longest-common-subsequence-1": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 1000
+ },
+ "maximum-sum-of-non-adjacent-elements": {
+  "lo": 0,
+  "hi": 1000,
+  "maxn": 100000
+ },
+ "next-greater-element": {
+  "lo": 0,
+  "hi": 1000000000,
+  "maxn": 200
+ },
+ "expression-add-operators": {
+  "lo": 0,
+  "hi": 9,
+  "maxn": 10
+ },
+ "most-stones-removed-with-same-row-or-column": {
+  "exclude": true,
+  "reason": "agent: Classic DSU problem. Model each row and each column as a DSU node; rows occupy ids 0..maxRow, columns are offset by (maxRow+1). For each stone union its row-node and column-node. Answer = n - ("
+ },
+ "making-a-large-island": {
+  "lo": 0,
+  "hi": 1,
+  "maxn": 30,
+  "domain": "binary"
+ },
+ "find-square-root-of-a-number": {
+  "lo": 0,
+  "hi": 2147483647,
+  "maxn": 1
+ },
+ "single-number---iii": {
+  "exclude": true,
+  "reason": "agent: Single Number III via XOR partitioning. XOR of all elements yields x = u1 ^ u2 for the two unique numbers; isolate any set bit (rightmost via x & -x) to split elements into two buckets, each XO"
+ },
+ "non-overlapping-intervals": {
+  "exclude": true,
+  "reason": "agent: Classic \"Non-overlapping Intervals\" (LeetCode 435). Despite the method name MaximumNonOverlappingIntervals, the problem asks for the MINIMUM number of intervals to REMOVE to make the rest non-o"
+ },
+ "matrix-chain-multiplication-1": {
+  "lo": 1,
+  "hi": 100,
+  "maxn": 100
+ },
+ "divisors-of-a-number": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 1
+ },
+ "topological-sort-or-kahns-algorithm": {
+  "exclude": true,
+  "reason": "agent: Topological sort of a DAG. Signature is vector<int> topoSort(int V, vector<int> adj[]) where adj is an array of adjacency lists (adj[u] contains the nodes u points to). Implemented Kahn's algor"
+ },
+ "check-if-a-number-is-odd-or-not": {
+  "lo": 0,
+  "hi": 10000,
+  "maxn": 1
+ },
+ "xor-of-numbers-in-a-given-range": {
+  "lo": 1,
+  "hi": 1000000000,
+  "maxn": 2
+ },
+ "subsets-ii": {
+  "lo": -10,
+  "hi": 10,
+  "maxn": 10
+ },
+ "number-of-greater-elements-to-the-right": {
+  "exclude": true,
+  "reason": "agent: Two array inputs: arr (values 1..1e5, length 1..1e4) and indices (the second array's elements are NOT free integers \u2014 each must be a valid index in [0, n-1] referencing arr). A simple uniform-r"
+ },
+ "merge-overlapping-subintervals": {
+  "exclude": true,
+  "reason": "agent: Classic Merge Intervals. Input is vector<vector<int>> arr where each row is an interval [start, end] with the per-row constraint start <= end and values in [0, 1e5]. This 2D-with-intra-row-orde"
+ },
+ "requirements-needed-to-construct-a-unique-bt": {
+  "lo": 1,
+  "hi": 3,
+  "maxn": 1
+ },
+ "maximum-rectangles": {
+  "lo": 0,
+  "hi": 1,
+  "maxn": 200,
+  "domain": "binary"
+ },
+ "4-sum": {
+  "lo": -10000,
+  "hi": 10000,
+  "maxn": 200
+ },
+ "letter-combinations-of-a-phone-number": {
+  "exclude": true,
+  "reason": "agent: Classic LeetCode \"Letter Combinations of a Phone Number\". Input is a single string `digits` of length 1..4, where every character must be a digit in ['2','9']. Standard phone keypad mapping (2="
+ },
+ "kmp-algorithm-or-lps-array": {
+  "lo": 0,
+  "hi": 0,
+  "maxn": 50000
+ },
+ "matrix-median": {
+  "exclude": true,
+  "reason": "agent: Median of a row-wise sorted matrix via binary search on the answer value range. For each candidate mid, count elements <= mid per row with upper_bound; find the smallest value whose count excee"
+ },
+ "pascals-triangle-i": {
+  "exclude": true,
+  "reason": "agent: Two coupled scalar inputs r and c (not arrays/strings) with the dependency constraint c <= r, both in [1,30]. This cannot be expressed via the array/string generation parameters, so generatable"
+ },
+ "course-schedule-i": {
+  "exclude": true,
+  "reason": "agent: Classic course-schedule cycle-detection via Kahn's topological sort. arr[i]=[a,b] means b must be taken before a, i.e. directed edge b->a; the graph can be finished iff it is a DAG (no cycle). "
+ },
+ "best-time-to-buy-and-sell-stock-iv": {
+  "lo": 0,
+  "hi": 10000,
+  "maxn": 1000
+ },
+ "minimum-insertions-to-make-string-palindrome": {
+  "lo": 97,
+  "hi": 122,
+  "maxn": 1000
+ },
+ "jump-game-ii": {
+  "lo": 1,
+  "hi": 1000,
+  "maxn": 200
+ },
+ "task-scheduler": {
+  "exclude": true,
+  "reason": "agent: Classic greedy formula: answer = max(tasks.size(), (maxFreq-1)*(n+1) + countOfTasksWithMaxFreq). The `tasks` input is a vector<char> of uppercase letters 'A'-'Z', NOT an int array, so it cannot"
+ },
+ "book-allocation-problem": {
+  "lo": 1,
+  "hi": 100000,
+  "maxn": 200
+ }
+}

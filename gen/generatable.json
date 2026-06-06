@@ -1,0 +1,2281 @@
+{
+ "check-if-the-array-is-sorted-ii": {
+  "entry": "isSorted",
+  "ret": "bool",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 0.998,
+  "ref_file": "3. Arrays/1. Easy/3.1.3. Check if the array is sorted.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "remove-duplicates-from-sorted-array": {
+  "entry": "removeDuplicates",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Remove duplicates from sorted array.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "union-of-two-sorted-arrays": {
+  "entry": "unionArray",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums1",
+   "nums2"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Union of two sorted arrays.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "maximum-consecutive-ones": {
+  "entry": "findMaxConsecutiveOnes",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Max Consecutive Ones.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "kadane's-algorithm": {
+  "entry": "maxSubArray",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 0.7583,
+  "ref_file": "01.Arrays/2.Medium/04.Kadane's_algorithm.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "count-subarrays-with-given-sum": {
+  "entry": "subarraySum",
+  "ret": "int",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "SubArraySum equalsK.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "best-time-to-buy-and-sell-stock-with-cooldown": {
+  "entry": "maxProfit",
+  "ret": "int",
+  "input_keys": [
+   "prices"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Best Time to Buy and Sell Stock II.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-consecutive-sequence-in-an-array": {
+  "entry": "longestConsecutive",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Longest Consecutive Sequence.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "print-the-matrix-in-spiral-manner": {
+  "entry": "spiralOrder",
+  "ret": "vector<int>",
+  "input_keys": [
+   "matrix"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Spiral a Matrix.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "largest-subarray-with-sum-0": {
+  "entry": "maxLen",
+  "ret": "int",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Largest Subarray with zero Sum.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "reverse-pairs": {
+  "entry": "reversePairs",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "01.Arrays/3.Hard/11.Reverse_pairs.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "maximum-product-subarray-in-an-array": {
+  "entry": "maxProduct",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Maximum Product Subarray.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "search-x-in-sorted-array": {
+  "entry": "search",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "target"
+  ],
+  "how": "fuzzy",
+  "score": 0.7894,
+  "ref_file": "02.Binary Search/1D Arrays/01.Find_x_in_sorted_array.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "lower-bound-": {
+  "entry": "lowerbound",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "x"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "02.Binary Search/1D Arrays/03.Implement_lower_upper_bound.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "search-insert-position": {
+  "entry": "searchInsert",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "target"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Search Insert Position.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "first-and-last-occurrence": {
+  "entry": "searchRange",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums",
+   "target"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Find First and last position of element in sorted array.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "count-occurrences-in-a-sorted-array": {
+  "entry": "countOccurrences",
+  "ret": "int",
+  "input_keys": [
+   "arr",
+   "target"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "02.Binary Search/1D Arrays/07.Number_of_occurences.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "find-peak-element": {
+  "entry": "findPeakElement",
+  "ret": "int",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Find peak element.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "search-in-rotated-sorted-array-i": {
+  "entry": "search",
+  "ret": "int",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 0.9813,
+  "ref_file": "02.Binary Search/1D Arrays/09.Search_in_rotated_sorted_array.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "search-in-rotated-sorted-array-2": {
+  "entry": "search",
+  "ret": "bool",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 0.7799,
+  "ref_file": "02.Binary Search/1D Arrays/10.Search_in_rotated_sorted_array_with_duplicates.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "find-minimum-in-rotated-sorted-array": {
+  "entry": "findMin",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Minimum in a rotated sorted array.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "find-out-how-many-times-the-array-is-rotated": {
+  "entry": "findKRotation",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.0,
+  "ref_file": "Count Number of rotations in rotated sorted array.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "find-row-with-maximum-1's": {
+  "entry": "rowWithMax1s",
+  "ret": "int",
+  "input_keys": [
+   "mat"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "02.Binary Search/2D Arrays/1.Row_with_maximum_number_of_1's.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "search-in-a-2d-matrix": {
+  "entry": "f",
+  "ret": "bool",
+  "input_keys": [
+   "mat",
+   "target"
+  ],
+  "how": "fuzzy",
+  "score": 0.9877,
+  "ref_file": "Search a 2D matrix.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "find-nth-root-of-a-number": {
+  "entry": "NthRoot",
+  "ret": "int",
+  "input_keys": [
+   "M",
+   "N"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "02.Binary Search/In Search Space/02.Nth_root_of_integer.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "minimum-days-to-make-m-bouquets": {
+  "entry": "isPossible",
+  "ret": "bool",
+  "input_keys": [
+   "k",
+   "m",
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 0.881,
+  "ref_file": "02.Binary Search/In Search Space/04.Minimum_days_to_make_boquets.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "aggressive-cows": {
+  "entry": "aggressiveCows",
+  "ret": "int",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.0,
+  "ref_file": "Aggressive Cows Problem.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "split-array---largest-sum": {
+  "entry": "splitArray",
+  "ret": "int",
+  "input_keys": [
+   "a",
+   "k"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Split Array Largest Sum.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "kth-missing-positive-number": {
+  "entry": "findKthPositive",
+  "ret": "int",
+  "input_keys": [
+   "arr",
+   "k"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "kth missing Positive number.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "kth-element-of-2-sorted-arrays": {
+  "entry": "kthElement",
+  "ret": "int",
+  "input_keys": [
+   "a",
+   "b",
+   "k"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "02.Binary Search/In Search Space/14.Kth_element_of_two_sorted_arrays.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "reverse-every-word-in-a-string": {
+  "entry": "reverseWords",
+  "ret": "string",
+  "input_keys": [
+   "s"
+  ],
+  "how": "fuzzy",
+  "score": 0.8053,
+  "ref_file": "03.Strings/1.Easy/02.Reverse_words_in_string.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "largest-odd-number-in-a-string": {
+  "entry": "largestOddNumber",
+  "ret": "string",
+  "input_keys": [
+   "s"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Largest Odd Number In a string.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "isomorphic-string": {
+  "entry": "isIsomorphic",
+  "ret": "bool",
+  "input_keys": [
+   "s",
+   "t"
+  ],
+  "how": "fuzzy",
+  "score": 0.999,
+  "ref_file": "03.Strings/1.Easy/05.Isomorphic_string.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "rotate-string": {
+  "entry": "rotateString",
+  "ret": "bool",
+  "input_keys": [
+   "goal",
+   "s"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Rotate Strings.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "sort-characters-by-frequency": {
+  "entry": "frequencySort",
+  "ret": "string",
+  "input_keys": [
+   "s"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Sort Characters by frequency.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "maximum-nesting-depth-of-the-parentheses": {
+  "entry": "maxDepth",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "fuzzy",
+  "score": 0.8966,
+  "ref_file": "Maximum Nesting Depth of parenthesis.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "roman-to-integer": {
+  "entry": "romanToInt",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Roman Number to integer.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "sum-of-beauty-of-all-substrings": {
+  "entry": "beautySum",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Sum Of Beauty of Substrings.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "count-good-numbers": {
+  "entry": "countGoodNumbers",
+  "ret": "int",
+  "input_keys": [
+   "n"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Count Good Numbers.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "word-break": {
+  "entry": "wordBreak",
+  "ret": "bool",
+  "input_keys": [
+   "s",
+   "wordDict"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "05.Recursion/3.Try Out All Combos/06.Word Break.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "check-if-the-i-th-bit-is-set-or-not": {
+  "entry": "checkKthBit",
+  "ret": "bool",
+  "input_keys": [
+   "i",
+   "n"
+  ],
+  "how": "fuzzy",
+  "score": 0.6422,
+  "ref_file": "06.Bit Manipulation/1. Learn Bit Manipulation/02.Check for the ith bit.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "check-if-a-number-is-power-of-2-or-not": {
+  "entry": "isPowerOfTwo",
+  "ret": "bool",
+  "input_keys": [
+   "n"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Check If the number is power of 2.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "minimum-bit-flips-to-convert-number": {
+  "entry": "minBitFlips",
+  "ret": "int",
+  "input_keys": [
+   "goal",
+   "start"
+  ],
+  "how": "fuzzy",
+  "score": 0.8086,
+  "ref_file": "06.Bit Manipulation/2. Interview Problems/01. Minimum bit flips.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "valid-paranthesis-checker": {
+  "entry": "isValid",
+  "ret": "bool",
+  "input_keys": [
+   "s"
+  ],
+  "how": "fuzzy",
+  "score": 0.674,
+  "ref_file": "Valid Parenthesis.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "infix-to-postfix-conversion": {
+  "entry": "infixToPostfix",
+  "ret": "string",
+  "input_keys": [
+   "expression"
+  ],
+  "how": "func-name",
+  "score": 1.0,
+  "ref_file": "Infix To Postfix.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "prefix-to-infix-conversion": {
+  "entry": "prefixToInfixConversion",
+  "ret": "string",
+  "input_keys": [
+   "expression"
+  ],
+  "how": "fuzzy",
+  "score": 0.8524,
+  "ref_file": "Prefix to Infix.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "postfix-to-prefix-conversion": {
+  "entry": "isAlphaNumeric",
+  "ret": "bool",
+  "input_keys": [
+   "expression"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "07.Stack and Queues/2. Infix, Postfix, and Prefix/06. Postfix to prefix.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "next-greater-element---2": {
+  "entry": "nextGreaterElements",
+  "ret": "vector<int>",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Next Greater Element 2.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "trapping-rainwater": {
+  "entry": "trap",
+  "ret": "int",
+  "input_keys": [
+   "height"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Trapping Rain Water.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "sum-of-subarray-ranges": {
+  "entry": "subArrayRanges",
+  "ret": "long long",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "07.Stack and Queues/3. Monotonic Stack and Queue/06. Sum of range of all subarray.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "largest-rectangle-in-a-histogram": {
+  "entry": "largestRectangleArea",
+  "ret": "int",
+  "input_keys": [
+   "heights"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Largest Rectangle in Histogram.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "asteroid-collision": {
+  "entry": "asteroidCollision",
+  "ret": "vector<int>",
+  "input_keys": [
+   "asteroids"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Asteroid Collision.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "celebrity-problem": {
+  "entry": "celebrity",
+  "ret": "int",
+  "input_keys": [
+   "M"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "07.Stack and Queues/4. Implementation/03. Celebrity Problem.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-substring-without-repeating-characters": {
+  "entry": "lengthOfLongestSubstring",
+  "ret": "int",
+  "input_keys": [
+   "S"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Longest Substring without repeating Characters.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "max-consecutive-ones-iii": {
+  "entry": "longestOnes",
+  "ret": "int",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Max Consecutive Ones III.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "binary-subarrays-with-sum": {
+  "entry": "func",
+  "ret": "int",
+  "input_keys": [
+   "goal",
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Binary Subarray With Sum.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "count-number-of-nice-subarrays": {
+  "entry": "f",
+  "ret": "int",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 0.98,
+  "ref_file": "Count Number of Subarrays.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "maximum-points-you-can-obtain-from-cards-": {
+  "entry": "maxScore",
+  "ret": "int",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Maximum Points You can obtain from cards.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-substring-with-at-most-k-distinct-characters": {
+  "entry": "kDistinctChars",
+  "ret": "int",
+  "input_keys": [
+   "k",
+   "s"
+  ],
+  "how": "fuzzy",
+  "score": 0.878,
+  "ref_file": "08. Sliding Window/2. Hard Problems/01. Longest Substring with at most K unique characters.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "subarrays-with-k-different-integers": {
+  "entry": "f",
+  "ret": "int",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Subarrays with k different integers.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "assign-cookies-1": {
+  "entry": "findContentChildren",
+  "ret": "int",
+  "input_keys": [
+   "cookie",
+   "student"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Assign Cookies.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "lemonade-change": {
+  "entry": "lemonadeChange",
+  "ret": "bool",
+  "input_keys": [
+   "bills"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Lemonade Change.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "jump-game---i": {
+  "entry": "canJump",
+  "ret": "bool",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Jump Game 1.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "candy": {
+  "entry": "candy",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Candy.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "insert-interval": {
+  "entry": "insert",
+  "ret": "vector<vector<int>>",
+  "input_keys": [
+   "Intervals",
+   "newInterval"
+  ],
+  "how": "fuzzy",
+  "score": 0.999,
+  "ref_file": "10. Greedy Approach/2. Medium/07. Insert Interval.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "introduction-": {
+  "entry": "numberOfNodes",
+  "ret": "int",
+  "input_keys": [
+   "N"
+  ],
+  "how": "fuzzy",
+  "score": 0.999,
+  "ref_file": "11. Binary Trees/1. Traversals/01. Introduction to trees.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "introduction-to-bst": {
+  "entry": "isValidBST",
+  "ret": "bool",
+  "input_keys": [
+   "order"
+  ],
+  "how": "fuzzy",
+  "score": 0.7248,
+  "ref_file": "12. Binary Search Trees/1. Concept/01. Intro to BST.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "rotten-oranges": {
+  "entry": "orangesRotting",
+  "ret": "int",
+  "input_keys": [
+   "grid"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Rotten Oranges(Based on BFS).cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "word-ladder-i": {
+  "entry": "ladderLength",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "startWord",
+   "targetWord"
+  ],
+  "how": "fuzzy",
+  "score": 0.9842,
+  "ref_file": "Word Ladder.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "path-with-minimum-effort": {
+  "entry": "minimumEffortPath",
+  "ret": "int",
+  "input_keys": [
+   "heights"
+  ],
+  "how": "fuzzy",
+  "score": 0.999,
+  "ref_file": "13. Graphs/4. Shortest Path Problems/05. Path with minimum effort.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "number-of-islands-ii": {
+  "entry": "isLand",
+  "ret": "bool",
+  "input_keys": [
+   "A",
+   "m",
+   "n"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "13. Graphs/5. MST Problems/06. Number of islands 2.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "swim-in-rising-water": {
+  "entry": "swimInWater",
+  "ret": "int",
+  "input_keys": [
+   "grid"
+  ],
+  "how": "func-name",
+  "score": 0.999,
+  "ref_file": "13. Graphs/5. MST Problems/08. Swim in rising water.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "climbing-stairs": {
+  "entry": "climbStairs",
+  "ret": "int",
+  "input_keys": [
+   "n"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Climbing Stairs.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "house-robber": {
+  "entry": "rob",
+  "ret": "int",
+  "input_keys": [
+   "money"
+  ],
+  "how": "fuzzy",
+  "score": 0.999,
+  "ref_file": "14. Dynamic Programming/2. 1D DP/04. House Robber.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "unique-paths-ii": {
+  "entry": "uniquePathsWithObstacles",
+  "ret": "int",
+  "input_keys": [
+   "matrix"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Unique Paths 2.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "target-sum": {
+  "entry": "findTargetSumWays",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "target"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Target Sum.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-common-substring": {
+  "entry": "findLength",
+  "ret": "int",
+  "input_keys": [
+   "str1",
+   "str2"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Longest Common Substring.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "shortest-common-supersequence": {
+  "entry": "shortestCommonSupersequence",
+  "ret": "string",
+  "input_keys": [
+   "str1",
+   "str2"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Shortest common supersequence.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "wildcard-matching": {
+  "entry": "isMatch",
+  "ret": "bool",
+  "input_keys": [
+   "pat",
+   "str"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Wildcard matching.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "largest-divisible-subset": {
+  "entry": "largestDivisibleSubset",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Longest divisible subset.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "minimum-number-of-bracket-reversals-to-make-an-expression-balanced": {
+  "entry": "minMoves2",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "fuzzy",
+  "score": 0.655,
+  "ref_file": "Minimum Number Of Moves To make elements equal.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "check-if-an-array-represents-a-min-heap-": {
+  "entry": "isMaxHeap",
+  "ret": "bool",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 0.7375,
+  "ref_file": "Check if the array represents heap or not.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-subarray-with-sum-k-1": {
+  "entry": "checkSubarraySum",
+  "ret": "bool",
+  "input_keys": [
+   "k",
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 0.682,
+  "ref_file": "Continuous Subarray Sum.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "count-all-digits-of-a-number": {
+  "entry": "countDigits",
+  "ret": "int",
+  "input_keys": [
+   "n"
+  ],
+  "how": "fuzzy",
+  "score": 0.78,
+  "ref_file": "Count Digits.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "divide-two-numbers-without-multiplication-and-division": {
+  "entry": "divide",
+  "ret": "int",
+  "input_keys": [
+   "Dividend",
+   "Divisor"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Divide two integers without using multiplication and division sign.cpp",
+  "maxn": 200,
+  "count": 20000
+ },
+ "hand-of-straights": {
+  "entry": "isNStraightHand",
+  "ret": "bool",
+  "input_keys": [
+   "groupSize",
+   "hand"
+  ],
+  "how": "func-name",
+  "score": 1.03,
+  "ref_file": "Hands Of Straights.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "number-of-longest-increasing-subsequences": {
+  "entry": "findNumberOfLIS",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Number of longest increasing subsequences.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "painters-partition": {
+  "entry": "f",
+  "ret": "bool",
+  "input_keys": [
+   "A",
+   "B",
+   "C"
+  ],
+  "how": "fuzzy",
+  "score": 0.7901,
+  "ref_file": "Painter's Partition.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "quick-sorting": {
+  "entry": "quickSort",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 1.0,
+  "ref_file": "QuickSort.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "reverse-every-word-in-a-string-1": {
+  "entry": "reverseWords",
+  "ret": "string",
+  "input_keys": [
+   "s"
+  ],
+  "how": "fuzzy",
+  "score": 0.87,
+  "ref_file": "Reverse Words in a string.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "search-in-2d-matrix-ii": {
+  "entry": "searchMatrix",
+  "ret": "bool",
+  "input_keys": [
+   "matrix",
+   "target"
+  ],
+  "how": "fuzzy",
+  "score": 0.9311,
+  "ref_file": "Search in a 2D matrix II.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "single-number---i-1": {
+  "entry": "singleNumber",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "fuzzy",
+  "score": 0.9907,
+  "ref_file": "Single Number.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "triangle": {
+  "entry": "minimumTotal",
+  "ret": "int",
+  "input_keys": [
+   "triangle"
+  ],
+  "how": "fuzzy",
+  "score": 1.03,
+  "ref_file": "Triangle.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "largest-element": {
+  "entry": "largestElement",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "func-name",
+  "score": 0.998,
+  "ref_file": "3. Arrays/1. Easy/3.1.1. Largest Element in an Array.cpp",
+  "maxn": 200,
+  "count": 200000
+ },
+ "k-th-largest-element-in-an-array": {
+  "entry": "kthLargestElement",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "k"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "find-missing-number": {
+  "entry": "missingNumber",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-subarray-with-sum-k": {
+  "entry": "longestSubarray",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "k"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "leaders-in-an-array": {
+  "entry": "leaders",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "count-subarrays-with-given-xor-k": {
+  "entry": "subarraysWithXorK",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "k"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "median-of-2-sorted-arrays": {
+  "entry": "median",
+  "ret": "double",
+  "input_keys": [
+   "arr1",
+   "arr2"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "find-square-root-of-a-number": {
+  "entry": "floorSqrt",
+  "ret": "int",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "koko-eating-bananas": {
+  "entry": "minimumRateToEatBananas",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "h"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "find-the-smallest-divisor": {
+  "entry": "smallestDivisor",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "limit"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "capacity-to-ship-packages-within-d-days": {
+  "entry": "shipWithinDays",
+  "ret": "int",
+  "input_keys": [
+   "weights",
+   "days"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "book-allocation-problem": {
+  "entry": "findPages",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-palindromic-substring": {
+  "entry": "longestPalindrome",
+  "ret": "string",
+  "input_keys": [
+   "s"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "count-the-number-of-set-bits": {
+  "entry": "countSetBits",
+  "ret": "int",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "power-set": {
+  "entry": "powerSet",
+  "ret": "vector<vector<int>>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "distinct-subsequences": {
+  "entry": "distinctSubsequences",
+  "ret": "int",
+  "input_keys": [
+   "s",
+   "t"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "power-set-bit-manipulation": {
+  "entry": "powerSet",
+  "ret": "vector<vector<int>>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "prime-factorisation-of-a-number": {
+  "entry": "primeFactors",
+  "ret": "vector<vector<int>>",
+  "input_keys": [
+   "queries"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "next-greater-element": {
+  "entry": "nextLargerElement",
+  "ret": "vector<int>",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "next-smaller-element": {
+  "entry": "nextSmallerElements",
+  "ret": "vector<int>",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "sum-of-subarray-minimums": {
+  "entry": "sumSubarrayMins",
+  "ret": "int",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "stock-span-problem": {
+  "entry": "stockSpan",
+  "ret": "vector<int>",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "fruit-into-baskets": {
+  "entry": "totalFruits",
+  "ret": "int",
+  "input_keys": [
+   "fruits"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "fractional-knapsack": {
+  "entry": "fractionalKnapsack",
+  "ret": "double",
+  "input_keys": [
+   "val",
+   "wt",
+   "capacity"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "jump-game-ii": {
+  "entry": "jump",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "number-of-enclaves": {
+  "entry": "numberOfEnclaves",
+  "ret": "int",
+  "input_keys": [
+   "grid"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "frog-jump": {
+  "entry": "frogJump",
+  "ret": "int",
+  "input_keys": [
+   "heights"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "ninja's-training": {
+  "entry": "ninjaTraining",
+  "ret": "int",
+  "input_keys": [
+   "matrix"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "grid-unique-paths": {
+  "entry": "uniquePaths",
+  "ret": "int",
+  "input_keys": [
+   "m",
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "minimum-falling-path-sum": {
+  "entry": "minFallingPathSum",
+  "ret": "int",
+  "input_keys": [
+   "matrix"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "rod-cutting-problem": {
+  "entry": "rodCutting",
+  "ret": "int",
+  "input_keys": [
+   "price"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-common-subsequence": {
+  "entry": "lcs",
+  "ret": "int",
+  "input_keys": [
+   "str1",
+   "str2"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-palindromic-subsequence": {
+  "entry": "longestPalinSubseq",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "minimum-insertions-to-make-string-palindrome": {
+  "entry": "minInsertion",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-increasing-subsequence": {
+  "entry": "LIS",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "print-longest-increasing-subsequence": {
+  "entry": "longestIncreasingSubsequence",
+  "ret": "vector<int>",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-bitonic-subsequence": {
+  "entry": "LongestBitonicSequence",
+  "ret": "int",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "burst-balloons": {
+  "entry": "maxCoins",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "palindrome-partitioning-ii-": {
+  "entry": "minCut",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "partition-array-for-maximum-sum": {
+  "entry": "maxSumAfterPartitioning",
+  "ret": "int",
+  "input_keys": [
+   "arr",
+   "k"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-word-with-all-prefixes": {
+  "entry": "completeString",
+  "ret": "string",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "number-of-distinct-substrings-in-a-string": {
+  "entry": "countDistinctSubstring",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "maximum-xor-of-two-numbers-in-an-array": {
+  "entry": "findMaximumXOR",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "highest-occurring-element-in-an-array": {
+  "entry": "mostFrequentElement",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "matrix-chain-multiplication": {
+  "entry": "matrixMultiplication",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "minimum-insertions-or-deletions-to-convert-string-a-to-b": {
+  "entry": "minOperations",
+  "ret": "int",
+  "input_keys": [
+   "str1",
+   "str2"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "factorial-of-a-given-number-i": {
+  "entry": "factorial",
+  "ret": "int",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "counting-frequencies-of-array-elements": {
+  "entry": "countFrequencies",
+  "ret": "vector<vector<int>>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "selection-sort": {
+  "entry": "selectionSort",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "linear-search": {
+  "entry": "linearSearch",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "target"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "insertion-sorting": {
+  "entry": "insertionSort",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "best-time-to-buy-and-sell-stock": {
+  "entry": "stockBuySell",
+  "ret": "int",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "best-time-to-buy-and-sell-stock-iii": {
+  "entry": "stockBuySell",
+  "ret": "int",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "maximum-rectangles-1": {
+  "entry": "maximalAreaOfSubMatrixOfAll1",
+  "ret": "int",
+  "input_keys": [
+   "matrix"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "string-to-integer-atoi": {
+  "entry": "myAtoi",
+  "ret": "int",
+  "input_keys": [
+   "input"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "replace-elements-by-their-rank": {
+  "entry": "replaceWithRank",
+  "ret": "vector<int>",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "upper-bound": {
+  "entry": "upperBound",
+  "ret": "int",
+  "input_keys": [
+   "nums",
+   "x"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "recursive-bubble-sort": {
+  "entry": "bubbleSort",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "fibonacci-number": {
+  "entry": "fib",
+  "ret": "int",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "count-palindromic-subsequences": {
+  "entry": "countPalSubseq",
+  "ret": "int",
+  "input_keys": [
+   "s"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "floor-and-ceil-in-sorted-array": {
+  "entry": "getFloorAndCeil",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums",
+   "x"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "best-time-to-buy-and-sell-stock-1": {
+  "entry": "stockBuySell",
+  "ret": "int",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "sum-of-first-n-numbers": {
+  "entry": "NnumbersSum",
+  "ret": "int",
+  "input_keys": [
+   "N"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "check-for-prime-number": {
+  "entry": "isPrime",
+  "ret": "bool",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "assign-cookies": {
+  "entry": "findMaximumCookieStudents",
+  "ret": "int",
+  "input_keys": [
+   "Student",
+   "Cookie"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "minimum-cost-to-connect-sticks": {
+  "entry": "connectSticks",
+  "ret": "int",
+  "input_keys": [
+   "sticks"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "valid-anagram": {
+  "entry": "anagramStrings",
+  "ret": "bool",
+  "input_keys": [
+   "s",
+   "t"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "prime-factorisation-of-a-number-1": {
+  "entry": "primeFactors",
+  "ret": "vector<vector<int>>",
+  "input_keys": [
+   "queries"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "check-if-string-is-palindrome-or-not-": {
+  "entry": "palindromeCheck",
+  "ret": "bool",
+  "input_keys": [
+   "s"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "second-largest-element": {
+  "entry": "secondLargestElement",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "ninja-and-his-friends": {
+  "entry": "maxChocolates",
+  "ret": "int",
+  "input_keys": [
+   "g"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "string-to-integer-atoi-1": {
+  "entry": "myAtoi",
+  "ret": "int",
+  "input_keys": [
+   "input"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "frog-jump-with-k-distances": {
+  "entry": "frogJump",
+  "ret": "int",
+  "input_keys": [
+   "heights",
+   "k"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "palindrome-number": {
+  "entry": "isPalindrome",
+  "ret": "bool",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "edit-distance": {
+  "entry": "editDistance",
+  "ret": "int",
+  "input_keys": [
+   "start",
+   "target"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "reverse-a-number": {
+  "entry": "reverseNumber",
+  "ret": "int",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "best-time-to-buy-and-sell-stock-with-cooldown-and-transaction-fees": {
+  "entry": "stockBuySell",
+  "ret": "int",
+  "input_keys": [
+   "arr",
+   "fee"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "gcd-of-two-numbers": {
+  "entry": "GCD",
+  "ret": "int",
+  "input_keys": [
+   "n1",
+   "n2"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "bubble-sort": {
+  "entry": "bubbleSort",
+  "ret": "vector<int>",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "best-time-to-buy-and-sell-stock-ii": {
+  "entry": "stockBuySell",
+  "ret": "int",
+  "input_keys": [
+   "arr"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "shortest-job-first": {
+  "entry": "solve",
+  "ret": "long long",
+  "input_keys": [
+   "bt"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "check-if-the-number-if-armstrong": {
+  "entry": "isArmstrong",
+  "ret": "bool",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "longest-increasing-subsequence-1": {
+  "entry": "LIS",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "kadane's-algorithm-1": {
+  "entry": "maxSubArray",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "longest-common-subsequence-1": {
+  "entry": "lcs",
+  "ret": "int",
+  "input_keys": [
+   "str1",
+   "str2"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "maximum-sum-of-non-adjacent-elements": {
+  "entry": "nonAdjacent",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "matrix-chain-multiplication-1": {
+  "entry": "matrixMultiplication",
+  "ret": "int",
+  "input_keys": [
+   "nums"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ },
+ "check-if-a-number-is-odd-or-not": {
+  "entry": "isOdd",
+  "ret": "bool",
+  "input_keys": [
+   "n"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "xor-of-numbers-in-a-given-range": {
+  "entry": "findRangeXOR",
+  "ret": "int",
+  "input_keys": [
+   "l",
+   "r"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "requirements-needed-to-construct-a-unique-bt": {
+  "entry": "uniqueBinaryTree",
+  "ret": "bool",
+  "input_keys": [
+   "a",
+   "b"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 20000
+ },
+ "maximum-rectangles": {
+  "entry": "largestRectangleArea",
+  "ret": "int",
+  "input_keys": [
+   "heights"
+  ],
+  "how": "agent",
+  "score": 2.0,
+  "ref_file": "agent",
+  "maxn": 200,
+  "count": 200000
+ }
+}

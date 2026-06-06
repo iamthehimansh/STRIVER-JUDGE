@@ -1,0 +1,657 @@
+{
+ "insertion-sorting": {
+  "code": "class Solution {\npublic:\n    vector<int> insertionSort(vector<int>& nums) {\n        int n = nums.size();\n        for (int i = 1; i < n; i++) {\n            int key = nums[i];\n            int j = i - 1;\n            while (j >= 0 && nums[j] > key) {\n                nums[j + 1] = nums[j];\n                j--;\n            }\n            nums[j + 1] = key;\n        }\n        return nums;\n    }\n};",
+  "entry": "insertionSort",
+  "is_class": true
+ },
+ "sum-of-subarray-minimums": {
+  "code": "class Solution {\npublic:\n    int sumSubarrayMins(vector<int> &arr) {\n        const int MOD = 1e9 + 7;\n        int n = arr.size();\n        // For each element arr[i] taken as the minimum of a subarray:\n        //   left  = number of choices for the subarray's start  (i - previous strictly-smaller index)\n        //   right = number of choices for the subarray's end    (next smaller-or-equal index - i)\n        // Using strict-less on the left and less-or-equal on the right avoids double-counting equal values.\n        vector<int> ple(n); // index of previous strictly-smaller element (-1 if none)\n        vector<int> nle(n); // index of next smaller-or-equal element (n if none)\n        stack<int> st;\n        for (int i = 0; i < n; i++) {\n            while (!st.empty() && arr[st.top()] >= arr[i]) st.pop();\n            ple[i] = st.empty() ? -1 : st.top();\n            st.push(i);\n        }\n        while (!st.empty()) st.pop();\n        for (int i = n - 1; i >= 0; i--) {\n            while (!st.empty() && arr[st.top()] > arr[i]) st.pop();\n            nle[i] = st.empty() ? n : st.top();\n            st.push(i);\n        }\n        long long ans = 0;\n        for (int i = 0; i < n; i++) {\n            long long left = i - ple[i];\n            long long right = nle[i] - i;\n            ans = (ans + (left * right % MOD) * arr[i]) % MOD;\n        }\n        return (int)ans;\n    }\n};",
+  "entry": "sumSubarrayMins",
+  "is_class": true
+ },
+ "best-time-to-buy-and-sell-stock": {
+  "code": "class Solution{\npublic:\n    int stockBuySell(vector<int> arr, int n){\n        if(n <= 1) return 0;\n        int minPrice = arr[0];\n        int maxProfit = 0;\n        for(int i = 1; i < n; i++){\n            maxProfit = max(maxProfit, arr[i] - minPrice);\n            minPrice = min(minPrice, arr[i]);\n        }\n        return maxProfit;\n    }\n};",
+  "entry": "stockBuySell",
+  "is_class": true
+ },
+ "maximum-sum-combination": {
+  "code": "class Solution {\npublic:\n  vector<int> maxSumCombinations(vector<int> &nums1, vector<int> &nums2, int k) {\n    int n = nums1.size();\n    vector<int> a = nums1, b = nums2;\n    sort(a.begin(), a.end());\n    sort(b.begin(), b.end());\n    // max-heap of (sum, i, j); i indexes a (sorted asc), j indexes b (sorted asc)\n    priority_queue<tuple<long long,int,int>> pq;\n    set<pair<int,int>> visited;\n    pq.push({(long long)a[n-1] + b[n-1], n-1, n-1});\n    visited.insert({n-1, n-1});\n    vector<int> result;\n    while ((int)result.size() < k && !pq.empty()) {\n      auto [sum, i, j] = pq.top();\n      pq.pop();\n      result.push_back((int)sum);\n      if (i - 1 >= 0 && !visited.count({i-1, j})) {\n        visited.insert({i-1, j});\n        pq.push({(long long)a[i-1] + b[j], i-1, j});\n      }\n      if (j - 1 >= 0 && !visited.count({i, j-1})) {\n        visited.insert({i, j-1});\n        pq.push({(long long)a[i] + b[j-1], i, j-1});\n      }\n    }\n    return result;\n  }\n};",
+  "entry": "maxSumCombinations",
+  "is_class": true
+ },
+ "best-time-to-buy-and-sell-stock-iii": {
+  "code": "class Solution{\npublic:\n    int stockBuySell(vector<int> arr, int n){\n        if (n == 0) return 0;\n        // State-machine DP for at most two transactions.\n        // buy1: best running value after first buy (we hold, having paid)\n        // sell1: best profit after first sell\n        // buy2: best running value after second buy\n        // sell2: best profit after second sell\n        long long buy1 = LLONG_MIN, sell1 = 0, buy2 = LLONG_MIN, sell2 = 0;\n        for (int i = 0; i < n; i++) {\n            long long p = arr[i];\n            buy1 = max(buy1, -p);\n            sell1 = max(sell1, buy1 + p);\n            buy2 = max(buy2, sell1 - p);\n            sell2 = max(sell2, buy2 + p);\n        }\n        return (int)sell2;\n    }\n};",
+  "entry": "stockBuySell",
+  "is_class": true
+ },
+ "longest-bitonic-subsequence": {
+  "code": "class Solution {\n  public:\n    int LongestBitonicSequence(vector<int> arr) {\n        int n = arr.size();\n        vector<int> left(n, 1), right(n, 1);\n        // left[i] = length of longest strictly increasing subsequence ending at i\n        for (int i = 0; i < n; i++)\n            for (int prev = 0; prev < i; prev++)\n                if (arr[prev] < arr[i])\n                    left[i] = max(left[i], left[prev] + 1);\n        // right[i] = length of longest strictly decreasing subsequence starting at i\n        for (int i = n - 1; i >= 0; i--)\n            for (int nxt = i + 1; nxt < n; nxt++)\n                if (arr[nxt] < arr[i])\n                    right[i] = max(right[i], right[nxt] + 1);\n        int ans = 0;\n        for (int i = 0; i < n; i++)\n            ans = max(ans, left[i] + right[i] - 1);\n        return ans;\n    }\n};",
+  "entry": "LongestBitonicSequence",
+  "is_class": true
+ },
+ "longest-palindromic-substring": {
+  "code": "class Solution {\npublic:\n    string longestPalindrome(string s) {\n        int n = s.size();\n        if (n == 0) return \"\";\n        int start = 0, maxLen = 1;\n        auto expand = [&](int l, int r) {\n            while (l >= 0 && r < n && s[l] == s[r]) {\n                if (r - l + 1 > maxLen) {\n                    maxLen = r - l + 1;\n                    start = l;\n                }\n                l--; r++;\n            }\n        };\n        for (int i = 0; i < n; i++) {\n            expand(i, i);     // odd length center\n            expand(i, i + 1); // even length center\n        }\n        return s.substr(start, maxLen);\n    }\n};",
+  "entry": "longestPalindrome",
+  "is_class": true
+ },
+ "while-loop": {
+  "code": "class Solution {\n    public:\n    int whileLoop(int d) {\n        int count = 0;\n        long long sum = 0;\n        int num = 1;\n        while (count < 50) {\n            if (num % 10 == d) {\n                sum += num;\n                count++;\n            }\n            num++;\n        }\n        return (int)sum;\n    }\n};",
+  "entry": "whileLoop",
+  "is_class": true
+ },
+ "longest-repeating-character-replacement": {
+  "code": "class Solution {\npublic:\n    int characterReplacement(string s, int k) {\n        vector<int> cnt(26, 0);\n        int left = 0, maxFreq = 0, ans = 0;\n        int n = s.size();\n        for (int right = 0; right < n; right++) {\n            cnt[s[right] - 'A']++;\n            maxFreq = max(maxFreq, cnt[s[right] - 'A']);\n            // (window length) - (most frequent char count) = number of chars\n            // that must be replaced to make the whole window uniform.\n            while ((right - left + 1) - maxFreq > k) {\n                cnt[s[left] - 'A']--;\n                left++;\n            }\n            ans = max(ans, right - left + 1);\n        }\n        return ans;\n    }\n};",
+  "entry": "characterReplacement",
+  "is_class": true
+ },
+ "maximum-rectangles-1": {
+  "code": "class Solution\n{\npublic:\n    int maximalAreaOfSubMatrixOfAll1(vector<vector<int>> &matrix){\n        if (matrix.empty() || matrix[0].empty()) return 0;\n        int rows = matrix.size();\n        int cols = matrix[0].size();\n        vector<int> heights(cols, 0);\n        int maxArea = 0;\n        for (int i = 0; i < rows; i++) {\n            for (int j = 0; j < cols; j++) {\n                if (matrix[i][j] == 1) heights[j] += 1;\n                else heights[j] = 0;\n            }\n            maxArea = max(maxArea, largestRectangleArea(heights));\n        }\n        return maxArea;\n    }\n\nprivate:\n    int largestRectangleArea(vector<int>& h) {\n        int n = h.size();\n        stack<int> st;\n        int best = 0;\n        for (int i = 0; i <= n; i++) {\n            int cur = (i == n) ? 0 : h[i];\n            while (!st.empty() && h[st.top()] >= cur) {\n                int height = h[st.top()];\n                st.pop();\n                int left = st.empty() ? -1 : st.top();\n                int width = i - left - 1;\n                best = max(best, height * width);\n            }\n            st.push(i);\n        }\n        return best;\n    }\n};",
+  "entry": "maximalAreaOfSubMatrixOfAll1",
+  "is_class": true
+ },
+ "leaders-in-an-array": {
+  "code": "class Solution {\npublic:\n    vector<int> leaders(vector<int>& nums) {\n        int n = nums.size();\n        vector<int> res;\n        int maxRight = INT_MIN;\n        for (int i = n - 1; i >= 0; --i) {\n            if (nums[i] > maxRight) {\n                res.push_back(nums[i]);\n                maxRight = nums[i];\n            }\n        }\n        reverse(res.begin(), res.end());\n        return res;\n    }\n};",
+  "entry": "leaders",
+  "is_class": true
+ },
+ "ninja's-training": {
+  "code": "class Solution {\npublic:\n    int ninjaTraining(vector<vector<int>>& matrix) {\n        int n = matrix.size();\n        if (n == 0) return 0;\n        // dp[t] = max merit through current day when current day's activity is t\n        vector<int> dp(3);\n        for (int t = 0; t < 3; t++) dp[t] = matrix[0][t];\n        for (int day = 1; day < n; day++) {\n            vector<int> cur(3);\n            for (int t = 0; t < 3; t++) {\n                int bestPrev = 0;\n                for (int p = 0; p < 3; p++)\n                    if (p != t) bestPrev = max(bestPrev, dp[p]);\n                cur[t] = matrix[day][t] + bestPrev;\n            }\n            dp = cur;\n        }\n        return max({dp[0], dp[1], dp[2]});\n    }\n};",
+  "entry": "ninjaTraining",
+  "is_class": true
+ },
+ "string-to-integer-atoi": {
+  "code": "class Solution {\npublic:\n    int myAtoi(string input) {\n        int n = input.size();\n        int i = 0;\n        // 1. Skip leading whitespace\n        while (i < n && input[i] == ' ') i++;\n        // 2. Determine sign\n        int sign = 1;\n        if (i < n && (input[i] == '+' || input[i] == '-')) {\n            if (input[i] == '-') sign = -1;\n            i++;\n        }\n        // 3. Read digits with clamping to 32-bit signed range\n        long long result = 0;\n        const long long INT_MAX_LL = 2147483647LL;\n        const long long INT_MIN_LL = -2147483648LL;\n        while (i < n && input[i] >= '0' && input[i] <= '9') {\n            int digit = input[i] - '0';\n            result = result * 10 + digit;\n            // clamp early to avoid long long overflow on very long inputs\n            if (sign == 1 && result > INT_MAX_LL) return (int)INT_MAX_LL;\n            if (sign == -1 && -result < INT_MIN_LL) return (int)INT_MIN_LL;\n            i++;\n        }\n        result *= sign;\n        if (result > INT_MAX_LL) return (int)INT_MAX_LL;\n        if (result < INT_MIN_LL) return (int)INT_MIN_LL;\n        return (int)result;\n    }\n};",
+  "entry": "myAtoi",
+  "is_class": true
+ },
+ "replace-elements-by-their-rank": {
+  "code": "class Solution {\npublic:\n    vector<int> replaceWithRank(vector<int>& arr) {\n        vector<int> sorted_unique(arr.begin(), arr.end());\n        sort(sorted_unique.begin(), sorted_unique.end());\n        sorted_unique.erase(unique(sorted_unique.begin(), sorted_unique.end()), sorted_unique.end());\n        vector<int> res;\n        res.reserve(arr.size());\n        for (int x : arr) {\n            int rank = (int)(lower_bound(sorted_unique.begin(), sorted_unique.end(), x) - sorted_unique.begin()) + 1;\n            res.push_back(rank);\n        }\n        return res;\n    }\n};",
+  "entry": "replaceWithRank",
+  "is_class": true
+ },
+ "minimum-number-of-platforms-required-for-a-railway": {
+  "code": "class Solution{\n    public:\n    int findPlatform(vector<int>& Arrival, vector<int>& Departure){\n        int n = Arrival.size();\n        if(n == 0) return 0;\n        vector<int> arr = Arrival, dep = Departure;\n        sort(arr.begin(), arr.end());\n        sort(dep.begin(), dep.end());\n        int i = 0, j = 0, plat = 0, ans = 0;\n        while (i < n) {\n            if (arr[i] <= dep[j]) {\n                // A train arrives (at the same time another departs, the\n                // platform cannot be reused) -> need an extra platform.\n                i++;\n                plat++;\n                ans = max(ans, plat);\n            } else {\n                // The earliest-departing train has left -> free a platform.\n                j++;\n                plat--;\n            }\n        }\n        return ans;\n    }\n};",
+  "entry": "findPlatform",
+  "is_class": true
+ },
+ "combination-sum": {
+  "code": "class Solution {\npublic:\n    void solve(int start, vector<int>& candidates, int target, vector<int>& temp, vector<vector<int>>& ans) {\n        if (target == 0) {\n            ans.push_back(temp);\n            return;\n        }\n        if (target < 0) return;\n        for (int i = start; i < (int)candidates.size(); i++) {\n            if (candidates[i] <= target) {\n                temp.push_back(candidates[i]);\n                solve(i, candidates, target - candidates[i], temp, ans);\n                temp.pop_back();\n            }\n        }\n    }\n    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {\n        vector<vector<int>> ans;\n        vector<int> temp;\n        solve(0, candidates, target, temp, ans);\n        return ans;\n    }\n};",
+  "entry": "combinationSum",
+  "is_class": true
+ },
+ "divisors-of-a-number-1": {
+  "code": "class Solution {\npublic:\n    vector<int> divisors(int n) {\n        vector<int> res;\n        for (int i = 1; (long long)i * i <= (long long)n; i++) {\n            if (n % i == 0) {\n                res.push_back(i);\n                if (i != n / i) res.push_back(n / i);\n            }\n        }\n        sort(res.begin(), res.end());\n        return res;\n    }\n};",
+  "entry": "divisors",
+  "is_class": true
+ },
+ "stock-span-problem": {
+  "code": "class Solution\n{\n    public:\n    vector <int> stockSpan(vector<int> arr, int n) {\n        vector<int> span(n);\n        stack<int> st; // indices of previous strictly greater elements\n        for (int i = 0; i < n; i++) {\n            while (!st.empty() && arr[st.top()] <= arr[i]) {\n                st.pop();\n            }\n            if (st.empty()) span[i] = i + 1;\n            else span[i] = i - st.top();\n            st.push(i);\n        }\n        return span;\n    }\n};",
+  "entry": "stockSpan",
+  "is_class": true
+ },
+ "minimum-window-subsequence": {
+  "code": "class Solution {\npublic:\n    string minWindow(string s1, string s2) {\n        int n = s1.size();\n        string ans = \"\";\n        int r = 0, r2 = 0, len = INT_MAX;\n        while (r < n) {\n            if (s1[r] == s2[r2]) r2++;\n            if (r2 == (int)s2.size()) {\n                int l = r;\n                r2--;\n                while (l >= 0 && r2 >= 0) {\n                    if (s1[l] == s2[r2]) r2--;\n                    l--;\n                }\n                l++;\n                if (r - l + 1 < len) {\n                    len = r - l + 1;\n                    ans = s1.substr(l, r - l + 1);\n                }\n                r2 = 0;\n                r = l + 1;\n            }\n            r++;\n        }\n        return ans;\n    }\n};",
+  "entry": "minWindow",
+  "is_class": true
+ },
+ "capacity-to-ship-packages-within-d-days": {
+  "code": "class Solution {\npublic:\n    int shipWithinDays(vector<int>& weights, int days) {\n        long long lo = 0, hi = 0;\n        for (int w : weights) {\n            lo = max(lo, (long long)w); // capacity must hold the heaviest package\n            hi += w;                    // upper bound: ship everything in one day\n        }\n        auto daysNeeded = [&](long long cap) -> long long {\n            long long d = 1, cur = 0;\n            for (int w : weights) {\n                if (cur + w > cap) { d++; cur = w; }\n                else cur += w;\n            }\n            return d;\n        };\n        long long ans = hi;\n        while (lo <= hi) {\n            long long mid = lo + (hi - lo) / 2;\n            if (daysNeeded(mid) <= (long long)days) { ans = mid; hi = mid - 1; }\n            else lo = mid + 1;\n        }\n        return (int)ans;\n    }\n};",
+  "entry": "shipWithinDays",
+  "is_class": true
+ },
+ "factorial-of-a-given-number-i": {
+  "code": "class Solution {\npublic:\n    int factorial(int n) {\n        int result = 1;\n        for (int i = 2; i <= n; i++) {\n            result *= i;\n        }\n        return result;\n    }\n};",
+  "entry": "factorial",
+  "is_class": true
+ },
+ "majority-element-ii": {
+  "code": "class Solution {\npublic:\n    vector<int> majorityElementTwo(vector<int>& nums) {\n        int n = (int)nums.size();\n        unordered_map<int,int> cnt;\n        for (int x : nums) cnt[x]++;\n        vector<int> ans;\n        for (auto &p : cnt) {\n            if (p.second > n / 3) ans.push_back(p.first);\n        }\n        sort(ans.begin(), ans.end());\n        return ans;\n    }\n};",
+  "entry": "majorityElementTwo",
+  "is_class": true
+ },
+ "print-longest-increasing-subsequence": {
+  "code": "class Solution {\n  public:\n    vector<int> longestIncreasingSubsequence(vector<int>& arr) {\n        int n = arr.size();\n        vector<int> dp(n, 1);\n        vector<int> prevmap(n, -1);\n        for (int i = 0; i < n; i++) {\n            for (int prev = 0; prev < i; prev++) {\n                if (arr[prev] < arr[i] && dp[i] < dp[prev] + 1) {\n                    dp[i] = dp[prev] + 1;\n                    prevmap[i] = prev;\n                }\n            }\n        }\n        int idx = (int)(max_element(dp.begin(), dp.end()) - dp.begin());\n        vector<int> lis;\n        int i = idx;\n        while (i >= 0) {\n            lis.push_back(arr[i]);\n            i = prevmap[i];\n        }\n        reverse(lis.begin(), lis.end());\n        return lis;\n    }\n};",
+  "entry": "longestIncreasingSubsequence",
+  "is_class": true
+ },
+ "upper-bound": {
+  "code": "class Solution{\npublic:\n    int upperBound(vector<int> &nums, int x){\n        int n = nums.size();\n        int low = 0, high = n - 1;\n        int ans = n;\n        while (low <= high) {\n            int mid = low + (high - low) / 2;\n            if (nums[mid] > x) {\n                ans = mid;\n                high = mid - 1;\n            } else {\n                low = mid + 1;\n            }\n        }\n        return ans;\n    }\n};",
+  "entry": "upperBound",
+  "is_class": true
+ },
+ "recursive-bubble-sort": {
+  "code": "class Solution {\npublic:\n    vector<int> bubbleSort(vector<int>& nums) {\n        sortRec(nums, (int)nums.size());\n        return nums;\n    }\nprivate:\n    void sortRec(vector<int>& nums, int n) {\n        if (n <= 1) return;\n        for (int i = 0; i < n - 1; i++) {\n            if (nums[i] > nums[i + 1]) {\n                swap(nums[i], nums[i + 1]);\n            }\n        }\n        sortRec(nums, n - 1);\n    }\n};",
+  "entry": "bubbleSort",
+  "is_class": true
+ },
+ "matrix-chain-multiplication": {
+  "code": "class Solution{\n\tpublic:\n\t\tint matrixMultiplication(vector<int>& nums){\n            int n = nums.size();\n            // dp[i][j] = min scalar multiplications to multiply matrices i..j\n            // Matrix A_k has dimensions nums[k-1] x nums[k], for k = 1..n-1.\n            vector<vector<long long>> dp(n, vector<long long>(n, 0));\n            for (int len = 2; len <= n - 1; len++) {\n                for (int i = 1; i + len - 1 <= n - 1; i++) {\n                    int j = i + len - 1;\n                    long long mini = LLONG_MAX;\n                    for (int k = i; k < j; k++) {\n                        long long cost = (long long)nums[i-1] * nums[k] * nums[j]\n                                         + dp[i][k] + dp[k+1][j];\n                        mini = min(mini, cost);\n                    }\n                    dp[i][j] = mini;\n                }\n            }\n            return (int)dp[1][n-1];\n    \t}\n};",
+  "entry": "matrixMultiplication",
+  "is_class": true
+ },
+ "fibonacci-number": {
+  "code": "class Solution {\npublic:\n    int fib(int n) {\n        if (n <= 1) return n;\n        int a = 0, b = 1;\n        for (int i = 2; i <= n; i++) {\n            int c = a + b;\n            a = b;\n            b = c;\n        }\n        return b;\n    }\n};",
+  "entry": "fib",
+  "is_class": true
+ },
+ "count-palindromic-subsequences": {
+  "code": "class Solution {\npublic:\n    int countPalSubseq(const string& s) {\n        int n = s.size();\n        if (n == 0) return 0;\n        // dp[i][j] = number of non-empty palindromic subsequences in s[i..j]\n        // (counts ALL palindromic subsequences, not just distinct ones)\n        vector<vector<long long>> dp(n, vector<long long>(n, 0));\n        for (int i = 0; i < n; i++) dp[i][i] = 1;\n        for (int len = 2; len <= n; len++) {\n            for (int i = 0; i + len - 1 < n; i++) {\n                int j = i + len - 1;\n                if (s[i] == s[j]) {\n                    dp[i][j] = dp[i + 1][j] + dp[i][j - 1] + 1;\n                } else {\n                    dp[i][j] = dp[i + 1][j] + dp[i][j - 1] - dp[i + 1][j - 1];\n                }\n            }\n        }\n        return (int)dp[0][n - 1];\n    }\n};",
+  "entry": "countPalSubseq",
+  "is_class": true
+ },
+ "recursive-insertion-sort": {
+  "code": "class Solution {\npublic:\n    void insert(vector<int>& nums, int i) {\n        if (i <= 0) return;\n        if (nums[i - 1] > nums[i]) {\n            swap(nums[i - 1], nums[i]);\n            insert(nums, i - 1);\n        }\n    }\n    void sortRec(vector<int>& nums, int i) {\n        if (i >= (int)nums.size()) return;\n        insert(nums, i);\n        sortRec(nums, i + 1);\n    }\n    vector<int> insertionSort(vector<int>& nums) {\n        sortRec(nums, 1);\n        return nums;\n    }\n};",
+  "entry": "insertionSort",
+  "is_class": true
+ },
+ "floor-and-ceil-in-sorted-array": {
+  "code": "class Solution {\npublic:\n    vector<int> getFloorAndCeil(vector<int> nums, int x) {\n        int n = nums.size();\n        int floorVal = -1, ceilVal = -1;\n        // floor: largest element <= x\n        {\n            int lo = 0, hi = n - 1;\n            while (lo <= hi) {\n                int mid = lo + (hi - lo) / 2;\n                if (nums[mid] <= x) {\n                    floorVal = nums[mid];\n                    lo = mid + 1;\n                } else {\n                    hi = mid - 1;\n                }\n            }\n        }\n        // ceil: smallest element >= x\n        {\n            int lo = 0, hi = n - 1;\n            while (lo <= hi) {\n                int mid = lo + (hi - lo) / 2;\n                if (nums[mid] >= x) {\n                    ceilVal = nums[mid];\n                    hi = mid - 1;\n                } else {\n                    lo = mid + 1;\n                }\n            }\n        }\n        return {floorVal, ceilVal};\n    }\n};",
+  "entry": "getFloorAndCeil",
+  "is_class": true
+ },
+ "best-time-to-buy-and-sell-stock-1": {
+  "code": "class Solution{\npublic:\n    int stockBuySell(vector<int> arr, int n){\n        if(n <= 1) return 0;\n        int minPrice = arr[0];\n        int maxProfit = 0;\n        for(int i = 1; i < n; i++){\n            maxProfit = max(maxProfit, arr[i] - minPrice);\n            minPrice = min(minPrice, arr[i]);\n        }\n        return maxProfit;\n    }\n};",
+  "entry": "stockBuySell",
+  "is_class": true
+ },
+ "minimum-window-substring-": {
+  "code": "class Solution {\npublic:\n    string minWindow(string s, string t) {\n        if (t.empty() || s.size() < t.size()) return \"\";\n        vector<int> need(128, 0);\n        for (char c : t) need[(unsigned char)c]++;\n        int required = (int)t.size();\n        int left = 0, minLen = INT_MAX, minStart = 0;\n        for (int right = 0; right < (int)s.size(); right++) {\n            if (need[(unsigned char)s[right]] > 0) required--;\n            need[(unsigned char)s[right]]--;\n            while (required == 0) {\n                if (right - left + 1 < minLen) {\n                    minLen = right - left + 1;\n                    minStart = left;\n                }\n                need[(unsigned char)s[left]]++;\n                if (need[(unsigned char)s[left]] > 0) required++;\n                left++;\n            }\n        }\n        return minLen == INT_MAX ? \"\" : s.substr(minStart, minLen);\n    }\n};",
+  "entry": "minWindow",
+  "is_class": true
+ },
+ "partition-equal-subset-sum": {
+  "code": "class Solution{\npublic:\n    bool equalPartition(int n, vector<int> arr) {\n        long long total = 0;\n        for (int i = 0; i < n; i++) total += arr[i];\n        if (total % 2 != 0) return false;\n        long long target = total / 2;\n        vector<char> dp(target + 1, 0);\n        dp[0] = 1;\n        for (int i = 0; i < n; i++) {\n            long long v = arr[i];\n            for (long long j = target; j >= v; j--) {\n                if (dp[j - v]) dp[j] = 1;\n            }\n        }\n        return dp[target] != 0;\n    }\n};",
+  "entry": "equalPartition",
+  "is_class": true
+ },
+ "coin-change-ii": {
+  "code": "class Solution {\n  public:\n   int count(vector<int>&coins, int N, int amount) {\n        const int MOD = 1e9 + 7;\n        vector<long long> dp(amount + 1, 0);\n        dp[0] = 1;\n        for (int i = 0; i < N; i++) {\n            for (int a = coins[i]; a <= amount; a++) {\n                dp[a] = (dp[a] + dp[a - coins[i]]) % MOD;\n            }\n        }\n        return (int)dp[amount];\n    }\n};",
+  "entry": "count",
+  "is_class": true
+ },
+ "fractional-knapsack": {
+  "code": "class Solution {\npublic:\n    double fractionalKnapsack(vector<long long>& val, vector<long long>& wt, long long capacity) {\n        int n = val.size();\n        // sort indices by value/weight ratio descending\n        vector<int> idx(n);\n        for (int i = 0; i < n; i++) idx[i] = i;\n        sort(idx.begin(), idx.end(), [&](int a, int b) {\n            // val[a]/wt[a] > val[b]/wt[b]  <=>  val[a]*wt[b] > val[b]*wt[a]\n            return (long double)val[a] * wt[b] > (long double)val[b] * wt[a];\n        });\n        long double total = 0.0L;\n        long long remaining = capacity;\n        for (int k = 0; k < n && remaining > 0; k++) {\n            int i = idx[k];\n            if (wt[i] <= remaining) {\n                total += (long double)val[i];\n                remaining -= wt[i];\n            } else {\n                total += (long double)val[i] * ((long double)remaining / (long double)wt[i]);\n                remaining = 0;\n            }\n        }\n        return (double)total;\n    }\n};",
+  "entry": "fractionalKnapsack",
+  "is_class": true
+ },
+ "check-if-there-exists-a-subsequence-with-sum-k": {
+  "code": "class Solution{\n    public:\n    bool checkSubsequenceSum(vector<int>& nums, int k) {\n        int n = nums.size();\n        // Subset-sum DP: dp[s] = true if some subsequence sums to s.\n        vector<char> dp(k + 1, 0);\n        dp[0] = 1;\n        for (int i = 0; i < n; i++) {\n            int v = nums[i];\n            if (v > k) continue; // positive values only (1 <= nums[i]), can't help reach k if > k\n            for (int s = k; s >= v; s--) {\n                if (dp[s - v]) dp[s] = 1;\n            }\n        }\n        return dp[k] != 0;\n    }\n};",
+  "entry": "checkSubsequenceSum",
+  "is_class": true
+ },
+ "median-of-2-sorted-arrays": {
+  "code": "class Solution {\npublic:\n    double median(vector<int> &arr1, vector<int> &arr2) {\n        // Merge two sorted arrays (m + n <= 2000), pick the middle element(s).\n        int n = (int)arr1.size();\n        int m = (int)arr2.size();\n        int total = n + m;\n        int idx2 = total / 2;        // upper middle (even) / exact middle (odd)\n        int idx1 = (total - 1) / 2;  // lower middle\n        int i = 0, j = 0, cnt = 0;\n        long long e1 = 0, e2 = 0;\n        while (i < n || j < m) {\n            int cur;\n            if (j >= m || (i < n && arr1[i] <= arr2[j])) {\n                cur = arr1[i++];\n            } else {\n                cur = arr2[j++];\n            }\n            if (cnt == idx1) e1 = cur;\n            if (cnt == idx2) { e2 = cur; break; }\n            cnt++;\n        }\n        return (e1 + e2) / 2.0;\n    }\n};",
+  "entry": "median",
+  "is_class": true
+ },
+ "sum-of-first-n-numbers": {
+  "code": "class Solution{\n\tpublic:\n\t\tint NnumbersSum(int N){\n\t\t\tif(N <= 0) return 0;\n\t\t\treturn N + NnumbersSum(N - 1);\n\t\t}\n};",
+  "entry": "NnumbersSum",
+  "is_class": true
+ },
+ "partition-a-set-into-two-subsets-with-minimum-absolute-sum-difference": {
+  "code": "class Solution{\n\n  public:\n\tint minDifference(vector<int>&arr, int n)  {\n\t\tint totalSum = 0;\n\t\tfor(int i = 0; i < n; i++) totalSum += arr[i];\n\n\t\t// dp[s] = true if some subset of arr can sum to s\n\t\tvector<char> dp(totalSum + 1, false);\n\t\tdp[0] = true;\n\t\tfor(int i = 0; i < n; i++){\n\t\t\tfor(int s = totalSum; s >= arr[i]; s--){\n\t\t\t\tif(dp[s - arr[i]]) dp[s] = true;\n\t\t\t}\n\t\t}\n\n\t\tint ans = INT_MAX;\n\t\tfor(int s = 0; s <= totalSum / 2; s++){\n\t\t\tif(dp[s]) ans = min(ans, abs((totalSum - s) - s));\n\t\t}\n\t\treturn ans;\n\t}\n};",
+  "entry": "minDifference",
+  "is_class": true
+ },
+ "power-set-bit-manipulation": {
+  "code": "class Solution {\npublic:\t\n    vector<vector<int> > powerSet(vector<int>& nums) {\n        int n = nums.size();\n        vector<vector<int>> ans;\n        for (int mask = 0; mask < (1 << n); mask++) {\n            vector<int> subset;\n            for (int i = 0; i < n; i++) {\n                if (mask & (1 << i)) {\n                    subset.push_back(nums[i]);\n                }\n            }\n            ans.push_back(subset);\n        }\n        return ans;\n    }\n};",
+  "entry": "powerSet",
+  "is_class": true
+ },
+ "partition-array-for-maximum-sum": {
+  "code": "class Solution {\npublic:\n    int maxSumAfterPartitioning(vector<int>& arr, int k) {\n        int n = arr.size();\n        vector<long long> dp(n + 1, 0);\n        for (int i = 1; i <= n; i++) {\n            long long maxVal = 0;\n            long long best = LLONG_MIN;\n            for (int len = 1; len <= k && len <= i; len++) {\n                int idx = i - len; // arr[idx] is the leftmost element of this block\n                maxVal = max(maxVal, (long long)arr[idx]);\n                long long cand = dp[idx] + maxVal * (long long)len;\n                best = max(best, cand);\n            }\n            dp[i] = best;\n        }\n        return (int)dp[n];\n    }\n};",
+  "entry": "maxSumAfterPartitioning",
+  "is_class": true
+ },
+ "check-for-prime-number": {
+  "code": "class Solution {\npublic:\n    bool isPrime(int n) {\n        if (n <= 1) return false;\n        for (int i = 2; (long long)i * i <= n; i++) {\n            if (n % i == 0) return false;\n        }\n        return true;\n    }\n};",
+  "entry": "isPrime",
+  "is_class": true
+ },
+ "longest-happy-prefix": {
+  "code": "class Solution{\n  public:\n\tstring lps(string s) {\n\t\tint n = s.size();\n\t\tvector<int> lps(n, 0);\n\t\tint len = 0;\n\t\tfor (int i = 1; i < n; ) {\n\t\t\tif (s[i] == s[len]) {\n\t\t\t\tlen++;\n\t\t\t\tlps[i] = len;\n\t\t\t\ti++;\n\t\t\t} else {\n\t\t\t\tif (len != 0) {\n\t\t\t\t\tlen = lps[len - 1];\n\t\t\t\t} else {\n\t\t\t\t\tlps[i] = 0;\n\t\t\t\t\ti++;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn s.substr(0, lps[n - 1]);\n\t}\n};",
+  "entry": "lps",
+  "is_class": true
+ },
+ "assign-cookies": {
+  "code": "class Solution{    \n    public:\n    int findMaximumCookieStudents(vector<int>& Student, vector<int>& Cookie){\n        sort(Student.begin(), Student.end());\n        sort(Cookie.begin(), Cookie.end());\n        int i = 0, j = 0;\n        int n = Student.size(), m = Cookie.size();\n        int count = 0;\n        while (i < n && j < m) {\n            if (Cookie[j] >= Student[i]) {\n                count++;\n                i++;\n                j++;\n            } else {\n                j++;\n            }\n        }\n        return count;\n    }\n};",
+  "entry": "findMaximumCookieStudents",
+  "is_class": true
+ },
+ "minimum-cost-to-connect-sticks": {
+  "code": "class Solution {\npublic:\n    int connectSticks(vector<int>& sticks) {\n        priority_queue<long long, vector<long long>, greater<long long>> pq;\n        for (int s : sticks) pq.push((long long)s);\n        long long total = 0;\n        while (pq.size() > 1) {\n            long long a = pq.top(); pq.pop();\n            long long b = pq.top(); pq.pop();\n            long long cost = a + b;\n            total += cost;\n            pq.push(cost);\n        }\n        return (int)total;\n    }\n};",
+  "entry": "connectSticks",
+  "is_class": true
+ },
+ "burst-balloons": {
+  "code": "class Solution {\n    public:\n        int maxCoins(vector<int>& nums){\n            int n = nums.size();\n            vector<int> a(n + 2);\n            a[0] = 1;\n            a[n + 1] = 1;\n            for (int i = 0; i < n; i++) a[i + 1] = nums[i];\n            // dp[i][j] = max coins bursting all balloons in open interval (i, j)\n            vector<vector<long long>> dp(n + 2, vector<long long>(n + 2, 0));\n            for (int len = 2; len <= n + 1; len++) {\n                for (int i = 0; i + len <= n + 1; i++) {\n                    int j = i + len;\n                    long long best = 0;\n                    for (int k = i + 1; k < j; k++) {\n                        long long coins = (long long)a[i] * a[k] * a[j] + dp[i][k] + dp[k][j];\n                        best = max(best, coins);\n                    }\n                    dp[i][j] = best;\n                }\n            }\n            return (int)dp[0][n + 1];\n        }\n};",
+  "entry": "maxCoins",
+  "is_class": true
+ },
+ "palindrome-partitioning-ii-": {
+  "code": "class Solution {\n\tpublic:\n    \tint minCut(string s){\n            int n = s.size();\n            if (n <= 1) return 0;\n            vector<vector<bool>> isPal(n, vector<bool>(n, false));\n            for (int i = 0; i < n; i++) isPal[i][i] = true;\n            for (int len = 2; len <= n; len++) {\n                for (int i = 0; i + len - 1 < n; i++) {\n                    int j = i + len - 1;\n                    if (s[i] == s[j]) {\n                        if (len == 2) isPal[i][j] = true;\n                        else isPal[i][j] = isPal[i+1][j-1];\n                    }\n                }\n            }\n            vector<int> dp(n+1, 0);\n            dp[n] = -1;\n            for (int i = n-1; i >= 0; i--) {\n                int best = INT_MAX;\n                for (int j = i; j < n; j++) {\n                    if (isPal[i][j]) {\n                        int cost = 1 + dp[j+1];\n                        best = min(best, cost);\n                    }\n                }\n                dp[i] = best;\n            }\n            return dp[0];\n\t    }\n};",
+  "entry": "minCut",
+  "is_class": true
+ },
+ "combination-sum-ii": {
+  "code": "class Solution {\npublic:\n    void backtrack(int idx, int target, vector<int>& candidates, vector<int>& cur, vector<vector<int>>& res) {\n        if (target == 0) {\n            res.push_back(cur);\n            return;\n        }\n        for (int i = idx; i < (int)candidates.size(); i++) {\n            if (i > idx && candidates[i] == candidates[i-1]) continue;\n            if (candidates[i] > target) break;\n            cur.push_back(candidates[i]);\n            backtrack(i + 1, target - candidates[i], candidates, cur, res);\n            cur.pop_back();\n        }\n    }\n    vector<vector<int> > combinationSum2(vector<int>& candidates, int target) {\n        sort(candidates.begin(), candidates.end());\n        vector<vector<int>> res;\n        vector<int> cur;\n        backtrack(0, target, candidates, cur, res);\n        return res;\n    }\n};",
+  "entry": "combinationSum2",
+  "is_class": true
+ },
+ "linear-search": {
+  "code": "class Solution {\npublic:\n    int linearSearch(vector<int>& nums, int target) {\n        for (int i = 0; i < (int)nums.size(); i++) {\n            if (nums[i] == target) return i;\n        }\n        return -1;\n    }\n};",
+  "entry": "linearSearch",
+  "is_class": true
+ },
+ "valid-anagram": {
+  "code": "class Solution{\n\tpublic:\n\t\tbool anagramStrings(string& s,string t){\n\t\t\tif(s.size()!=t.size()) return false;\n\t\t\tint cnt[26]={0};\n\t\t\tfor(char c: s) cnt[c-'a']++;\n\t\t\tfor(char c: t) cnt[c-'a']--;\n\t\t\tfor(int i=0;i<26;i++) if(cnt[i]!=0) return false;\n\t\t\treturn true;\n\t\t}\n};",
+  "entry": "anagramStrings",
+  "is_class": true
+ },
+ "grid-unique-paths": {
+  "code": "class Solution {\npublic:\n    int uniquePaths(int m, int n) {\n        // Number of unique paths from top-left to bottom-right\n        // moving only right/down = C(m+n-2, m-1).\n        long long N = (long long)m + n - 2;\n        long long r = min((long long)m - 1, (long long)n - 1);\n        long long res = 1;\n        for (long long i = 1; i <= r; i++) {\n            res = res * (N - r + i) / i;\n        }\n        return (int)res;\n    }\n};",
+  "entry": "uniquePaths",
+  "is_class": true
+ },
+ "prime-factorisation-of-a-number-1": {
+  "code": "class Solution{\n    public:\n        vector<vector<int>> primeFactors(vector<int>& queries){\n            vector<vector<int>> ans;\n            for(int q : queries){\n                vector<int> factors;\n                int x = q;\n                for(int i = 2; (long long)i*i <= x; i++){\n                    while(x % i == 0){\n                        factors.push_back(i);\n                        x /= i;\n                    }\n                }\n                if(x > 1) factors.push_back(x);\n                ans.push_back(factors);\n            }\n            return ans;\n        }\n};",
+  "entry": "primeFactors",
+  "is_class": true
+ },
+ "selection-sort": {
+  "code": "class Solution {\npublic:\n    vector<int> selectionSort(vector<int>& nums) {\n        int n = nums.size();\n        for (int i = 0; i < n - 1; i++) {\n            int mini = i;\n            for (int j = i + 1; j < n; j++) {\n                if (nums[j] < nums[mini]) mini = j;\n            }\n            swap(nums[i], nums[mini]);\n        }\n        return nums;\n    }\n};",
+  "entry": "selectionSort",
+  "is_class": true
+ },
+ "combination-sum-iii": {
+  "code": "class Solution {\npublic:\n    void solve(int start, int k, int tar, vector<int>& temp, vector<vector<int>>& ans) {\n        if (tar == 0 && (int)temp.size() == k) {\n            ans.push_back(temp);\n            return;\n        }\n        if ((int)temp.size() == k || tar <= 0) return;\n        for (int i = start; i <= 9; i++) {\n            if (i > tar) break;\n            temp.push_back(i);\n            solve(i + 1, k, tar - i, temp, ans);\n            temp.pop_back();\n        }\n    }\n\n    vector<vector<int> > combinationSum3(int k, int n) {\n        vector<vector<int>> ans;\n        vector<int> temp;\n        solve(1, k, n, temp, ans);\n        return ans;\n    }\n};",
+  "entry": "combinationSum3",
+  "is_class": true
+ },
+ "minimum-multiplications-to-reach-end": {
+  "code": "class Solution{\npublic:\n    int minimumMultiplications(vector<int> &arr,\n                               int start, int end) {\n        const int MOD = 100000;\n        if (start == end) return 0;\n        vector<int> dist(MOD, -1);\n        queue<int> q;\n        dist[start] = 0;\n        q.push(start);\n        while (!q.empty()) {\n            int node = q.front(); q.pop();\n            int steps = dist[node];\n            for (int x : arr) {\n                int nxt = (int)((long long)node * x % MOD);\n                if (dist[nxt] == -1) {\n                    dist[nxt] = steps + 1;\n                    if (nxt == end) return steps + 1;\n                    q.push(nxt);\n                }\n            }\n        }\n        return -1;\n    }\n};",
+  "entry": "minimumMultiplications",
+  "is_class": true
+ },
+ "longest-palindromic-subsequence": {
+  "code": "class Solution{\n    public: \n        int longestPalinSubseq(string s) {\n            string t = s;\n            reverse(t.begin(), t.end());\n            int n = s.size();\n            // Longest palindromic subsequence == LCS of s and reverse(s)\n            vector<vector<int>> dp(n + 1, vector<int>(n + 1, 0));\n            for (int i = 1; i <= n; i++) {\n                for (int j = 1; j <= n; j++) {\n                    if (s[i - 1] == t[j - 1]) dp[i][j] = 1 + dp[i - 1][j - 1];\n                    else dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);\n                }\n            }\n            return dp[n][n];\n        }\n};",
+  "entry": "longestPalinSubseq",
+  "is_class": true
+ },
+ "check-if-string-is-palindrome-or-not-": {
+  "code": "class Solution{\n\tpublic:\n\t\tbool palindromeCheck(string& s){\n\t\t\tint i = 0, j = (int)s.size() - 1;\n\t\t\twhile (i < j) {\n\t\t\t\tif (s[i] != s[j]) return false;\n\t\t\t\ti++;\n\t\t\t\tj--;\n\t\t\t}\n\t\t\treturn true;\n\t\t}\n};",
+  "entry": "palindromeCheck",
+  "is_class": true
+ },
+ "second-largest-element": {
+  "code": "class Solution {\npublic:\n    int secondLargestElement(vector<int>& nums) {\n        int largest = INT_MIN, second = INT_MIN;\n        for (int x : nums) {\n            if (x > largest) { second = largest; largest = x; }\n            else if (x < largest && x > second) { second = x; }\n        }\n        return second == INT_MIN ? -1 : second;\n    }\n};",
+  "entry": "secondLargestElement",
+  "is_class": true
+ },
+ "ninja-and-his-friends": {
+  "code": "class Solution {\npublic:\n    int maxChocolates(vector<vector<int>>& g) {\n        int r = g.size();\n        if (r == 0) return 0;\n        int c = g[0].size();\n        const long long NEG = LLONG_MIN / 4;\n        // next[j1][j2] = best collectable from row i+1 onward with Alice at j1, Bob at j2\n        vector<vector<long long>> next(c, vector<long long>(c, 0));\n        // base case: last row\n        for (int j1 = 0; j1 < c; j1++) {\n            for (int j2 = 0; j2 < c; j2++) {\n                if (j1 == j2) next[j1][j2] = g[r-1][j1];\n                else next[j1][j2] = (long long)g[r-1][j1] + g[r-1][j2];\n            }\n        }\n        for (int i = r - 2; i >= 0; i--) {\n            vector<vector<long long>> cur(c, vector<long long>(c, 0));\n            for (int j1 = 0; j1 < c; j1++) {\n                for (int j2 = 0; j2 < c; j2++) {\n                    long long best = NEG;\n                    for (int dj1 = -1; dj1 <= 1; dj1++) {\n                        for (int dj2 = -1; dj2 <= 1; dj2++) {\n                            int nj1 = j1 + dj1, nj2 = j2 + dj2;\n                            if (nj1 < 0 || nj1 >= c || nj2 < 0 || nj2 >= c) continue;\n                            best = max(best, next[nj1][nj2]);\n                        }\n                    }\n                    long long val = (j1 == j2) ? g[i][j1] : (long long)g[i][j1] + g[i][j2];\n                    cur[j1][j2] = val + best;\n                }\n            }\n            next = cur;\n        }\n        return (int)next[0][c-1];\n    }\n};",
+  "entry": "maxChocolates",
+  "is_class": true
+ },
+ "longest-common-subsequence": {
+  "code": "class Solution {\n  public:\n    int lcs(string str1, string str2) {\n        int n = str1.size(), m = str2.size();\n        vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= m; j++) {\n                if (str1[i - 1] == str2[j - 1])\n                    dp[i][j] = 1 + dp[i - 1][j - 1];\n                else\n                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);\n            }\n        }\n        return dp[n][m];\n    }\n};",
+  "entry": "lcs",
+  "is_class": true
+ },
+ "convert-min-heap-to-max-heap": {
+  "code": "class Solution {\npublic:\n    void maxHeapify(vector<int>& nums, int i, int n) {\n        int largest = i;\n        int left = 2 * i + 1;\n        int right = 2 * i + 2;\n        if (left < n && nums[left] > nums[largest]) largest = left;\n        if (right < n && nums[right] > nums[largest]) largest = right;\n        if (largest != i) {\n            swap(nums[i], nums[largest]);\n            maxHeapify(nums, largest, n);\n        }\n    }\n    vector<int> minToMaxHeap(vector<int> nums) {\n        int n = (int)nums.size();\n        for (int i = n / 2 - 1; i >= 0; i--) {\n            maxHeapify(nums, i, n);\n        }\n        return nums;\n    }\n};",
+  "entry": "minToMaxHeap",
+  "is_class": true
+ },
+ "string-to-integer-atoi-1": {
+  "code": "class Solution {\npublic:\n    int myAtoi(string input) {\n        int n = (int)input.size();\n        int i = 0;\n        // skip leading whitespace\n        while (i < n && input[i] == ' ') i++;\n        if (i == n) return 0;\n        int sign = 1;\n        if (input[i] == '+' || input[i] == '-') {\n            if (input[i] == '-') sign = -1;\n            i++;\n        }\n        long long ans = 0;\n        while (i < n && input[i] >= '0' && input[i] <= '9') {\n            ans = ans * 10 + (input[i] - '0');\n            if (sign == 1 && ans > 2147483647LL) return 2147483647;\n            if (sign == -1 && -ans < -2147483648LL) return -2147483648;\n            i++;\n        }\n        ans = sign * ans;\n        if (ans > 2147483647LL) return 2147483647;\n        if (ans < -2147483648LL) return -2147483648;\n        return (int)ans;\n    }\n};",
+  "entry": "myAtoi",
+  "is_class": true
+ },
+ "count-partitions-with-given-difference": {
+  "code": "class Solution {\n  public:\n   int countPartitions(int n, int diff, vector<int>& arr) {\n        const int mod = 1e9 + 7;\n        long long totalSum = 0;\n        for (int x : arr) totalSum += x;\n        // S1 + S2 = totalSum, S1 - S2 = diff  =>  S2 = (totalSum - diff) / 2\n        if (totalSum - diff < 0 || (totalSum - diff) % 2 != 0) return 0;\n        long long target = (totalSum - diff) / 2;\n        // dp[j] = number of subsets (using processed elements) with sum == j\n        // Zeros are handled by the base case so an element equal to 0 can be\n        // placed in either subset, doubling the count.\n        vector<long long> dp(target + 1, 0);\n        if (arr[0] == 0) {\n            dp[0] = 2; // include or exclude => both yield sum 0\n        } else {\n            dp[0] = 1;\n            if (arr[0] <= target) dp[arr[0]] = (dp[arr[0]] + 1) % mod;\n        }\n        for (int i = 1; i < n; i++) {\n            vector<long long> cur(target + 1, 0);\n            for (long long j = 0; j <= target; j++) {\n                long long notTake = dp[j];\n                long long take = 0;\n                if (arr[i] <= j) take = dp[j - arr[i]];\n                cur[j] = (notTake + take) % mod;\n            }\n            dp = cur;\n        }\n        return (int)(dp[target] % mod);\n    }\n};",
+  "entry": "countPartitions",
+  "is_class": true
+ },
+ "minimum-insertions-or-deletions-to-convert-string-a-to-b": {
+  "code": "class Solution{\n\tpublic: int minOperations(string str1, string str2) { \n\t    int n = str1.size(), m = str2.size();\n\t    vector<vector<int>> dp(n+1, vector<int>(m+1, 0));\n\t    for(int i=1;i<=n;i++){\n\t        for(int j=1;j<=m;j++){\n\t            if(str1[i-1]==str2[j-1]) dp[i][j] = 1 + dp[i-1][j-1];\n\t            else dp[i][j] = max(dp[i-1][j], dp[i][j-1]);\n\t        }\n\t    }\n\t    int lcs = dp[n][m];\n\t    return (n - lcs) + (m - lcs);\n\t} \n};",
+  "entry": "minOperations",
+  "is_class": true
+ },
+ "sliding-window-maximum": {
+  "code": "class Solution{\npublic:\n    vector<int> maxSlidingWindow(vector<int> &arr, int k) {\n        int n = arr.size();\n        vector<int> ans;\n        deque<int> dq; // stores indices; front holds index of current max\n        for (int i = 0; i < n; i++) {\n            // remove indices that fall outside the window\n            if (!dq.empty() && dq.front() <= i - k) dq.pop_front();\n            // maintain a decreasing deque of values\n            while (!dq.empty() && arr[dq.back()] <= arr[i]) dq.pop_back();\n            dq.push_back(i);\n            if (i >= k - 1) ans.push_back(arr[dq.front()]);\n        }\n        return ans;\n    }\n};",
+  "entry": "maxSlidingWindow",
+  "is_class": true
+ },
+ "merge-sorting": {
+  "code": "class Solution {\npublic:\n    void merge(vector<int>& nums, int low, int mid, int high) {\n        vector<int> temp;\n        int left = low, right = mid + 1;\n        while (left <= mid && right <= high) {\n            if (nums[left] <= nums[right]) temp.push_back(nums[left++]);\n            else temp.push_back(nums[right++]);\n        }\n        while (left <= mid) temp.push_back(nums[left++]);\n        while (right <= high) temp.push_back(nums[right++]);\n        for (int i = low; i <= high; i++) nums[i] = temp[i - low];\n    }\n    void ms(vector<int>& nums, int low, int high) {\n        if (low >= high) return;\n        int mid = (low + high) / 2;\n        ms(nums, low, mid);\n        ms(nums, mid + 1, high);\n        merge(nums, low, mid, high);\n    }\n    vector<int> mergeSort(vector<int>& nums) {\n        ms(nums, 0, (int)nums.size() - 1);\n        return nums;\n    }\n};",
+  "entry": "mergeSort",
+  "is_class": true
+ },
+ "maximum-xor-of-two-numbers-in-an-array": {
+  "code": "class Solution {\npublic:\n    int findMaximumXOR(vector<int>& nums) {\n        int maxNum = 0;\n        for (int x : nums) maxNum = max(maxNum, x);\n        int highBit = (maxNum == 0) ? 0 : (31 - __builtin_clz((unsigned)maxNum));\n        int maxXor = 0, mask = 0;\n        for (int i = highBit; i >= 0; --i) {\n            mask |= (1 << i);\n            unordered_set<int> prefixes;\n            for (int x : nums) prefixes.insert(x & mask);\n            int candidate = maxXor | (1 << i);\n            bool found = false;\n            for (int p : prefixes) {\n                if (prefixes.count(candidate ^ p)) { found = true; break; }\n            }\n            if (found) maxXor = candidate;\n        }\n        return maxXor;\n    }\n};",
+  "entry": "findMaximumXOR",
+  "is_class": true
+ },
+ "frog-jump": {
+  "code": "class Solution {\npublic:\n    int frogJump(vector<int>& heights) {\n        int n = heights.size();\n        if (n <= 1) return 0;\n        vector<int> dp(n, 0);\n        dp[0] = 0;\n        dp[1] = abs(heights[1] - heights[0]);\n        for (int i = 2; i < n; i++) {\n            int oneStep = dp[i-1] + abs(heights[i] - heights[i-1]);\n            int twoStep = dp[i-2] + abs(heights[i] - heights[i-2]);\n            dp[i] = min(oneStep, twoStep);\n        }\n        return dp[n-1];\n    }\n};",
+  "entry": "frogJump",
+  "is_class": true
+ },
+ "count-the-number-of-set-bits": {
+  "code": "class Solution {\npublic:\n    int countSetBits(int n) {\n        int count = 0;\n        while (n > 0) {\n            n = n & (n - 1);\n            count++;\n        }\n        return count;\n    }\n};",
+  "entry": "countSetBits",
+  "is_class": true
+ },
+ "subset-sum-equals-to-target": {
+  "code": "class Solution{   \npublic:\n    bool isSubsetSum(vector<int>arr, int target){\n        int n = arr.size();\n        // dp[s] = can we form sum s using the elements processed so far\n        // 0/1 knapsack feasibility; iterate sum downward so each element is used at most once\n        vector<char> dp(target + 1, 0);\n        dp[0] = 1;\n        for (int i = 0; i < n; i++) {\n            int v = arr[i];\n            if (v < 0) continue; // negative values cannot help reach a non-negative bounded target with this DP\n            for (int s = target; s >= v; s--) {\n                if (dp[s - v]) dp[s] = 1;\n            }\n        }\n        return dp[target] != 0;\n    }\n};",
+  "entry": "isSubsetSum",
+  "is_class": true
+ },
+ "fruit-into-baskets": {
+  "code": "class Solution{\n  public:\n    int totalFruits(vector<int>& fruits){\n        int n = fruits.size();\n        int left = 0, maxLen = 0;\n        unordered_map<int,int> cnt;\n        for (int right = 0; right < n; right++) {\n            cnt[fruits[right]]++;\n            while ((int)cnt.size() > 2) {\n                cnt[fruits[left]]--;\n                if (cnt[fruits[left]] == 0) cnt.erase(fruits[left]);\n                left++;\n            }\n            maxLen = max(maxLen, right - left + 1);\n        }\n        return maxLen;\n    }\n};",
+  "entry": "totalFruits",
+  "is_class": true
+ },
+ "frog-jump-with-k-distances": {
+  "code": "class Solution {\npublic:\n    int frogJump(vector<int>& heights, int k) {\n        int n = heights.size();\n        vector<long long> dp(n, 0);\n        dp[0] = 0;\n        for (int i = 1; i < n; i++) {\n            long long best = LLONG_MAX;\n            for (int j = 1; j <= k; j++) {\n                if (i - j >= 0) {\n                    long long cost = dp[i - j] + abs(heights[i] - heights[i - j]);\n                    best = min(best, cost);\n                }\n            }\n            dp[i] = best;\n        }\n        return (int)dp[n - 1];\n    }\n};",
+  "entry": "frogJump",
+  "is_class": true
+ },
+ "count-and-say": {
+  "code": "class Solution {\n  public:\n    string countAndSay(int n) {\n        string result = \"1\";\n        for (int i = 1; i < n; i++) {\n            string next = \"\";\n            int j = 0;\n            int len = result.size();\n            while (j < len) {\n                int count = 1;\n                while (j + 1 < len && result[j] == result[j + 1]) {\n                    count++;\n                    j++;\n                }\n                next += to_string(count);\n                next += result[j];\n                j++;\n            }\n            result = next;\n        }\n        return result;\n    }\n};",
+  "entry": "countAndSay",
+  "is_class": true
+ },
+ "next-smaller-element": {
+  "code": "class Solution {\npublic:\n    vector<int> nextSmallerElements(const vector<int>& arr) {\n        int n = arr.size();\n        vector<int> res(n, -1);\n        stack<int> st;\n        for (int i = n - 1; i >= 0; i--) {\n            while (!st.empty() && st.top() >= arr[i]) {\n                st.pop();\n            }\n            if (!st.empty()) {\n                res[i] = st.top();\n            }\n            st.push(arr[i]);\n        }\n        return res;\n    }\n};",
+  "entry": "nextSmallerElements",
+  "is_class": true
+ },
+ "highest-occurring-element-in-an-array": {
+  "code": "class Solution {\npublic:\n    int mostFrequentElement(vector<int>& nums) {\n        unordered_map<int,int> freq;\n        for (int x : nums) freq[x]++;\n        int bestVal = INT_MAX;\n        int bestCount = 0;\n        for (auto& p : freq) {\n            if (p.second > bestCount || (p.second == bestCount && p.first < bestVal)) {\n                bestCount = p.second;\n                bestVal = p.first;\n            }\n        }\n        return bestVal;\n    }\n};",
+  "entry": "mostFrequentElement",
+  "is_class": true
+ },
+ "generate-parentheses": {
+  "code": "class Solution {\npublic:\n    vector<string> generateParenthesis(int n) {\n        vector<string> res;\n        string cur;\n        function<void(int,int)> rec = [&](int open, int close){\n            if((int)cur.size() == 2*n){ res.push_back(cur); return; }\n            if(open < n){ cur.push_back('('); rec(open+1, close); cur.pop_back(); }\n            if(close < open){ cur.push_back(')'); rec(open, close+1); cur.pop_back(); }\n        };\n        rec(0,0);\n        return res;\n    }\n};",
+  "entry": "generateParenthesis",
+  "is_class": true
+ },
+ "3-sum": {
+  "code": "class Solution {\npublic:\n    vector<vector<int>> threeSum(vector<int>& nums) {\n        vector<vector<int>> ans;\n        sort(nums.begin(), nums.end());\n        int n = nums.size();\n\n        for (int k = 0; k < n; k++) {\n            if (k > 0 && nums[k] == nums[k - 1]) continue;\n            int i = k + 1;\n            int j = n - 1;\n            int target = -nums[k];\n            while (i < j) {\n                int sum = nums[i] + nums[j];\n                if (sum == target) {\n                    ans.push_back({nums[k], nums[i], nums[j]});\n                    i++;\n                    j--;\n                    while (i < j && nums[i] == nums[i - 1]) i++;\n                    while (i < j && nums[j] == nums[j + 1]) j--;\n                } else if (sum < target) {\n                    i++;\n                } else {\n                    j--;\n                }\n            }\n        }\n        return ans;\n    }\n};",
+  "entry": "threeSum",
+  "is_class": true
+ },
+ "palindrome-number": {
+  "code": "class Solution {\npublic:\n    bool isPalindrome(int n) {\n        // Constraints: 0 <= n <= 5000, so n is non-negative.\n        long long original = n;\n        long long reversed = 0;\n        long long temp = n;\n        while (temp > 0) {\n            reversed = reversed * 10 + temp % 10;\n            temp /= 10;\n        }\n        return reversed == original;\n    }\n};",
+  "entry": "isPalindrome",
+  "is_class": true
+ },
+ "find-the-smallest-divisor": {
+  "code": "class Solution {\npublic:\n  int smallestDivisor(vector<int> &nums, int limit) {\n      int lo = 1;\n      int hi = 0;\n      for (int x : nums) hi = max(hi, x);\n      int ans = hi;\n      while (lo <= hi) {\n          int mid = lo + (hi - lo) / 2;\n          long long sum = 0;\n          for (int x : nums) {\n              sum += (long long)(x + mid - 1) / mid; // ceiling division\n          }\n          if (sum <= (long long)limit) {\n              ans = mid;\n              hi = mid - 1;\n          } else {\n              lo = mid + 1;\n          }\n      }\n      return ans;\n  }\n};",
+  "entry": "smallestDivisor",
+  "is_class": true
+ },
+ "rabin-karp-algorithm": {
+  "code": "class Solution{\n    public:\n        vector <int> search(string pat, string txt) {\n            vector<int> result;\n            int n = txt.size();\n            int m = pat.size();\n            if (m == 0 || m > n) return result;\n\n            const long long MOD = 1000000007LL;\n            const long long BASE = 256LL;\n\n            // precompute BASE^(m-1) % MOD for the rolling-hash removal step\n            long long h = 1;\n            for (int i = 0; i < m - 1; i++) {\n                h = (h * BASE) % MOD;\n            }\n\n            long long patHash = 0, txtHash = 0;\n            for (int i = 0; i < m; i++) {\n                patHash = (patHash * BASE + (unsigned char)pat[i]) % MOD;\n                txtHash = (txtHash * BASE + (unsigned char)txt[i]) % MOD;\n            }\n\n            for (int i = 0; i <= n - m; i++) {\n                if (patHash == txtHash) {\n                    // verify character by character to guard against hash collisions\n                    bool match = true;\n                    for (int j = 0; j < m; j++) {\n                        if (txt[i + j] != pat[j]) { match = false; break; }\n                    }\n                    if (match) result.push_back(i);\n                }\n                if (i < n - m) {\n                    txtHash = (txtHash - ((unsigned char)txt[i] * h) % MOD + MOD) % MOD;\n                    txtHash = (txtHash * BASE + (unsigned char)txt[i + m]) % MOD;\n                }\n            }\n            return result;\n        }\n};",
+  "entry": "search",
+  "is_class": true
+ },
+ "longest-common-prefix": {
+  "code": "class Solution{\n\tpublic:\n\t\tstring longestCommonPrefix(vector<string>& str){\n\t\t\tif(str.empty()) return \"\";\n\t\t\tstring prefix = str[0];\n\t\t\tfor(int i = 1; i < (int)str.size(); i++){\n\t\t\t\tint j = 0;\n\t\t\t\twhile(j < (int)prefix.size() && j < (int)str[i].size() && prefix[j] == str[i][j]){\n\t\t\t\t\tj++;\n\t\t\t\t}\n\t\t\t\tprefix = prefix.substr(0, j);\n\t\t\t\tif(prefix.empty()) break;\n\t\t\t}\n\t\t\treturn prefix;\n\t\t}\n};",
+  "entry": "longestCommonPrefix",
+  "is_class": true
+ },
+ "count-all-subsequences-with-sum-k": {
+  "code": "class Solution{\n    public:    \t\n    int countSubsequenceWithTargetSum(vector<int>& nums, int k){\n        int n = nums.size();\n        // dp[i][t] = number of subsequences using first i elements with sum t\n        vector<vector<long long>> dp(n+1, vector<long long>(k+1, 0));\n        dp[0][0] = 1; // empty subsequence has sum 0\n        for(int i = 1; i <= n; i++){\n            for(int t = 0; t <= k; t++){\n                long long notTake = dp[i-1][t];\n                long long take = 0;\n                if(nums[i-1] <= t) take = dp[i-1][t - nums[i-1]];\n                dp[i][t] = take + notTake;\n            }\n        }\n        // Since k >= 1 per constraints, the empty subsequence (sum 0) is never counted here.\n        return (int)dp[n][k];\n    }\n};",
+  "entry": "countSubsequenceWithTargetSum",
+  "is_class": true
+ },
+ "edit-distance": {
+  "code": "class Solution {\n  public:\n    int editDistance(string start, string target) {\n        int n = start.size(), m = target.size();\n        vector<int> prev(m + 1, 0), cur(m + 1, 0);\n        for (int j = 0; j <= m; j++) prev[j] = j;\n        for (int i = 1; i <= n; i++) {\n            cur[0] = i;\n            for (int j = 1; j <= m; j++) {\n                if (start[i - 1] == target[j - 1]) {\n                    cur[j] = prev[j - 1];\n                } else {\n                    cur[j] = 1 + min({prev[j - 1], prev[j], cur[j - 1]});\n                }\n            }\n            prev = cur;\n        }\n        return prev[m];\n    }\n};",
+  "entry": "editDistance",
+  "is_class": true
+ },
+ "minimum-falling-path-sum": {
+  "code": "class Solution {\npublic:\n    int minFallingPathSum(vector<vector<int>>& matrix) {\n        int m = matrix.size();\n        int n = matrix[0].size();\n        vector<long long> prev(n);\n        for (int j = 0; j < n; j++) prev[j] = matrix[0][j];\n        for (int i = 1; i < m; i++) {\n            vector<long long> cur(n);\n            for (int j = 0; j < n; j++) {\n                long long best = prev[j];\n                if (j - 1 >= 0) best = min(best, prev[j - 1]);\n                if (j + 1 < n) best = min(best, prev[j + 1]);\n                cur[j] = (long long)matrix[i][j] + best;\n            }\n            prev = cur;\n        }\n        long long ans = LLONG_MAX / 4;\n        for (int j = 0; j < n; j++) ans = min(ans, prev[j]);\n        return (int)ans;\n    }\n};",
+  "entry": "minFallingPathSum",
+  "is_class": true
+ },
+ "reverse-a-number": {
+  "code": "class Solution {\npublic:\n    int reverseNumber(int n) {\n        int rev = 0;\n        while (n > 0) {\n            rev = rev * 10 + n % 10;\n            n /= 10;\n        }\n        return rev;\n    }\n};",
+  "entry": "reverseNumber",
+  "is_class": true
+ },
+ "minimum-coins": {
+  "code": "class Solution{\n\tpublic:\n\tint MinimumCoins(vector<int>& coins, int amount) {\n        int n = coins.size();\n        const int INF = 1e9;\n        vector<int> dp(amount + 1, INF);\n        dp[0] = 0;\n        for (int i = 0; i < n; i++) {\n            for (int a = coins[i]; a <= amount; a++) {\n                if (dp[a - coins[i]] != INF)\n                    dp[a] = min(dp[a], dp[a - coins[i]] + 1);\n            }\n        }\n        return dp[amount] >= INF ? -1 : dp[amount];\n    }\n};",
+  "entry": "MinimumCoins",
+  "is_class": true
+ },
+ "prime-factorisation-of-a-number": {
+  "code": "class Solution{\n    public:\n        vector<vector<int>> primeFactors(vector<int>& queries){\n            vector<vector<int>> ans;\n            ans.reserve(queries.size());\n            for(int q : queries){\n                vector<int> factors;\n                int x = q;\n                for(int d = 2; (long long)d * d <= x; d++){\n                    while(x % d == 0){\n                        factors.push_back(d);\n                        x /= d;\n                    }\n                }\n                if(x > 1) factors.push_back(x);\n                ans.push_back(factors);\n            }\n            return ans;\n        }\n};",
+  "entry": "primeFactors",
+  "is_class": true
+ },
+ "generate-binary-strings-without-consecutive-1s": {
+  "code": "class Solution {\npublic:\n    vector<string> generateBinaryStrings(int n) {\n        vector<string> result;\n        string cur;\n        solve(0, n, cur, result);\n        return result;\n    }\nprivate:\n    void solve(int idx, int n, string &cur, vector<string> &result) {\n        if (idx == n) {\n            result.push_back(cur);\n            return;\n        }\n        // Place '0' always (tried first to keep lexicographic order)\n        cur.push_back('0');\n        solve(idx + 1, n, cur, result);\n        cur.pop_back();\n        // Place '1' only if previous char is not '1'\n        if (idx == 0 || cur[idx - 1] != '1') {\n            cur.push_back('1');\n            solve(idx + 1, n, cur, result);\n            cur.pop_back();\n        }\n    }\n};",
+  "entry": "generateBinaryStrings",
+  "is_class": true
+ },
+ "best-time-to-buy-and-sell-stock-with-cooldown-and-transaction-fees": {
+  "code": "class Solution{\npublic:\n    int stockBuySell(vector<int> arr, int n, int fee){\n        // DP on stocks with transaction fee (fee charged on each sell).\n        // notHold = max profit with no stock held at end of the day.\n        // hold    = max profit while holding a stock at end of the day.\n        long long notHold = 0;\n        long long hold = LLONG_MIN / 4; // impossible to hold before any buy\n        for(int i = 0; i < n; i++){\n            long long prevNotHold = notHold;\n            long long prevHold = hold;\n            // buy today: pay the price\n            hold = max(prevHold, prevNotHold - (long long)arr[i]);\n            // sell today: receive price minus transaction fee\n            notHold = max(prevNotHold, prevHold + (long long)arr[i] - (long long)fee);\n        }\n        return (int)notHold;\n    }\n};",
+  "entry": "stockBuySell",
+  "is_class": true
+ },
+ "count-subsets-with-sum-k": {
+  "code": "class Solution{\n\tpublic:\n\tint perfectSum(vector<int>&arr, int K){\n\t    const int MOD = 1e9 + 7;\n\t    int n = (int)arr.size();\n\t    // dp[j] = number of subsets with sum j (modulo MOD)\n\t    vector<long long> dp(K + 1, 0);\n\t    dp[0] = 1; // the empty subset has sum 0\n\t    for (int i = 0; i < n; i++) {\n\t        // iterate downwards so each element is used at most once\n\t        for (int j = K; j >= arr[i]; j--) {\n\t            dp[j] = (dp[j] + dp[j - arr[i]]) % MOD;\n\t        }\n\t    }\n\t    return (int)(dp[K] % MOD);\n\t}\n};",
+  "entry": "perfectSum",
+  "is_class": true
+ },
+ "longest-subarray-with-sum-k": {
+  "code": "class Solution{\npublic:\n    int longestSubarray(vector<int> &nums, int k){\n        unordered_map<long long, int> firstIdx; // prefix sum -> earliest index seen\n        long long pref = 0;\n        int ans = 0;\n        int n = nums.size();\n        for (int i = 0; i < n; i++) {\n            pref += (long long)nums[i];\n            if (pref == (long long)k) {\n                ans = max(ans, i + 1);\n            }\n            long long need = pref - (long long)k;\n            auto it = firstIdx.find(need);\n            if (it != firstIdx.end()) {\n                ans = max(ans, i - it->second);\n            }\n            if (firstIdx.find(pref) == firstIdx.end()) {\n                firstIdx[pref] = i;\n            }\n        }\n        return ans;\n    }\n};",
+  "entry": "longestSubarray",
+  "is_class": true
+ },
+ "gcd-of-two-numbers": {
+  "code": "class Solution {\npublic:\n    int GCD(int n1,int n2) {\n        while (n2 != 0) {\n            int t = n1 % n2;\n            n1 = n2;\n            n2 = t;\n        }\n        return n1;\n    }\n};",
+  "entry": "GCD",
+  "is_class": true
+ },
+ "unbounded-knapsack": {
+  "code": "class Solution\n{\n    public:\n   int unboundedKnapsack(vector<int>& wt, vector<int>& val, int n, int W) {\n       // dp[w] = max value achievable with capacity w (unbounded: infinite supply)\n       vector<long long> dp(W + 1, 0);\n       for (int i = 0; i < n; i++) {\n           for (int w = wt[i]; w <= W; w++) {\n               dp[w] = max(dp[w], dp[w - wt[i]] + (long long)val[i]);\n           }\n       }\n       return (int)dp[W];\n   }\n};",
+  "entry": "unboundedKnapsack",
+  "is_class": true
+ },
+ "bubble-sort": {
+  "code": "class Solution {\npublic:\n    vector<int> bubbleSort(vector<int>& nums) {\n        int n = nums.size();\n        for (int i = n - 1; i > 0; i--) {\n            bool swapped = false;\n            for (int j = 0; j < i; j++) {\n                if (nums[j] > nums[j + 1]) {\n                    swap(nums[j], nums[j + 1]);\n                    swapped = true;\n                }\n            }\n            if (!swapped) break;\n        }\n        return nums;\n    }\n};",
+  "entry": "bubbleSort",
+  "is_class": true
+ },
+ "longest-word-with-all-prefixes": {
+  "code": "class Solution {\npublic:\n    string completeString(vector<string>& nums) {\n        struct TrieNode {\n            TrieNode* children[26];\n            bool end;\n            TrieNode() {\n                end = false;\n                for (int i = 0; i < 26; i++) children[i] = nullptr;\n            }\n        };\n        TrieNode* root = new TrieNode();\n        // insert all words into the trie\n        for (auto& word : nums) {\n            TrieNode* curr = root;\n            for (char ch : word) {\n                int key = ch - 'a';\n                if (curr->children[key] == nullptr)\n                    curr->children[key] = new TrieNode();\n                curr = curr->children[key];\n            }\n            curr->end = true;\n        }\n        // a word is complete if every prefix (including itself) is marked end\n        auto isValid = [&](const string& word) -> bool {\n            TrieNode* curr = root;\n            for (char ch : word) {\n                int key = ch - 'a';\n                if (curr->children[key] == nullptr || curr->children[key]->end == false)\n                    return false;\n                curr = curr->children[key];\n            }\n            return true;\n        };\n        string ans = \"\";\n        bool found = false;\n        for (auto& word : nums) {\n            if (isValid(word)) {\n                if (!found) { ans = word; found = true; }\n                else if (word.size() > ans.size()) ans = word;\n                else if (word.size() == ans.size() && word < ans) ans = word;\n            }\n        }\n        if (!found) return \"None\";\n        return ans;\n    }\n};",
+  "entry": "completeString",
+  "is_class": true
+ },
+ "best-time-to-buy-and-sell-stock-ii": {
+  "code": "class Solution{\npublic:\n    int stockBuySell(vector<int> arr, int n){\n        long long profit = 0;\n        for(int i = 1; i < n; i++){\n            if(arr[i] > arr[i-1]){\n                profit += (long long)(arr[i] - arr[i-1]);\n            }\n        }\n        return (int)profit;\n    }\n};",
+  "entry": "stockBuySell",
+  "is_class": true
+ },
+ "shortest-job-first": {
+  "code": "class Solution {\n  public:\n    long long solve(vector<int>& bt) {\n        sort(bt.begin(), bt.end());\n        long long n = (long long)bt.size();\n        long long elapsed = 0;    // cumulative time before current process starts\n        long long totalWait = 0;  // sum of waiting times\n        for (int i = 0; i < (int)bt.size(); ++i) {\n            totalWait += elapsed;\n            elapsed += bt[i];\n        }\n        return totalWait / n;     // floor of the average waiting time\n    }\n};",
+  "entry": "solve",
+  "is_class": true
+ },
+ "counting-frequencies-of-array-elements": {
+  "code": "class Solution {\npublic:\n    vector<vector<int>> countFrequencies(vector<int>& nums) {\n        map<int,int> freq;\n        for (int x : nums) freq[x]++;\n        vector<vector<int>> res;\n        for (auto& p : freq) res.push_back({p.first, p.second});\n        return res;\n    }\n};",
+  "entry": "countFrequencies",
+  "is_class": true
+ },
+ "rod-cutting-problem": {
+  "code": "class Solution{\n  public:\n    int rodCutting(vector<int> price, int n) {\n        // price[i] = value of a rod piece of length (i+1), 1-based lengths.\n        // n = total rod length; here n == price.size().\n        // dp[len] = max value obtainable from a rod of length len.\n        vector<long long> dp(n + 1, 0);\n        for (int len = 1; len <= n; len++) {\n            long long best = LLONG_MIN;\n            for (int cut = 1; cut <= len; cut++) {\n                best = max(best, (long long)price[cut - 1] + dp[len - cut]);\n            }\n            dp[len] = best;\n        }\n        return (int)dp[n];\n    }\n};",
+  "entry": "rodCutting",
+  "is_class": true
+ },
+ "check-if-the-number-if-armstrong": {
+  "code": "class Solution {\npublic:\n    bool isArmstrong(int n) {\n        long long original = n;\n        int digits = 0;\n        long long temp = n;\n        if (temp == 0) {\n            digits = 1;\n        } else {\n            while (temp > 0) {\n                digits++;\n                temp /= 10;\n            }\n        }\n        long long sum = 0;\n        temp = n;\n        if (temp == 0) {\n            sum = 0;\n        } else {\n            while (temp > 0) {\n                long long d = temp % 10;\n                long long p = 1;\n                for (int i = 0; i < digits; i++) p *= d;\n                sum += p;\n                temp /= 10;\n            }\n        }\n        return sum == original;\n    }\n};",
+  "entry": "isArmstrong",
+  "is_class": true
+ },
+ "number-of-enclaves": {
+  "code": "class Solution{\npublic:\n    int numberOfEnclaves(vector<vector<int>> &grid) {\n        int n = grid.size();\n        if (n == 0) return 0;\n        int m = grid[0].size();\n        vector<vector<bool>> vis(n, vector<bool>(m, false));\n        queue<pair<int,int>> q;\n        // push all boundary land cells\n        for (int j = 0; j < m; j++) {\n            if (grid[0][j] == 1 && !vis[0][j]) { vis[0][j] = true; q.push({0, j}); }\n            if (grid[n-1][j] == 1 && !vis[n-1][j]) { vis[n-1][j] = true; q.push({n-1, j}); }\n        }\n        for (int i = 0; i < n; i++) {\n            if (grid[i][0] == 1 && !vis[i][0]) { vis[i][0] = true; q.push({i, 0}); }\n            if (grid[i][m-1] == 1 && !vis[i][m-1]) { vis[i][m-1] = true; q.push({i, m-1}); }\n        }\n        int dr[] = {-1, 0, 1, 0};\n        int dc[] = {0, 1, 0, -1};\n        while (!q.empty()) {\n            auto [r, c] = q.front(); q.pop();\n            for (int d = 0; d < 4; d++) {\n                int nr = r + dr[d], nc = c + dc[d];\n                if (nr >= 0 && nr < n && nc >= 0 && nc < m && !vis[nr][nc] && grid[nr][nc] == 1) {\n                    vis[nr][nc] = true;\n                    q.push({nr, nc});\n                }\n            }\n        }\n        int ans = 0;\n        for (int i = 0; i < n; i++)\n            for (int j = 0; j < m; j++)\n                if (grid[i][j] == 1 && !vis[i][j]) ans++;\n        return ans;\n    }\n};",
+  "entry": "numberOfEnclaves",
+  "is_class": true
+ },
+ "k-th-largest-element-in-an-array": {
+  "code": "class Solution {\npublic:\n    int kthLargestElement(vector<int>& nums, int k) {\n        // Min-heap of size k: the top is the k-th largest element.\n        priority_queue<int, vector<int>, greater<int>> pq;\n        for (int x : nums) {\n            pq.push(x);\n            if ((int)pq.size() > k) pq.pop();\n        }\n        return pq.top();\n    }\n};",
+  "entry": "kthLargestElement",
+  "is_class": true
+ },
+ "koko-eating-bananas": {
+  "code": "class Solution {\npublic:\nint minimumRateToEatBananas(vector<int> nums, int h) {\n    int maxPile = 0;\n    for (int x : nums) maxPile = max(maxPile, x);\n    int lo = 1, hi = maxPile, ans = maxPile;\n    while (lo <= hi) {\n        int mid = lo + (hi - lo) / 2;\n        long long hours = 0;\n        for (int x : nums) {\n            hours += (long long)(x + mid - 1) / mid; // ceil(x / mid)\n            if (hours > (long long)h) break;\n        }\n        if (hours <= (long long)h) {\n            ans = mid;\n            hi = mid - 1;\n        } else {\n            lo = mid + 1;\n        }\n    }\n    return ans;\n}\n};",
+  "entry": "minimumRateToEatBananas",
+  "is_class": true
+ },
+ "find-missing-number": {
+  "code": "class Solution {\npublic:\n    int missingNumber(vector<int>& nums) {\n        long long n = nums.size();\n        long long total = n * (n + 1) / 2;\n        long long sum = 0;\n        for (int x : nums) sum += x;\n        return (int)(total - sum);\n    }\n};",
+  "entry": "missingNumber",
+  "is_class": true
+ },
+ "count-subarrays-with-given-xor-k": {
+  "code": "class Solution{\npublic:\n    int subarraysWithXorK(vector<int> &nums, int k) {\n        unordered_map<int,int> cnt;\n        int xr = 0;\n        long long ans = 0;\n        cnt[0] = 1;\n        for (int x : nums) {\n            xr ^= x;\n            int need = xr ^ k;\n            auto it = cnt.find(need);\n            if (it != cnt.end()) ans += it->second;\n            cnt[xr]++;\n        }\n        return (int)ans;\n    }\n};",
+  "entry": "subarraysWithXorK",
+  "is_class": true
+ },
+ "number-of-distinct-substrings-in-a-string": {
+  "code": "class Solution{\n    public:\n        int countDistinctSubstring(string s){\n            int n = s.size();\n            // Trie stored as a vector of 26-way nodes; -1 means no child.\n            vector<array<int,26>> trie;\n            trie.push_back(array<int,26>());\n            trie[0].fill(-1);\n            int cnt = 0;\n            for (int i = 0; i < n; i++) {\n                int curr = 0;\n                for (int j = i; j < n; j++) {\n                    int ltr = s[j] - 'a';\n                    if (trie[curr][ltr] == -1) {\n                        cnt++;\n                        array<int,26> node;\n                        node.fill(-1);\n                        trie.push_back(node);\n                        trie[curr][ltr] = (int)trie.size() - 1;\n                    }\n                    curr = trie[curr][ltr];\n                }\n            }\n            return cnt + 1; // +1 for the empty substring\n        }\n};",
+  "entry": "countDistinctSubstring",
+  "is_class": true
+ },
+ "power-set": {
+  "code": "class Solution {\npublic:\t\n    vector<vector<int> > powerSet(vector<int>& nums) {\n        int n = nums.size();\n        vector<vector<int>> ans;\n        for (int mask = 0; mask < (1 << n); mask++) {\n            vector<int> subset;\n            for (int j = 0; j < n; j++) {\n                if (mask & (1 << j)) {\n                    subset.push_back(nums[j]);\n                }\n            }\n            ans.push_back(subset);\n        }\n        return ans;\n    }\n};",
+  "entry": "powerSet",
+  "is_class": true
+ },
+ "longest-increasing-subsequence-1": {
+  "code": "class Solution {\npublic:\n    int LIS(vector<int>& nums) {\n        vector<int> tails;\n        for (int x : nums) {\n            auto it = lower_bound(tails.begin(), tails.end(), x);\n            if (it == tails.end()) tails.push_back(x);\n            else *it = x;\n        }\n        return (int)tails.size();\n    }\n};",
+  "entry": "LIS",
+  "is_class": true
+ },
+ "distinct-subsequences": {
+  "code": "class Solution{\n  public: int distinctSubsequences(string s, string t){\n        const int MOD = 1e9 + 7;\n        int n = s.size(), m = t.size();\n        // dp[j] = number of distinct subsequences (of the processed prefix of s)\n        // that equal the first j characters of t.\n        vector<long long> dp(m + 1, 0);\n        dp[0] = 1; // empty t can always be formed in exactly 1 way\n        for (int i = 1; i <= n; i++) {\n            // iterate j from high to low so dp[j-1] refers to the previous row (i-1)\n            for (int j = m; j >= 1; j--) {\n                if (s[i - 1] == t[j - 1]) {\n                    dp[j] = (dp[j] + dp[j - 1]) % MOD;\n                }\n                // else: dp[j] stays unchanged (exclude s[i-1])\n            }\n        }\n        return (int)(dp[m] % MOD);\n    }\n};",
+  "entry": "distinctSubsequences",
+  "is_class": true
+ },
+ "kadane's-algorithm-1": {
+  "code": "class Solution {\npublic:\n    int maxSubArray(vector<int>& nums) {\n        long long maxSum = LLONG_MIN;\n        long long cur = 0;\n        for (int x : nums) {\n            cur += x;\n            if (cur > maxSum) maxSum = cur;\n            if (cur < 0) cur = 0;\n        }\n        return (int)maxSum;\n    }\n};",
+  "entry": "maxSubArray",
+  "is_class": true
+ },
+ "subsets-i": {
+  "code": "class Solution {\n  public:\n    void solve(int index, int sum, vector<int>& nums, vector<int>& ans) {\n        if (index == (int)nums.size()) {\n            ans.push_back(sum);\n            return;\n        }\n        solve(index + 1, sum + nums[index], nums, ans);\n        solve(index + 1, sum, nums, ans);\n    }\n\n    vector<int> subsetSums(vector<int>& nums) {\n        vector<int> ans;\n        solve(0, 0, nums, ans);\n        sort(ans.begin(), ans.end());\n        return ans;\n    }\n};",
+  "entry": "subsetSums",
+  "is_class": true
+ },
+ "longest-increasing-subsequence": {
+  "code": "class Solution {\npublic:\n    int LIS(vector<int>& nums) {\n        vector<int> tails;\n        for (int x : nums) {\n            auto it = lower_bound(tails.begin(), tails.end(), x);\n            if (it == tails.end()) tails.push_back(x);\n            else *it = x;\n        }\n        return (int)tails.size();\n    }\n};",
+  "entry": "LIS",
+  "is_class": true
+ },
+ "longest-common-subsequence-1": {
+  "code": "class Solution {\n  public:\n    int lcs(string str1, string str2) {\n        int n = str1.size(), m = str2.size();\n        vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= m; j++) {\n                if (str1[i - 1] == str2[j - 1])\n                    dp[i][j] = 1 + dp[i - 1][j - 1];\n                else\n                    dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);\n            }\n        }\n        return dp[n][m];\n    }\n};",
+  "entry": "lcs",
+  "is_class": true
+ },
+ "maximum-sum-of-non-adjacent-elements": {
+  "code": "class Solution {\npublic:\n    int nonAdjacent(vector<int>& nums) {\n        long long prev = 0;   // dp[i-1]: best up to previous index\n        long long prev2 = 0;  // dp[i-2]: best up to index before previous\n        for (int i = 0; i < (int)nums.size(); i++) {\n            long long pick = (long long)nums[i] + (i >= 2 ? prev2 : 0);\n            long long notPick = prev;\n            long long cur = max(pick, notPick);\n            prev2 = prev;\n            prev = cur;\n        }\n        return (int)prev;\n    }\n};",
+  "entry": "nonAdjacent",
+  "is_class": true
+ },
+ "next-greater-element": {
+  "code": "class Solution {\npublic:\n    vector<int> nextLargerElement(vector<int> arr) {\n        int n = arr.size();\n        vector<int> res(n, -1);\n        stack<int> st; // monotonic stack of candidate \"next greater\" values from the right\n        for (int i = n - 1; i >= 0; i--) {\n            while (!st.empty() && st.top() <= arr[i]) {\n                st.pop();\n            }\n            if (!st.empty()) {\n                res[i] = st.top();\n            }\n            st.push(arr[i]);\n        }\n        return res;\n    }\n};",
+  "entry": "nextLargerElement",
+  "is_class": true
+ },
+ "expression-add-operators": {
+  "code": "class Solution {\npublic:\n    vector<string> addOperators(string s, int target) {\n        vector<string> result;\n        int n = s.size();\n        if (n == 0) return result;\n        function<void(int, string&, long long, long long)> rec =\n            [&](int idx, string &expr, long long cur, long long prev) {\n                if (idx == n) {\n                    if (cur == (long long)target) result.push_back(expr);\n                    return;\n                }\n                for (int i = idx; i < n; i++) {\n                    // Skip numbers with leading zeros (but allow single \"0\")\n                    if (i > idx && s[idx] == '0') break;\n                    string part = s.substr(idx, i - idx + 1);\n                    long long num = stoll(part);\n                    int len = expr.size();\n                    if (idx == 0) {\n                        // First operand: no operator prefix\n                        expr += part;\n                        rec(i + 1, expr, num, num);\n                        expr.resize(len);\n                    } else {\n                        // '+'\n                        expr += \"+\" + part;\n                        rec(i + 1, expr, cur + num, num);\n                        expr.resize(len);\n                        // '-'\n                        expr += \"-\" + part;\n                        rec(i + 1, expr, cur - num, -num);\n                        expr.resize(len);\n                        // '*' (undo previous operand, apply multiplication for precedence)\n                        expr += \"*\" + part;\n                        rec(i + 1, expr, cur - prev + prev * num, prev * num);\n                        expr.resize(len);\n                    }\n                }\n            };\n        string expr = \"\";\n        rec(0, expr, 0, 0);\n        return result;\n    }\n};",
+  "entry": "addOperators",
+  "is_class": true
+ },
+ "making-a-large-island": {
+  "code": "class Solution {\npublic:\n    vector<int> parent, sz;\n    int find(int x){ while(parent[x]!=x){ parent[x]=parent[parent[x]]; x=parent[x]; } return x; }\n    void unite(int a, int b){ a=find(a); b=find(b); if(a==b) return; if(sz[a]<sz[b]) swap(a,b); parent[b]=a; sz[a]+=sz[b]; }\n    int largestIsland(vector<vector<int>>& grid) {\n        int n = grid.size();\n        if(n==0) return 0;\n        parent.resize(n*n); sz.assign(n*n,1);\n        for(int i=0;i<n*n;i++) parent[i]=i;\n        int dr[4]={-1,1,0,0}, dc[4]={0,0,-1,1};\n        for(int i=0;i<n;i++) for(int j=0;j<n;j++){\n            if(grid[i][j]==1){\n                for(int d=0;d<4;d++){\n                    int ni=i+dr[d], nj=j+dc[d];\n                    if(ni>=0&&ni<n&&nj>=0&&nj<n&&grid[ni][nj]==1){\n                        unite(i*n+j, ni*n+nj);\n                    }\n                }\n            }\n        }\n        int best=0;\n        for(int i=0;i<n*n;i++) if(find(i)==i) best=max(best, sz[i]);\n        for(int i=0;i<n;i++) for(int j=0;j<n;j++){\n            if(grid[i][j]==0){\n                set<int> roots;\n                long long total=1;\n                for(int d=0;d<4;d++){\n                    int ni=i+dr[d], nj=j+dc[d];\n                    if(ni>=0&&ni<n&&nj>=0&&nj<n&&grid[ni][nj]==1){\n                        roots.insert(find(ni*n+nj));\n                    }\n                }\n                for(int r:roots) total+=sz[r];\n                best=max<long long>(best, total);\n            }\n        }\n        return best;\n    }\n};",
+  "entry": "largestIsland",
+  "is_class": true
+ },
+ "find-square-root-of-a-number": {
+  "code": "class Solution {\npublic:\n    int floorSqrt(int n)  {\n        long long lo = 0, hi = n, ans = 0;\n        while (lo <= hi) {\n            long long mid = lo + (hi - lo) / 2;\n            if (mid * mid <= (long long)n) {\n                ans = mid;\n                lo = mid + 1;\n            } else {\n                hi = mid - 1;\n            }\n        }\n        return (int)ans;\n    }\n};",
+  "entry": "floorSqrt",
+  "is_class": true
+ },
+ "matrix-chain-multiplication-1": {
+  "code": "class Solution{\n\tpublic:\n\t\tint matrixMultiplication(vector<int>& nums){\n            int n = nums.size();\n            // dp[i][j] = min scalar multiplications to multiply matrices i..j\n            // Matrix Ai has dimensions nums[i-1] x nums[i] (1-indexed matrices).\n            vector<vector<long long>> dp(n, vector<long long>(n, 0));\n            for(int len = 2; len <= n - 1; len++){\n                for(int i = 1; i + len - 1 <= n - 1; i++){\n                    int j = i + len - 1;\n                    long long mini = LLONG_MAX;\n                    for(int k = i; k < j; k++){\n                        long long cost = (long long)nums[i-1] * nums[k] * nums[j]\n                                         + dp[i][k] + dp[k+1][j];\n                        mini = min(mini, cost);\n                    }\n                    dp[i][j] = mini;\n                }\n            }\n            return (int)dp[1][n-1];\n    \t}\n};",
+  "entry": "matrixMultiplication",
+  "is_class": true
+ },
+ "divisors-of-a-number": {
+  "code": "class Solution {\npublic:\n    vector<int> divisors(int n) {\n        vector<int> res;\n        for (int i = 1; (long long)i * i <= n; i++) {\n            if (n % i == 0) {\n                res.push_back(i);\n                if (i != n / i) res.push_back(n / i);\n            }\n        }\n        sort(res.begin(), res.end());\n        return res;\n    }\n};",
+  "entry": "divisors",
+  "is_class": true
+ },
+ "check-if-a-number-is-odd-or-not": {
+  "code": "class Solution {\npublic:\n    bool isOdd(int n) {\n        return (n & 1) != 0;\n    }\n};",
+  "entry": "isOdd",
+  "is_class": true
+ },
+ "xor-of-numbers-in-a-given-range": {
+  "code": "class Solution{\n\tpublic:\n\t\tint findRangeXOR(int l,int r){\n\t\t\tauto xorUpto = [](long long n) -> long long {\n\t\t\t\t// XOR of all integers from 0..n (n >= 0)\n\t\t\t\tswitch(n % 4){\n\t\t\t\t\tcase 0: return n;\n\t\t\t\t\tcase 1: return 1;\n\t\t\t\t\tcase 2: return n + 1;\n\t\t\t\t\tdefault: return 0; // case 3\n\t\t\t\t}\n\t\t\t};\n\t\t\tlong long res = xorUpto((long long)r) ^ xorUpto((long long)l - 1);\n\t\t\treturn (int)res;\n\t\t}\n};",
+  "entry": "findRangeXOR",
+  "is_class": true
+ },
+ "subsets-ii": {
+  "code": "class Solution {\npublic:\n    void solve(int idx, vector<int>& nums, vector<int>& cur, vector<vector<int>>& ans) {\n        ans.push_back(cur);\n        for (int i = idx; i < (int)nums.size(); i++) {\n            if (i > idx && nums[i] == nums[i-1]) continue;\n            cur.push_back(nums[i]);\n            solve(i + 1, nums, cur, ans);\n            cur.pop_back();\n        }\n    }\n    vector<vector<int> > subsetsWithDup(vector<int>& nums) {\n        sort(nums.begin(), nums.end());\n        vector<vector<int>> ans;\n        vector<int> cur;\n        solve(0, nums, cur, ans);\n        return ans;\n    }\n};",
+  "entry": "subsetsWithDup",
+  "is_class": true
+ },
+ "requirements-needed-to-construct-a-unique-bt": {
+  "code": "class Solution{\t\n\tpublic:\t\n\t\tbool uniqueBinaryTree(int a, int b){\n\t\t\t// Traversal codes: 1 -> Preorder, 2 -> Inorder, 3 -> Postorder.\n\t\t\t// A unique binary tree can be reconstructed from a pair of traversals\n\t\t\t// if and only if exactly one of the two traversals is Inorder (2).\n\t\t\t// Inorder is required to split nodes into left/right subtrees, and\n\t\t\t// pairing it with Preorder or Postorder yields a unique tree.\n\t\t\t// Preorder+Postorder (or any same-type / non-inorder pair) is ambiguous,\n\t\t\t// and two Inorder traversals are also insufficient.\n\t\t\treturn (a == 2) ^ (b == 2);\n\t\t}\n};",
+  "entry": "uniqueBinaryTree",
+  "is_class": true
+ },
+ "maximum-rectangles": {
+  "code": "class Solution\n{\npublic:\n    int largestRectangleArea(vector<int> &heights){\n        int n = heights.size();\n        stack<int> st;\n        int maxArea = 0;\n        for(int i = 0; i <= n; i++){\n            int cur = (i == n) ? 0 : heights[i];\n            while(!st.empty() && heights[st.top()] >= cur){\n                int height = heights[st.top()];\n                st.pop();\n                int width = st.empty() ? i : (i - st.top() - 1);\n                maxArea = max(maxArea, height * width);\n            }\n            st.push(i);\n        }\n        return maxArea;\n    }\n    int maximalAreaOfSubMatrixOfAll1(vector<vector<int>> &matrix){\n        if(matrix.empty() || matrix[0].empty()) return 0;\n        int m = matrix.size();\n        int n = matrix[0].size();\n        vector<int> heights(n, 0);\n        int maxArea = 0;\n        for(int i = 0; i < m; i++){\n            for(int j = 0; j < n; j++){\n                if(matrix[i][j] == 1) heights[j] += 1;\n                else heights[j] = 0;\n            }\n            maxArea = max(maxArea, largestRectangleArea(heights));\n        }\n        return maxArea;\n    }\n};",
+  "entry": "maximalAreaOfSubMatrixOfAll1",
+  "is_class": true
+ },
+ "4-sum": {
+  "code": "class Solution {\npublic:\n    vector<vector<int>> fourSum(vector<int>& nums, int target) {\n        int n = nums.size();\n        sort(nums.begin(), nums.end());\n        vector<vector<int>> ans;\n        for (int a = 0; a < n; a++) {\n            if (a > 0 && nums[a] == nums[a - 1]) continue;\n            for (int b = a + 1; b < n; b++) {\n                if (b > a + 1 && nums[b] == nums[b - 1]) continue;\n                int c = b + 1;\n                int d = n - 1;\n                while (c < d) {\n                    long long sum = (long long)nums[a] + nums[b] + nums[c] + nums[d];\n                    if (sum == (long long)target) {\n                        ans.push_back({nums[a], nums[b], nums[c], nums[d]});\n                        c++;\n                        d--;\n                        while (c < d && nums[c] == nums[c - 1]) c++;\n                        while (c < d && nums[d] == nums[d + 1]) d--;\n                    } else if (sum < (long long)target) {\n                        c++;\n                    } else {\n                        d--;\n                    }\n                }\n            }\n        }\n        return ans;\n    }\n};",
+  "entry": "fourSum",
+  "is_class": true
+ },
+ "kmp-algorithm-or-lps-array": {
+  "code": "class Solution{\n    public:\n        vector <int> search(string pat, string txt){\n            vector<int> result;\n            int n = (int)txt.size(), m = (int)pat.size();\n            if (m == 0 || m > n) return result;\n\n            // Build LPS (Longest Proper Prefix which is also Suffix) array for the pattern\n            vector<int> lps(m, 0);\n            for (int i = 1; i < m; i++) {\n                int j = lps[i - 1];\n                while (j > 0 && pat[i] != pat[j]) {\n                    j = lps[j - 1];\n                }\n                if (pat[i] == pat[j]) {\n                    j++;\n                }\n                lps[i] = j;\n            }\n\n            // KMP search over the text; collect all 0-based starting indices (ascending)\n            int j = 0; // number of characters of pat currently matched\n            for (int i = 0; i < n; i++) {\n                while (j > 0 && txt[i] != pat[j]) {\n                    j = lps[j - 1];\n                }\n                if (txt[i] == pat[j]) {\n                    j++;\n                }\n                if (j == m) {\n                    result.push_back(i - m + 1);\n                    j = lps[j - 1]; // allow overlapping matches\n                }\n            }\n            return result;\n        }\n};",
+  "entry": "search",
+  "is_class": true
+ },
+ "best-time-to-buy-and-sell-stock-iv": {
+  "code": "class Solution{\npublic:\n    int stockBuySell(vector<int> arr, int n, int k){\n        // dp[cap][buy]: max profit, buy=0 means we are free to buy, buy=1 means holding a share.\n        // Space-optimized iteration over days from last to first.\n        vector<vector<int>> ahead(k+1, vector<int>(2, 0));\n        vector<vector<int>> cur(k+1, vector<int>(2, 0));\n        for(int ind = n-1; ind >= 0; ind--){\n            for(int cap = 1; cap <= k; cap++){\n                for(int buy = 0; buy <= 1; buy++){\n                    int profit;\n                    if(buy == 0){ // free to buy\n                        profit = max(-arr[ind] + ahead[cap][1], ahead[cap][0]);\n                    } else { // holding, may sell (completes a transaction)\n                        profit = max(arr[ind] + ahead[cap-1][0], ahead[cap][1]);\n                    }\n                    cur[cap][buy] = profit;\n                }\n            }\n            ahead = cur;\n        }\n        return ahead[k][0];\n    }\n};",
+  "entry": "stockBuySell",
+  "is_class": true
+ },
+ "minimum-insertions-to-make-string-palindrome": {
+  "code": "class Solution{   \npublic: \n  int minInsertion(string s) {\n    int n = s.size();\n    string r = s;\n    reverse(r.begin(), r.end());\n    // LCS of s and reverse(s) == longest palindromic subsequence length\n    vector<vector<int>> dp(n + 1, vector<int>(n + 1, 0));\n    for (int i = 1; i <= n; i++) {\n      for (int j = 1; j <= n; j++) {\n        if (s[i - 1] == r[j - 1])\n          dp[i][j] = dp[i - 1][j - 1] + 1;\n        else\n          dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);\n      }\n    }\n    int lps = dp[n][n];\n    return n - lps;\n  }\n};",
+  "entry": "minInsertion",
+  "is_class": true
+ },
+ "jump-game-ii": {
+  "code": "class Solution {\npublic:\n    int jump(vector<int>& nums) {\n        int n = nums.size();\n        int jumps = 0;\n        int curEnd = 0;\n        int farthest = 0;\n        for (int i = 0; i < n - 1; i++) {\n            farthest = max(farthest, i + nums[i]);\n            if (i == curEnd) {\n                jumps++;\n                curEnd = farthest;\n            }\n        }\n        return jumps;\n    }\n};",
+  "entry": "jump",
+  "is_class": true
+ },
+ "book-allocation-problem": {
+  "code": "class Solution {\npublic:\n    int findPages(vector<int> &nums, int m)  {\n        int n = nums.size();\n        if (m > n) return -1;\n        long long low = 0, high = 0;\n        for (int i = 0; i < n; i++) {\n            low = max(low, (long long)nums[i]);\n            high += nums[i];\n        }\n        int ans = -1;\n        while (low <= high) {\n            long long mid = low + (high - low) / 2;\n            // count minimum students needed if a student may hold at most `mid` pages\n            int students = 1;\n            long long pagesSum = 0;\n            for (int i = 0; i < n; i++) {\n                if (pagesSum + nums[i] <= mid) {\n                    pagesSum += nums[i];\n                } else {\n                    students++;\n                    pagesSum = nums[i];\n                }\n            }\n            if (students <= m) {\n                ans = (int)mid;\n                high = mid - 1;\n            } else {\n                low = mid + 1;\n            }\n        }\n        return ans;\n    }\n};",
+  "entry": "findPages",
+  "is_class": true
+ }
+}
