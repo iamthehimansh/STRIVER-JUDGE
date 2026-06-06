@@ -3,16 +3,61 @@ import { getProblem, getSubmitTestcases, getGeneratedCases } from "@/lib/data";
 import { buildHarness, buildBatchHarness } from "@/lib/judge/harness";
 import { runJob, type JobCase } from "@/lib/judge/runner";
 import { compareOutput } from "@/lib/judge/compare";
+import { recordSubmission } from "@/lib/db";
 import type {
   CaseResult,
   CaseStatus,
   JudgeMode,
   Language,
+  Problem,
   RunLimits,
   RunMode,
   RunResponse,
   Testcase,
 } from "@/lib/types";
+
+// Persist run/submit history. Best-effort: never blocks the response and
+// silently swallows DB errors so an out-of-disk doesn't break judging.
+function persist(
+  problem: { slug: string; name: string; category: string | null; difficulty: string }
+        | Problem,
+  language: Language,
+  mode: RunMode,
+  code: string,
+  duration_ms: number,
+  resp: RunResponse,
+): void {
+  try {
+    const failed = (resp.cases || [])
+      .filter((c) => c.status !== "passed" && c.status !== "unknown" && c.status !== "skipped")
+      .slice(0, 25)
+      .map((c, i) => ({
+        case_idx: i,
+        inputs: c.input,
+        expected: c.expected,
+        actual: c.stdout || (c.stderr ? `[stderr] ${c.stderr.slice(0, 1000)}` : ""),
+        status: c.status,
+      }));
+    recordSubmission({
+      slug: problem.slug,
+      problem_name: problem.name,
+      category: problem.category,
+      difficulty: problem.difficulty,
+      language,
+      mode,
+      code,
+      verdict: resp.verdict,
+      passed: resp.passed,
+      total: resp.total,
+      runtime_mode: resp.mode,
+      backend: resp.backend,
+      duration_ms,
+      failed_cases: failed,
+    });
+  } catch {
+    /* never block the response on history-store failure */
+  }
+}
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -123,10 +168,15 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "problem not found" }, { status: 404 });
   }
 
+  const t0 = Date.now();
+
   // Submit + a generated static set available -> batched judging.
   if (runMode === "submit" && language === "cpp" && !Array.isArray(body?.cases)) {
     const batched = await tryBatchSubmit(slug, code);
-    if (batched) return NextResponse.json(batched);
+    if (batched) {
+      persist(problem, language, runMode, code, Date.now() - t0, batched);
+      return NextResponse.json(batched);
+    }
   }
 
   // pick testcase set
@@ -171,12 +221,12 @@ export async function POST(req: NextRequest) {
       cases = testcases.map((tc) => ({ argv: [], stdin: joinInputs(tc) }));
       message = "Detected a main() — running as a full program (stdin → stdout).";
     } else {
-      return NextResponse.json(
-        emptyResponse(language, runMode, "unsupported",
-          built.reason ||
-            "Auto-judge does not support this problem's signature yet. Write a full program with main() that reads stdin.",
-          testcases.length),
-      );
+      const er = emptyResponse(language, runMode, "unsupported",
+        built.reason ||
+          "Auto-judge does not support this problem's signature yet. Write a full program with main() that reads stdin.",
+        testcases.length);
+      persist(problem, language, runMode, code, Date.now() - t0, er);
+      return NextResponse.json(er);
     }
   } else {
     // C: always free-form full program
@@ -193,7 +243,7 @@ export async function POST(req: NextRequest) {
   const result = await runJob(language, source, cases, DEFAULT_LIMITS);
 
   if (!result.compile.ok) {
-    return NextResponse.json(<RunResponse>{
+    const ce: RunResponse = {
       ok: true,
       mode,
       backend: result.backend,
@@ -206,7 +256,9 @@ export async function POST(req: NextRequest) {
       total: testcases.length,
       message,
       limits: DEFAULT_LIMITS,
-    });
+    };
+    persist(problem, language, runMode, code, Date.now() - t0, ce);
+    return NextResponse.json(ce);
   }
 
   const unordered = isUnordered(slug);
@@ -259,7 +311,7 @@ export async function POST(req: NextRequest) {
       "Submitting against example testcases (no generated answer key yet for this problem).";
   }
 
-  return NextResponse.json(<RunResponse>{
+  const finalResp: RunResponse = {
     ok: true,
     mode,
     backend: result.backend,
@@ -272,7 +324,9 @@ export async function POST(req: NextRequest) {
     total: gradable.length || caseResults.length,
     message,
     limits: DEFAULT_LIMITS,
-  });
+  };
+  persist(problem, language, runMode, code, Date.now() - t0, finalResp);
+  return NextResponse.json(finalResp);
 }
 
 function blankCase(tc: Testcase, status: CaseStatus): CaseResult {

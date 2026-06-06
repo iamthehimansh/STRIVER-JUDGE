@@ -7,6 +7,11 @@
 # ---------- deps ----------
 FROM node:20-bookworm-slim AS deps
 WORKDIR /app
+# build tools for better-sqlite3 (falls back to building from source if no
+# matching prebuilt binary is found for the host arch)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      python3 make g++ ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
 COPY package.json package-lock.json* ./
 RUN npm ci --no-audit --no-fund
 

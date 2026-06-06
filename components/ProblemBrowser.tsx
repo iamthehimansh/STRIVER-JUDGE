@@ -38,18 +38,8 @@ export default function ProblemBrowser({ items }: { items: ProblemIndexItem[] })
   }, [filtered]);
 
   return (
-    <div className="mx-auto min-h-screen max-w-4xl px-5 py-10">
-      <div className="mb-8">
-        <div className="flex items-baseline gap-3">
-          <h1 className="text-2xl font-bold tracking-tight text-ink">Striver Judge</h1>
-          <span className="text-sm text-ink-faint">{items.length} problems · C / C++</span>
-        </div>
-        <p className="mt-1 text-sm text-ink-dim">
-          A local LeetCode-style judge over the takeUforward A2Z problem set.
-        </p>
-      </div>
-
-      <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+    <div>
+      <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center">
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}

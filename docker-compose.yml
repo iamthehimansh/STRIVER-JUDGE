@@ -31,3 +31,5 @@ services:
       - ./generated-tests:/app/generated-tests:ro
       # 4. (optional) live problem JSONs without rebuilding
       - ./public/data:/app/public/data:ro
+      # 5. persistent SQLite history (run/submit stats + per-submission code)
+      - ./data:/app/data

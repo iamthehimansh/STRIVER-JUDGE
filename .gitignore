@@ -8,3 +8,5 @@ next-env.d.ts
 .judge-tmp
 /gen/_shim
 
+/data
+npm-debug.log*
