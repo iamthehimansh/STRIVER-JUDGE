@@ -10,3 +10,6 @@ next-env.d.ts
 
 /data
 npm-debug.log*
+
+# scratchpad file I keep accidentally adding; ignore for good
+sc

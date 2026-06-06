@@ -1,9 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { ProblemIndexItem } from "@/lib/types";
 import { difficultyKey } from "@/lib/starter";
+
+const LS_OPEN_KEY = "striver:openCategory";
 
 interface SlugStatusLite {
   solved: boolean;
@@ -51,6 +53,36 @@ export default function ProblemBrowser({ items, statuses }: Props) {
   const [query, setQuery] = useState("");
   const [diff, setDiff] = useState<(typeof DIFF_FILTERS)[number]>("all");
   const [status, setStatus] = useState<(typeof STATUS_FILTERS)[number]>("any");
+
+  // Single-active accordion: at most one category open at a time. The user's
+  // choice is persisted to localStorage so it survives reloads. `null` is a
+  // valid value (everything collapsed).  `undefined` is the pre-hydration
+  // state (we don't render the dropdown body until we've read localStorage to
+  // avoid a hydration mismatch / flash).
+  const [openCat, setOpenCat] = useState<string | null | undefined>(undefined);
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(LS_OPEN_KEY);
+      if (raw === null) {
+        // first visit -> open the first category; we set state to "" sentinel
+        // and resolve to the first visible category in the render path
+        setOpenCat("");
+      } else {
+        setOpenCat(raw === "__none__" ? null : raw);
+      }
+    } catch {
+      setOpenCat("");
+    }
+  }, []);
+  function toggleCat(cat: string) {
+    setOpenCat((cur) => {
+      const next = cur === cat ? null : cat;
+      try {
+        localStorage.setItem(LS_OPEN_KEY, next === null ? "__none__" : next);
+      } catch {}
+      return next;
+    });
+  }
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -167,7 +199,13 @@ export default function ProblemBrowser({ items, statuses }: Props) {
         </div>
       )}
 
-      <div className="space-y-5">
+      {(() => null)()}
+      {/* Resolve the actually-open category for this render:
+            - "" (sentinel "first-time visit") -> first visible category
+            - a string that's still in the visible groups -> use it
+            - everything else -> all collapsed                                  */}
+      {undefined}
+      <div className="space-y-3">
         {groups.map(({ cat, subs }, catIdx) => {
           const catItems = subs.flatMap((s) => s.items);
           const catSolved = catItems.filter((it) => statuses[it.slug]?.solved).length;
@@ -175,10 +213,26 @@ export default function ProblemBrowser({ items, statuses }: Props) {
             (it) => !statuses[it.slug]?.solved && (statuses[it.slug]?.attempts ?? 0) > 0
           ).length;
           const pct = catItems.length > 0 ? Math.round((catSolved / catItems.length) * 100) : 0;
+          const effectiveOpen =
+            openCat === undefined
+              ? null
+              : openCat === ""
+              ? groups[0]?.cat ?? null
+              : openCat && groups.some((g) => g.cat === openCat)
+              ? openCat
+              : null;
+          const isOpen = effectiveOpen === cat;
           return (
             <section key={cat} className="overflow-hidden rounded-xl bg-bg-panel ring-1 ring-edge">
-              {/* category header */}
-              <header className="border-b border-edge/60 bg-gradient-to-r from-bg-raised to-bg-panel px-4 py-3">
+              {/* clickable category header — toggles single-active accordion */}
+              <button
+                type="button"
+                aria-expanded={isOpen}
+                onClick={() => toggleCat(cat)}
+                className={`group w-full bg-gradient-to-r from-bg-raised to-bg-panel px-4 py-3 text-left transition hover:from-bg-hover hover:to-bg-panel ${
+                  isOpen ? "border-b border-edge/60" : ""
+                }`}
+              >
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="flex items-baseline gap-2 text-sm font-semibold text-ink">
                     <span className="font-mono text-xs text-ink-faint">
@@ -192,19 +246,29 @@ export default function ProblemBrowser({ items, statuses }: Props) {
                       <span className="text-ink-faint"> / {catItems.length}</span>
                     </span>
                     {catAttempts > 0 && (
-                      <span className="text-warn">
-                        ⏵ {catAttempts} in progress
-                      </span>
+                      <span className="text-warn">⏵ {catAttempts} in progress</span>
                     )}
                     <span className="font-mono text-ink-faint">{pct}%</span>
+                    <svg
+                      viewBox="0 0 12 12"
+                      className={`h-3 w-3 stroke-ink-faint transition-transform duration-200 ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                      fill="none"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M2.5 4 L6 7.5 L9.5 4" />
+                    </svg>
                   </div>
                 </div>
                 <div className="mt-2 h-1 overflow-hidden rounded-full bg-bg">
                   <div className="h-full bg-ok/70" style={{ width: `${pct}%` }} />
                 </div>
-              </header>
+              </button>
 
-              <div className="divide-y divide-edge/40">
+              <div className={`divide-y divide-edge/40 ${isOpen ? "block" : "hidden"}`}>
                 {subs.map(({ sc, items: list }) => (
                   <div key={sc}>
                     {sc !== "—" && sc !== cat && (
