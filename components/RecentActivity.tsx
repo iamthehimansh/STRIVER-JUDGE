@@ -56,13 +56,9 @@ export default function RecentActivity({ recent }: Props) {
                   <span className={`h-2 w-2 shrink-0 rounded-full ${v.dot}`} />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-baseline justify-between gap-2">
-                      <Link
-                        href={`/problem/${r.slug}`}
-                        className="truncate text-sm text-ink hover:text-accent-soft"
-                        onClick={(e) => e.stopPropagation()}
-                      >
+                      <span className="truncate text-sm text-ink group-hover:text-accent-soft">
                         {r.problem_name || r.slug}
-                      </Link>
+                      </span>
                       <span className="shrink-0 text-[11px] text-ink-faint">{ago(r.created_at)}</span>
                     </div>
                     <div className="mt-0.5 flex flex-wrap items-center gap-1.5 text-[11px]">
