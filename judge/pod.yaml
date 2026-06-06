@@ -1,0 +1,91 @@
+# Kubernetes Pod example for the Striver Judge. The simplest reliable shape
+# for "Run/Submit on a Docker pod" is Docker-out-of-Docker via a mounted
+# host-Docker socket (this needs Docker running on the node — most managed
+# k8s clusters run containerd instead and won't have a Docker socket; use the
+# DinD sidecar variant at the bottom in that case).
+#
+# Prereqs on the node:
+#   1. Sandbox image present locally:
+#        docker build -t striver-judge:latest -f judge/Dockerfile .
+#   2. Test data restored on the node host:
+#        python3 scripts/restore_data.py
+#   3. Update the hostPath paths below to match the repo location on the node.
+#
+# Apply:   kubectl apply -f judge/pod.yaml
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: striver-judge
+  labels:
+    app: striver-judge
+spec:
+  containers:
+    - name: app
+      image: striver-judge-app:latest
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 3000
+          name: http
+      env:
+        - { name: JUDGE_BACKEND,    value: "docker" }
+        - { name: JUDGE_IMAGE,      value: "striver-judge:latest" }
+        - { name: JUDGE_MEMORY_MB,  value: "256" }
+        - { name: JUDGE_TIME_MS,    value: "3000" }
+        - { name: JUDGE_COMPILE_MS, value: "15000" }
+      volumeMounts:
+        - { name: docker-sock, mountPath: /var/run/docker.sock }
+        - { name: shared-tmp,  mountPath: /tmp }
+        - { name: test-data,   mountPath: /app/generated-tests, readOnly: true }
+        - { name: problem-data,mountPath: /app/public/data,      readOnly: true }
+      resources:
+        requests: { cpu: "200m", memory: "256Mi" }
+        limits:   { cpu: "1",    memory: "1Gi" }
+  volumes:
+    - name: docker-sock
+      hostPath: { path: /var/run/docker.sock, type: Socket }
+    - name: shared-tmp
+      hostPath: { path: /tmp, type: Directory }
+    - name: test-data
+      hostPath: { path: /opt/striver-judge/generated-tests, type: Directory }
+    - name: problem-data
+      hostPath: { path: /opt/striver-judge/public/data, type: Directory }
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: striver-judge
+spec:
+  selector: { app: striver-judge }
+  ports:
+    - port: 80
+      targetPort: 3000
+  type: ClusterIP
+
+# ─── ALTERNATIVE: DinD sidecar (clusters without a host Docker daemon) ──────
+# If your cluster runs containerd (no /var/run/docker.sock on the node),
+# replace the spec above with this shape instead:
+#
+#   containers:
+#     - name: app
+#       image: striver-judge-app:latest
+#       env:
+#         - { name: DOCKER_HOST, value: "tcp://localhost:2375" }
+#         # other JUDGE_* vars as above
+#     - name: dind
+#       image: docker:24-dind
+#       securityContext: { privileged: true }      # required for nested Docker
+#       env:
+#         - { name: DOCKER_TLS_CERTDIR, value: "" }
+#       args: ["--host=tcp://0.0.0.0:2375"]
+#       volumeMounts:
+#         - { name: docker-storage, mountPath: /var/lib/docker }
+#   volumes:
+#     - { name: docker-storage, emptyDir: {} }
+#
+# Caveats: privileged: true is a real security trade-off; DinD restarts wipe
+# the sandbox image cache (build it inside an init step), and /tmp is no
+# longer naturally shared with the host so the app's `-v <dir>:/work` mount
+# must point at a path the DinD daemon also sees (an emptyDir volume mounted
+# at /tmp in BOTH containers).

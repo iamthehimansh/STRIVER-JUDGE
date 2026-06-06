@@ -1,0 +1,33 @@
+# One-command deploy on a Docker-enabled VM. Prereqs:
+#   1. Sandbox image built:   docker build -t striver-judge:latest -f judge/Dockerfile .
+#   2. Test data restored:    python3 scripts/restore_data.py
+# Then:                       docker compose up -d --build
+#
+# Architecture: this app container speaks to the host's Docker daemon via the
+# mounted socket and spawns a fresh sibling container per submission (DooD).
+# /tmp is bind-mounted host<->container so the paths the app uses for
+# `docker run -v <jobdir>:/work …` resolve identically on both sides.
+
+services:
+  striver-judge:
+    build: .
+    image: striver-judge-app:latest
+    container_name: striver-judge
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      JUDGE_BACKEND: "docker"                # force per-run Docker sandbox
+      JUDGE_IMAGE: "striver-judge:latest"    # sandbox image tag
+      JUDGE_MEMORY_MB: "256"                 # per-run memory cap
+      JUDGE_TIME_MS: "3000"                  # per-case wall-time cap
+      JUDGE_COMPILE_MS: "15000"              # compile timeout
+    volumes:
+      # 1. host Docker socket -> the app spawns sandbox containers as siblings
+      - /var/run/docker.sock:/var/run/docker.sock
+      # 2. shared /tmp -> job-dir paths the app generates are valid on the host
+      - /tmp:/tmp
+      # 3. generated test data (run scripts/restore_data.py on the host first)
+      - ./generated-tests:/app/generated-tests:ro
+      # 4. (optional) live problem JSONs without rebuilding
+      - ./public/data:/app/public/data:ro

@@ -1,0 +1,12 @@
+# Files NOT shipped into the app build context. generated-tests/ is the big one
+# — it's bind-mounted at runtime from the host so the image stays small.
+.git
+.next
+node_modules
+public/vs
+generated-tests
+.judge-tmp
+gen/_shim
+*.tsbuildinfo
+.DS_Store
+README.md

@@ -142,6 +142,52 @@ used identically by both backends so verdicts match.
 | `JUDGE_TIME_MS`     | `3000`                | Per-case wall-time limit         |
 | `JUDGE_COMPILE_MS`  | `15000`               | Compile timeout                  |
 
+## Production deployment (Docker / Kubernetes)
+
+Two images, one socket mount.
+
+| Image                       | What it is                                  | Built from           |
+| --------------------------- | ------------------------------------------- | -------------------- |
+| `striver-judge:latest`      | Per-run **sandbox** (clang + g++ + python3) | `judge/Dockerfile`   |
+| `striver-judge-app:latest`  | The **Next.js app + Docker CLI**            | `Dockerfile` (root)  |
+
+The app spawns one fresh sandbox container per submission via the host
+Docker daemon (Docker-out-of-Docker via the mounted socket — the app is *not*
+nested inside Docker). Both images must be available on whichever node runs
+the app.
+
+### One-shot: Docker Compose
+
+```bash
+# on the host VM, in the repo:
+python3 scripts/restore_data.py                                # 1. stitch the .partNNN files
+docker build -t striver-judge:latest -f judge/Dockerfile .     # 2. build sandbox image
+docker compose up -d --build                                   # 3. start app on :3000
+```
+
+`docker-compose.yml` mounts three things into the app container:
+
+1. `/var/run/docker.sock` → the app shells out to `docker run …` for each
+   submission. The spawned sandbox is a **sibling** of the app, not a child.
+2. `/tmp` ↔ host `/tmp` → the per-job temp dir the app creates must resolve
+   to the **same path** on the host (where the daemon runs), so the
+   `-v <jobdir>:/work` mount the app emits actually finds something.
+3. `./generated-tests` → the (restored) Submit test data, read-only.
+
+### Kubernetes pod
+
+`judge/pod.yaml` is a working Pod + Service example. The default shape uses
+the same DooD pattern (mounts the node's Docker socket). For clusters where
+the node runs containerd (no Docker daemon to talk to), the file has a DinD
+sidecar variant commented at the bottom.
+
+### Verify Docker mode is actually in use
+
+After starting, hit **Run** on any problem and check the badge in the Result
+panel: `🐳 docker` confirms the per-run sandbox path; `💻 local` means the
+runner couldn't reach the daemon and fell back to host clang. Force-on:
+`JUDGE_BACKEND=docker`; force-off: `JUDGE_BACKEND=local`.
+
 ## Data
 
 `scripts/build_data.py` reads `FULL_STRIVER_DATABASE.json` and:
