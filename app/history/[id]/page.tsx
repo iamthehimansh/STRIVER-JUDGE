@@ -1,6 +1,17 @@
 import Link from "next/link";
+import nextDynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import { getSubmission } from "@/lib/db";
+import { beautifyCpp } from "@/lib/format/cpp";
+
+// Monaco is browser-only. Aliased to avoid clashing with the `dynamic`
+// route-segment export below.
+const CodeView = nextDynamic(() => import("@/components/CodeView"), {
+  ssr: false,
+  loading: () => (
+    <div className="rounded-lg bg-bg p-4 text-sm text-ink-dim ring-1 ring-edge">Loading editor…</div>
+  ),
+});
 
 export const dynamic = "force-dynamic";
 
@@ -124,9 +135,10 @@ export default async function HistoryDetail({ params }: { params: { id: string }
 
       <section>
         <h2 className="mb-2 text-sm font-semibold text-ink">Submitted code</h2>
-        <pre className="overflow-auto rounded-lg bg-bg p-4 font-mono text-[12.5px] text-ink/90 ring-1 ring-edge">
-          {sub.code}
-        </pre>
+        <CodeView
+          value={beautifyCpp(sub.code)}
+          language={sub.language === "c" ? "c" : "cpp"}
+        />
       </section>
     </main>
   );
