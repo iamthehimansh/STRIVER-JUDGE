@@ -22,16 +22,17 @@ Docker sandbox with memory + time limits.
 ## Quick start
 
 ```bash
-python3 scripts/restore_data.py   # reassemble split generated-tests/ (post-clone, one-time)
 npm install                       # deps + self-hosts Monaco into public/vs
 npm run data                      # build cleaned + per-problem JSON from the raw DB
 npm run dev                       # http://localhost:3000
 ```
 
 > `generated-tests/` ships split into ~40 MB chunks (`.partNNN`) so no single
-> file exceeds GitHub's 100 MB limit. `restore_data.py` is idempotent —
-> reassembles each `<base>.jsonl.part000` + siblings into `<base>.jsonl` and
-> removes the parts. Re-running after a successful restore is a no-op.
+> file exceeds GitHub's 100 MB limit. The judge **transparently streams the
+> chunks** when no intact `.jsonl` is present — no pre-clone reassembly is
+> required. Running `python3 scripts/restore_data.py` is still useful if you
+> want to inspect or edit the data on disk (idempotent — reassembles each
+> `<base>.jsonl.part000` + siblings into `<base>.jsonl` and removes the parts).
 
 Open the browser, pick a problem (e.g. **Largest Element**), write a solution,
 and hit **Run**.

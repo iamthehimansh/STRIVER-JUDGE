@@ -133,6 +133,47 @@ export interface RecentRow {
   created_at: number;
 }
 
+// per-slug "have I solved it / tried it / how close did I get"
+export interface SlugStatus {
+  solved: boolean;
+  attempts: number;
+  best_passed: number;
+  best_total: number;
+}
+export function getSlugStatuses(): Map<string, SlugStatus> {
+  const d = db();
+  const rows = d
+    .prepare(
+      `SELECT
+         slug,
+         COUNT(*) AS attempts,
+         MAX(CASE WHEN mode='submit' AND verdict='accepted' THEN 1 ELSE 0 END) AS solved,
+         MAX(CAST(passed AS REAL) / NULLIF(total, 0)) AS best_ratio,
+         MAX(passed) AS best_passed,
+         MAX(total)  AS best_total
+       FROM submissions
+       GROUP BY slug`
+    )
+    .all() as Array<{
+      slug: string;
+      attempts: number;
+      solved: number;
+      best_ratio: number | null;
+      best_passed: number;
+      best_total: number;
+    }>;
+  const m = new Map<string, SlugStatus>();
+  for (const r of rows) {
+    m.set(r.slug, {
+      solved: r.solved === 1,
+      attempts: r.attempts,
+      best_passed: r.best_passed ?? 0,
+      best_total: r.best_total ?? 0,
+    });
+  }
+  return m;
+}
+
 export function recentSubmissions(limit = 12): RecentRow[] {
   return db()
     .prepare(

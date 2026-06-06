@@ -1,5 +1,5 @@
 import { getIndex } from "@/lib/data";
-import { getStats } from "@/lib/db";
+import { getStats, getSlugStatuses } from "@/lib/db";
 import ProblemBrowser from "@/components/ProblemBrowser";
 import StatsHero from "@/components/StatsHero";
 import WeekChart from "@/components/WeekChart";
@@ -11,8 +11,10 @@ export const dynamic = "force-dynamic";
 export default async function Home() {
   const items = await getIndex();
   let stats;
+  let statuses: Record<string, { solved: boolean; attempts: number; best_passed: number; best_total: number }> = {};
   try {
     stats = getStats();
+    statuses = Object.fromEntries(getSlugStatuses());
   } catch {
     // db unavailable (first boot before any write) → render an empty shell
     stats = {
@@ -89,7 +91,7 @@ export default async function Home() {
           <h2 className="text-lg font-semibold text-ink">All problems</h2>
           <span className="text-xs text-ink-faint">click to open the workspace</span>
         </div>
-        <ProblemBrowser items={items} />
+        <ProblemBrowser items={items} statuses={statuses} />
       </section>
 
       <footer className="mt-10 pb-4 text-center text-xs text-ink-faint">
